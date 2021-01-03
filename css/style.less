@@ -120,8 +120,18 @@ a:hover {
   background-repeat: no-repeat;
 }
 
+.search-field {
+  border: none;
+  outline: none;
+  &::-webkit-search-cancel-button {
+    display: none;
+  }
+}
+
 .right-header-menu {
+  padding-left: 3em;
   li {
+    display: flex;
     a {
       color: @text-header-menu-color;
       &:hover {
@@ -131,9 +141,29 @@ a:hover {
   }
   .search-field {
     color: @search-text-header-menu-color;
-    &:hover {
-      cursor: text;
-      color: @text-header-menu-color-hover;
+    border: none;
+    outline: none;
+    width: 90px;
+    padding: 0.25em 0.5em;
+    left: -10px;
+    top: 7px;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+    background-color: transparent;
+    border-radius: 0px;
+
+    caret-color: transparent;
+
+    &::-webkit-search-cancel-button {
+      display: none;
+    }
+
+    &:focus {
+      caret-color: @search-text-header-menu-color;
+      border-radius: 20px;
+      background-color: @search-panel-color;
+      width: 110px;
+      left: -30px;
     }
   }
   .language-options {
@@ -153,11 +183,19 @@ a:hover {
 }
 
 .search-icon {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  z-index: 10;
   background-position: 0 -20px;
   background-size: 200px 200px;
   width: 20px;
   height: 20px;
   margin: 0.2em;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .globe-icon {
@@ -395,14 +433,23 @@ footer {
     margin-top: 1em;
 
     padding: 0.5em 1.5em;
-    padding-right: 0.5em;
+    padding-right: 2em;
 
     border-radius: 20px;
+  }
+
+  .search-box {
+    position: relative;
+
+    width: 250px;
   }
 
   .search-icon {
     background-size: 270px 270px;
     background-position: 0px -33px;
+    position: absolute;
+    right: 3px;
+    top: 18px;
   }
 
   .navbar {
