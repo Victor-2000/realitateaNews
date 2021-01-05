@@ -63,12 +63,27 @@ a:hover {
   }
 }
 
-.addblock {
+header {
+  margin-top: 30px;
+}
+
+.adblock {
   display: flex;
   justify-content: center;
+  a {
+    position: relative;
+  }
   img {
     width: 100%;
-    margin: 30px;
+  }
+
+  .close-icon {
+    position: absolute;
+    background-position: -73px -48px;
+    right: 35px;
+    top: 17px;
+
+    cursor: pointer;
   }
 }
 
@@ -289,6 +304,12 @@ a:hover {
 .breaking-news-banner {
   background-color: @breaking-news-panel-color;
 
+  a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   #breaking-news-text-image {
     height: 50px;
   }
@@ -320,6 +341,12 @@ a:hover {
 .news-alert-banner {
   background-color: @news-alert-panel-color;
   justify-content: space-between;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   #news-alert-text-image {
     height: 50px;
@@ -392,6 +419,7 @@ a:hover {
   .small-news-block {
     padding-left: 0;
     margin-bottom: 1em;
+    cursor: pointer;
   }
 
   padding: 0;
@@ -399,6 +427,9 @@ a:hover {
 }
 
 .large-news-unit {
+  .large-news-block {
+    cursor: pointer;
+  }
   .article-title {
     font-size: 20px;
     line-height: 23px;

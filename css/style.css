@@ -28,13 +28,25 @@ a:hover {
 .hide-text * {
   font-size: 0px;
 }
-.addblock {
+header {
+  margin-top: 30px;
+}
+.adblock {
   display: flex;
   justify-content: center;
 }
-.addblock img {
+.adblock a {
+  position: relative;
+}
+.adblock img {
   width: 100%;
-  margin: 30px;
+}
+.adblock .close-icon {
+  position: absolute;
+  background-position: -73px -48px;
+  right: 35px;
+  top: 17px;
+  cursor: pointer;
 }
 .icon {
   display: block;
@@ -211,6 +223,11 @@ a:hover {
 .breaking-news-banner {
   background-color: #e50000;
 }
+.breaking-news-banner a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .breaking-news-banner #breaking-news-text-image {
   height: 50px;
 }
@@ -234,6 +251,11 @@ a:hover {
 }
 .news-alert-banner {
   background-color: #f2f2f2;
+  justify-content: space-between;
+}
+.news-alert-banner a {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .news-alert-banner #news-alert-text-image {
@@ -296,6 +318,10 @@ a:hover {
 .small-news-unit .small-news-block {
   padding-left: 0;
   margin-bottom: 1em;
+  cursor: pointer;
+}
+.large-news-unit .large-news-block {
+  cursor: pointer;
 }
 .large-news-unit .article-title {
   font-size: 20px;
