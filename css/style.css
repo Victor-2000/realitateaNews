@@ -568,6 +568,9 @@ header {
   padding: 0;
   margin-bottom: 1em;
 }
+.small-news-unit a {
+  margin: 0;
+}
 .small-news-unit .article-title {
   font-size: 13.8px;
   line-height: 17px;
