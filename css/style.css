@@ -23,7 +23,7 @@ a:hover {
   margin: 0;
 }
 .hide-text {
-  font-size: 0px;
+  font-size: 0px !important;
 }
 .hide-text * {
   font-size: 0px;
@@ -34,9 +34,13 @@ header {
 .adblock {
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }
 .adblock a {
+  border-radius: 20px;
   position: relative;
+  overflow: hidden;
+  height: 285px;
 }
 .adblock img {
   width: 100%;
@@ -48,6 +52,34 @@ header {
   top: 17px;
   cursor: pointer;
 }
+.adblock .ad-title,
+.adblock .ad-description {
+  position: absolute;
+  color: white;
+}
+.adblock .ad-description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 535px;
+  font-size: 5pt;
+  left: 40px;
+  bottom: 15px;
+  font-family: Inter SemiBold;
+}
+.adblock .ad-title {
+  font-size: 19pt;
+  font-family: Inter SemiBold;
+  left: 40px;
+  bottom: 52px;
+}
+.adblock .mercedes-icon {
+  background-size: 250px 250px;
+  background-position: -123px -90px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
 .icon {
   display: block;
   width: 20px;
@@ -56,27 +88,62 @@ header {
   background-repeat: no-repeat;
   background-size: 200px 200px;
 }
+.contact-options {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
 .contact-options li {
+  width: 25px;
+  height: 25px;
+}
+.left-nav {
+  display: flex;
+  align-items: center;
+}
+.left-nav .text-left-nav li {
+  margin: 0.5em;
+}
+.left-nav li {
+  display: flex;
   margin: 0.2em;
+}
+.left-nav li a {
+  color: #b3b3b3;
+}
+.left-nav li a:hover {
+  color: #959595;
+}
+.text-left-nav {
+  margin: 10px;
+}
+.facebook,
+.odnoklasniki,
+.telegram,
+.twitter,
+.youtube {
+  background-size: 250px 250px;
+  width: 25px;
+  height: 25px;
 }
 .facebook {
   background-position: 0 0;
 }
 .odnoklasniki {
-  background-position: -25px 0;
+  background-position: -30px 0;
 }
 .telegram {
-  background-position: -50px 0;
+  background-position: -60px 0;
 }
 .twitter {
-  background-position: -75px 0;
+  background-position: -93px 0;
 }
 .youtube {
-  background-position: -100px 0;
+  background-position: -125px 0;
 }
 .logo {
   display: block;
-  margin: auto;
+  margin: 0;
   width: 200px;
   height: 50px;
   background-image: url("../images/logo.png");
@@ -91,42 +158,36 @@ header {
   display: none;
 }
 .right-header-menu {
-  padding-left: 3em;
-}
-.right-header-menu li {
-  display: flex;
-}
-.right-header-menu li a {
-  color: #959595;
-}
-.right-header-menu li a:hover {
-  color: #7a7a7a;
+  padding-left: 10em;
+  flex-direction: row-reverse;
 }
 .right-header-menu .search-field {
-  color: #b9b9b9;
+  display: flex;
+  position: absolute;
+  color: #020202;
   border: none;
   outline: none;
-  width: 90px;
-  padding: 0.25em 0.5em;
-  left: -10px;
-  top: 7px;
-  position: absolute;
-  transition: 0.3s ease-in-out;
-  background-color: transparent;
-  border-radius: 0px;
-  caret-color: transparent;
+  right: 80px;
+  z-index: 0;
+  padding: 0.3em 1em;
+  padding-right: 1.5em;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  width: 240px;
+}
+.right-header-menu .search-field::placeholder {
+  color: #b9b9b9;
 }
 .right-header-menu .search-field::-webkit-search-cancel-button {
   display: none;
 }
 .right-header-menu .search-field:focus {
   caret-color: #b9b9b9;
-  border-radius: 20px;
-  background-color: #f6f6f6;
-  width: 110px;
-  left: -30px;
 }
 .right-header-menu .language-options {
+  position: absolute;
+  right: 10px;
+  top: 15px;
   color: #000000;
   font-weight: 500;
 }
@@ -140,15 +201,18 @@ header {
   justify-content: center;
 }
 .search-icon {
+  position: absolute;
   border: none;
   outline: none;
   background-color: transparent;
   z-index: 10;
-  background-position: 0 -20px;
-  background-size: 200px 200px;
-  width: 20px;
-  height: 20px;
+  background-position: 4px -27px;
+  background-size: 250px 250px;
+  width: 25px;
+  height: 25px;
   margin: 0.2em;
+  right: 80px;
+  top: 10px;
 }
 .search-icon:focus {
   outline: none;
@@ -190,10 +254,12 @@ header {
 .navbar .navbar-side-menu .business {
   background-position: 2px -53px;
 }
-.navbar .navbar-side-menu .money {
+.navbar .navbar-side-menu .currency-button {
+  cursor: pointer;
   background-position: -24px -53px;
 }
-.navbar .navbar-side-menu .daily {
+.navbar .navbar-side-menu .weather-button {
+  cursor: pointer;
   background-position: -52px -53px;
 }
 .navbar .navbar-side-menu .live {
@@ -204,6 +270,200 @@ header {
   display: flex;
   margin: 0 5px;
   height: 20px;
+}
+.additional-info {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #00000083;
+  color: white;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  top: 0;
+  font-family: Inter SemiBold;
+}
+.additional-info .additional-info-background {
+  position: absolute;
+  z-index: 101;
+  width: 100%;
+  height: 100%;
+}
+.additional-info .meteo,
+.additional-info .curs-valutar {
+  background-color: #2a252e;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 102;
+  width: 380px;
+  height: 240px;
+  flex-shrink: 0;
+}
+.additional-info .meteo {
+  display: none;
+}
+.additional-info .meteo .city {
+  display: flex;
+  align-items: center;
+}
+.additional-info .meteo .weather-icon {
+  background-size: 300px 300px;
+  width: 40px;
+  height: 40px;
+  background-position: -230px -35px;
+  margin: auto;
+}
+.additional-info .meteo .meteo-header {
+  background-color: #f9f9f9;
+  color: #000000;
+  font-size: 15pt;
+  padding: 1em 1em;
+  margin: 0;
+}
+.additional-info .meteo .meteo-header .weather-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.additional-info .meteo .meteo-header .weather-info #current-weather {
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 11px;
+}
+.additional-info .meteo .meteo-header .weather-info #current-temp {
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -5px;
+  top: 5px;
+}
+.additional-info .meteo .meteo-content {
+  margin: 0.5em 0;
+}
+.additional-info .meteo .meteo-content ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.additional-info .meteo .meteo-content ul .lowest-temp,
+.additional-info .meteo .meteo-content ul .highest-temp {
+  line-height: 20px;
+}
+.additional-info .meteo .meteo-content ul .highest-temp {
+  color: #ff565e;
+}
+.additional-info .meteo .meteo-content ul .lowest-temp {
+  color: #51b3f5;
+}
+.additional-info .meteo .meteo-content ul .weather-icon {
+  background-size: 250px 250px;
+  width: 40px;
+  height: 35px;
+  background-position: -230px -35px;
+  margin: 10px 0px;
+}
+.additional-info .meteo .meteo-content ul #weather-1 .weather-icon {
+  background-position: -156px 1px;
+}
+.additional-info .meteo .meteo-content ul #weather-2 .weather-icon {
+  background-position: -151px -32px;
+}
+.additional-info .meteo .meteo-content ul #weather-3 .weather-icon {
+  background-position: -189px -29px;
+}
+.additional-info .meteo .meteo-content ul #weather-4 .weather-icon {
+  background-position: -156px 1px;
+}
+.additional-info .meteo .meteo-content ul #weather-5 .weather-icon {
+  background-position: -151px -32px;
+}
+.additional-info .meteo .meteo-content ul #weather-6 .weather-icon {
+  background-position: -189px -29px;
+}
+.additional-info .meteo .meteo-content ul #weather-7 .weather-icon {
+  background-position: -189px -29px;
+}
+.additional-info .meteo .meteo-content ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.2em;
+}
+.additional-info .meteo .meteo-content ul li div {
+  display: flex;
+  flex-direction: row;
+}
+.additional-info .curs-valutar {
+  display: none;
+}
+.additional-info .curs-valutar .curs-valutar-header {
+  background-color: #f9f9f9;
+  color: #000000;
+  font-size: 15pt;
+  padding: 0.7em 1.5em;
+}
+.additional-info .curs-valutar .curs-valutar-content {
+  margin: 1em;
+}
+.additional-info .curs-valutar .curs-valutar-content ul {
+  display: flex;
+  flex-direction: column;
+}
+.additional-info .curs-valutar .curs-valutar-content ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.2em;
+  margin-left: 0;
+}
+.additional-info .curs-valutar .curs-valutar-content ul li span {
+  background-size: 250px 250px;
+}
+.additional-info .curs-valutar .curs-valutar-content ul li .eur {
+  background-position: 0px -125px;
+}
+.additional-info .curs-valutar .curs-valutar-content ul li .usd {
+  background-position: -30px -125px;
+}
+.additional-info .curs-valutar .curs-valutar-content ul li .rub {
+  background-position: -61px -125px;
+}
+.additional-info .curs-valutar .curs-valutar-content ul li .ron {
+  background-position: -91px -125px;
+}
+.additional-info .curs-valutar .curs-valutar-content ul li .uah {
+  background-position: -122px -125px;
+}
+.additional-info .curs-valutar .curs-valutar-content ul li .rising,
+.additional-info .curs-valutar .curs-valutar-content ul li .falling {
+  position: absolute;
+  left: 45.5%;
+}
+.additional-info .curs-valutar .curs-valutar-content ul li .rising {
+  background-position: -165px -130px;
+}
+.additional-info .curs-valutar .curs-valutar-content ul li .falling {
+  background-position: -196px -130px;
+}
+.additional-info .curs-valutar .curs-valutar-content ul li .currency {
+  justify-content: space-between;
+  width: 60px;
+}
+.additional-info .curs-valutar .curs-valutar-content ul li div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1em;
 }
 .breaking-news-banner-row {
   padding-left: 15px;
@@ -345,7 +605,6 @@ footer #search-panel {
   background-color: #f6f6f6;
   font-size: 14px;
   font-weight: 400;
-  margin-top: 1em;
   padding: 0.5em 1.5em;
   padding-right: 2em;
   border-radius: 20px;

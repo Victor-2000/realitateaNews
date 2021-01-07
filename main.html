@@ -19,27 +19,167 @@
     <title>Pagina principala</title>
   </head>
   <body>
+      <section class="additional-info">
+            <div class="additional-info-background"></div>
+          <div class="curs-valutar">
+              <div class="curs-valutar-header">Curs valutar</div>
+              <div class="curs-valutar-content">
+
+                  <ul>
+                      <li>
+                          <div class="currency" style="font: Inter SemiBold;">
+                            EUR <span class="icon eur"></span>
+                          </div>
+                          <div class="value">
+                              <span class="icon rising"></span>
+                              21.1147
+                          </div>
+                          <div class="growth">
+                            0.3288%
+                          </div>
+                      </li>
+                      <li>
+                          <div class="currency">
+                            USD <span class="icon usd"></span>
+                          </div>
+                          <div class="value">
+                              <span class="icon rising"></span> 17.2281
+                          </div>
+                          <div class="growth">0.1616%</div>
+                      </li>
+                      <li>
+                          <div class="currency">
+                              RUB <span class="icon rub"></span>
+                          </div>
+                          <div class="value">
+                              <span class="icon rising"></span> 0.2336
+                          </div>
+                          <div class="growth">-1.0589%</div>
+                      </li>
+                      <li>
+                          <div class="currency">
+                              RON <span class="icon ron"></span>
+                          </div>
+                          <div class="value">
+                              <span class="icon rising"></span> 4.3378
+                          </div>
+                          <div class="growth">0.3865%</div>
+                      </li>
+                      <li>
+                          <div class="currency">
+                            UAH <span class="icon uah"></span>
+                          </div>
+                          <div class="value">
+                              <span class="icon falling"></span> 0.6173
+                          </div>
+                          <div class="growth">0.1785%</div>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="meteo">
+              <div id="weather-current" class="row flex-row meteo-header">
+                  <div class="col-4 city">Chisinau</div>
+                  <div class="col-3"> 
+                      <span class="icon weather-icon"></span>
+                  </div>
+                  <div class="col-4 weather-info">
+                      <div class="row flex-row">
+                          <div id="current-weather" class="col-6">Partly Cloudy</div>
+                          <div id="current-temp">7 ℃</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row flex-row meteo-content">
+                  <div class="col-11 flex-row">
+                      <ul>
+                          <li id="weather-1">
+                              <div class="day">Lun</div>
+                              <span class="icon weather-icon"></span>
+                              <div class="highest-temp">7 ℃</div>
+                              <div class="lowest-temp">4 ℃</div>
+                          </li>
+                          <li id="weather-2">
+                              <div class="day">Mar</div>
+                              <span class="icon weather-icon"></span>
+                              <div class="highest-temp">8 ℃</div>
+                              <div class="lowest-temp">2 ℃</div>
+                          </li>
+                          <li id="weather-3">
+                              <div class="day">Mie</div>
+                              <span class="icon weather-icon"></span>
+                              <div class="highest-temp">4 ℃</div>
+                              <div class="lowest-temp">5 ℃</div>
+                          </li>
+                          <li id="weather-4">
+                              <div class="day">Joi</div>
+                              <span class="icon weather-icon"></span>
+                              <div class="highest-temp">5 ℃</div>
+                              <div class="lowest-temp">0 ℃</div>
+                          </li>
+                          <li id="weather-5">
+                              <div class="day">Vin</div>
+                              <span class="icon weather-icon"></span>
+                              <div class="highest-temp">7 ℃</div>
+                              <div class="lowest-temp">4 ℃</div>
+                          </li>
+                          <li id="weather-6">
+                              <div class="day">Sam</div>
+                              <span class="icon weather-icon"></span>
+                              <div class="highest-temp">7 ℃</div>
+                              <div class="lowest-temp">4 ℃</div>
+                          </li>
+                          <li id="weather-7">
+                              <div class="day">Dum</div>
+                              <span class="icon weather-icon"></span>
+                              <div class="highest-temp">7 ℃</div>
+                              <div class="lowest-temp">4 ℃</div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </section>
+
     <header>
         <div class="row flex-row">
             <div class="adblock col-10">
                 <a href="https://www.mercedes-benz.md/ro/desktop/home.html">
                     <img src="images/add1.png" alt="Mercedes Car add.">
+                    <div class="ad-title">
+                        A double victory. One single reason
+                    </div>
+                    <div class="ad-description">
+                        <span class="mercedes-icon icon"></span>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the</br> 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                        It has survived not only five centuries, but also the</br> leap into electronic typesetting, 
+                        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
+                        sheets containing Lorem
+                    </div>
                 </a>
                 <span class="close-icon icon"></span>
             </div>
         </div>
         <div class="row flex-row">
-            <div class="col-3 contact-options">
-                <ul>
+            <div class="col-4 left-nav">
+                <ul class="contact-options">
                     <li><a href="#" class="icon hide-text facebook">facebook</a></li>
                     <li><a href="#" class="icon hide-text odnoklasniki">odnoklasniki</a></li>
                     <li><a href="#" class="icon hide-text telegram">telegram</a></li>
                     <li><a href="#" class="icon hide-text twitter">twitter</a></li>
                     <li><a href="#" class="icon hide-text youtube">youtube</a></li>
                 </ul>
+                <ul class="text-left-nav">
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Cariere</a></li>
+                    <li><a href="#">Pub</a></li>
+                </ul>
             </div>
     
-            <div class="col-4">
+            
+            <div class="col-3">
                 <a href="#"><span class="logo hide-text"><h1>Realitatea</h1></span></a>
             </div>
             
@@ -49,8 +189,6 @@
                         <input type="search" name="header-search" class="search-field"  id="header-search" placeholder="Search">
                         <button class="icon search-icon"></button>
                     </li>
-                    <li><a href="#">Contacts</a></li>
-                    <li><a href="#">Cariere</a></li>
                     <li><a class="language-options" href="#">
                         <span class="icon globe-icon"></span>
                         RO
@@ -79,17 +217,13 @@
                             <a href="#">
                                 <span class="icon hide-text business">Realitatea TV</span>
                             </a>
-                            <a href="#">
-                                <span class="icon hide-text money">Curs Valutar</span>
-                            </a>
-                            <a href="#">
-                                <span class="icon hide-text daily">Vremea</span>
-                            </a>
+                            <span class="icon hide-text currency-button">Curs Valutar</span>
+                            <span class="icon hide-text weather-button">Vremea</span>
                             
                             <span>|</span>
 
                             <a href="#">
-                                Live <span class="icon live"></span>
+                                <span class="icon live"></span> Live
                             </a>
                         </div>
                     </li>
