@@ -6,22 +6,270 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--Reset CSS-->
-    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <!-- <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css"> -->
     <link rel="stylesheet" href="css/reset.css">
     
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/bootstrap.css">
     
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
     <title>Pagina principala</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+      <section class="additional-info">
+            <div class="additional-info-background"></div>
+          <div class="curs-valutar">
+              <div class="curs-valutar-header">Curs valutar</div>
+              <div class="curs-valutar-content">
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+                  <ul>
+                      <li>
+                          <div class="currency" style="font: Inter SemiBold;">
+                            EUR <span class="icon eur"></span>
+                          </div>
+                          <div class="value">
+                              <span class="icon rising"></span>
+                              21.1147
+                          </div>
+                          <div class="growth">
+                            0.3288%
+                          </div>
+                      </li>
+                      <li>
+                          <div class="currency">
+                            USD <span class="icon usd"></span>
+                          </div>
+                          <div class="value">
+                              <span class="icon rising"></span> 17.2281
+                          </div>
+                          <div class="growth">0.1616%</div>
+                      </li>
+                      <li>
+                          <div class="currency">
+                              RUB <span class="icon rub"></span>
+                          </div>
+                          <div class="value">
+                              <span class="icon rising"></span> 0.2336
+                          </div>
+                          <div class="growth">-1.0589%</div>
+                      </li>
+                      <li>
+                          <div class="currency">
+                              RON <span class="icon ron"></span>
+                          </div>
+                          <div class="value">
+                              <span class="icon rising"></span> 4.3378
+                          </div>
+                          <div class="growth">0.3865%</div>
+                      </li>
+                      <li>
+                          <div class="currency">
+                            UAH <span class="icon uah"></span>
+                          </div>
+                          <div class="value">
+                              <span class="icon falling"></span> 0.6173
+                          </div>
+                          <div class="growth">0.1785%</div>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="meteo">
+              <div id="weather-current" class="row flex-row meteo-header">
+                  <div class="col-4 city">Chisinau</div>
+                  <div class="col-3"> 
+                      <span class="icon weather-icon"></span>
+                  </div>
+                  <div class="col-4 weather-info">
+                      <div class="row flex-row">
+                          <div id="current-weather" class="col-6">Partly Cloudy</div>
+                          <div id="current-temp">7 ℃</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row flex-row meteo-content">
+                  <div class="col-11 flex-row">
+                      <ul>
+                          <li id="weather-1">
+                              <div class="day">Lun</div>
+                              <span class="icon weather-icon"></span>
+                              <div class="highest-temp">7 ℃</div>
+                              <div class="lowest-temp">4 ℃</div>
+                          </li>
+                          <li id="weather-2">
+                              <div class="day">Mar</div>
+                              <span class="icon weather-icon"></span>
+                              <div class="highest-temp">8 ℃</div>
+                              <div class="lowest-temp">2 ℃</div>
+                          </li>
+                          <li id="weather-3">
+                              <div class="day">Mie</div>
+                              <span class="icon weather-icon"></span>
+                              <div class="highest-temp">4 ℃</div>
+                              <div class="lowest-temp">5 ℃</div>
+                          </li>
+                          <li id="weather-4">
+                              <div class="day">Joi</div>
+                              <span class="icon weather-icon"></span>
+                              <div class="highest-temp">5 ℃</div>
+                              <div class="lowest-temp">0 ℃</div>
+                          </li>
+                          <li id="weather-5">
+                              <div class="day">Vin</div>
+                              <span class="icon weather-icon"></span>
+                              <div class="highest-temp">7 ℃</div>
+                              <div class="lowest-temp">4 ℃</div>
+                          </li>
+                          <li id="weather-6">
+                              <div class="day">Sam</div>
+                              <span class="icon weather-icon"></span>
+                              <div class="highest-temp">7 ℃</div>
+                              <div class="lowest-temp">4 ℃</div>
+                          </li>
+                          <li id="weather-7">
+                              <div class="day">Dum</div>
+                              <span class="icon weather-icon"></span>
+                              <div class="highest-temp">7 ℃</div>
+                              <div class="lowest-temp">4 ℃</div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+    <header>
+        <div class="row flex-row">
+            <div class="adblock col-10">
+                <a href="https://www.mercedes-benz.md/ro/desktop/home.html">
+                    <img src="images/add1.png" alt="Mercedes Car add.">
+                    <div class="ad-title">
+                        A double victory. One single reason
+                    </div>
+                    <div class="ad-description">
+                        <span class="mercedes-icon icon"></span>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the</br> 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                        It has survived not only five centuries, but also the</br> leap into electronic typesetting, 
+                        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
+                        sheets containing Lorem
+                    </div>
+                </a>
+                <span class="close-icon icon"></span>
+            </div>
+        </div>
+        <div class="row flex-row">
+            <div class="col-4 left-nav">
+                <ul class="contact-options">
+                    <li><a href="#" class="icon hide-text facebook">facebook</a></li>
+                    <li><a href="#" class="icon hide-text odnoklasniki">odnoklasniki</a></li>
+                    <li><a href="#" class="icon hide-text telegram">telegram</a></li>
+                    <li><a href="#" class="icon hide-text twitter">twitter</a></li>
+                    <li><a href="#" class="icon hide-text youtube">youtube</a></li>
+                </ul>
+                <ul class="text-left-nav">
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Cariere</a></li>
+                    <li><a href="#">Pub</a></li>
+                </ul>
+            </div>
+    
+            
+            <div class="col-3">
+                <a href="#"><span class="logo hide-text"><h1>Realitatea</h1></span></a>
+            </div>
+            
+            <div class="col-3 right-header-menu">
+                <ul>
+                    <li>
+                        <input type="search" name="header-search" class="search-field"  id="header-search" placeholder="Search">
+                        <button class="icon search-icon"></button>
+                    </li>
+                    <li><a class="language-options" href="#">
+                        <span class="icon globe-icon"></span>
+                        RO
+                        <span class="icon dropdown-button-icon"></span>
+                        <a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row flex-row">
+            <div class="col-xs-10 navbar">
+                <ul>
+                    <li><a href="#">Actualitate</a></li>
+                    <li><a href="#">Alegeri</a></li>
+                    <li><a href="#">Politica</a></li>
+                    <li><a href="#">Societate</a></li>
+                    <li><a href="#">Economie</a></li>
+                    <li><a href="#">In lume</a></li>
+                    <li><a href="#">Life</a></li>
+                    <li><a href="#">Auto</a></li>
+                    <li><a href="#">Tech</a></li>
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="#">Toate stirile</a></li>
+                    <li id="navbar-list-item">
+                        <div class="navbar-side-menu">
+                            <a href="#">
+                                <span class="icon hide-text business">Realitatea TV</span>
+                            </a>
+                            <span class="icon hide-text currency-button">Curs Valutar</span>
+                            <span class="icon hide-text weather-button">Vremea</span>
+                            
+                            <span>|</span>
+
+                            <a href="#">
+                                <span class="icon live"></span> Live
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <footer>
+        <div class="row flex-row">
+            <div class="col-10 flex-row">
+                <div class="search-box">
+                    <input type="search" name="search-panel" class="search-field"  id="search-panel" placeholder="Search">
+                    <button class="icon search-icon"></button>
+                </div>
+            </div>
+        </div>
+        <div class="row flex-row">
+            <div class="col-10 navbar">
+                <ul>
+                    <li><a href="#">Actualitate</a></li>
+                    <li><a href="#">Alegeri</a></li>
+                    <li><a href="#">Politica</a></li>
+                    <li><a href="#">Societate</a></li>
+                    <li><a href="#">Economie</a></li>
+                    <li><a href="#">In lume</a></li>
+                    <li><a href="#">Life</a></li>
+                    <li><a href="#">Auto</a></li>
+                    <li><a href="#">Tech</a></li>
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="#">Toate stirile</a></li>
+                    <li><a href="#">Realitatea TV</a></li>
+                    <li><a href="#">Curs Valutar</a></li>
+                    <li><a href="#">Vremea</a></li>
+                    <li><a href="#">Live</a></li>
+                    <li><a href="#">Contacte</a></li>
+                    <li><a href="#">Cariere</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row flex-row">
+            <div class="col-8 copyright-text">
+                 Mollit reprehenderit sunt dolore est ex commodo mollit. Enim ullamco magna quis minim dolore veniam in. 
+                 Sunt culpa ullamco reprehenderit ut mollit ut minim. Sint quis dolor fugiat et.
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
