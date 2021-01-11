@@ -145,7 +145,7 @@
         <div class="row flex-row">
             <div class="adblock col-10">
                 <a href="https://www.mercedes-benz.md/ro/desktop/home.html">
-                    <img src="images/add1.png" alt="Mercedes Car add.">
+                    <img src="images/ad1.png" alt="Mercedes Car add.">
                     <div class="ad-title">
                         A double victory. One single reason
                     </div>
@@ -193,7 +193,7 @@
                         <span class="icon globe-icon"></span>
                         RO
                         <span class="icon dropdown-button-icon"></span>
-                        <a>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -235,15 +235,18 @@
     <section class="banners">
         <div class="row flex-row breaking-news-banner-row">
             <div class="col-10 breaking-news-banner">
-                <img id="breaking-news-text-image" src="images/breaking_news.png" alt="Breaking news">
+                <div class="breaking-news-title">
+                    Breaking News <span class="breaking-news-dot icon"></span>
+                </div>
                 <a href="#">
                     <img id="breaking-news-image" src="images/emergencyNewsImg.png" alt="Breaking news image">
                     <div id="breaking-news-text"> CNESP urmează să decidă astăzi dacă interzice zborurile din Marea Britanie</div>
                 </a>
-                <span id="breaking-news-pretend-timer" class="icon"></span>
             </div>
             <div class="col-10 news-alert-banner">
-                <img id="news-alert-text-image" src="images/news_alert.png" alt="News Alert">
+                <div class="news-alert-title">
+                    News Alert <span class="news-alert-dot icon"></span>
+                </div>
                 <a href="#">
                     <img id="news-alert-image" src="images/newsAlertImg.png" alt="News alert image">
                     <div id="news-alert-text"> 
@@ -269,11 +272,39 @@
                     </span>
                 </div>
             </div>
+            <div class="col-10 rlive-news-banner">
+                <div class="rlive-news-title">
+                    RLive News <span class="rlive-news-dot icon"></span>
+                </div>
+                <a href="#">
+                    <img id="rlive-news-image" src="images/rliveNewsImg.png" alt="News alert image">
+                    <div id="rlive-news-text"> 
+                        Cu vizite în Rusia și toate fără rezultate! </br> 
+                        De ce Igor Dodon nu merită un </br>
+                        nou mandat la șefia statului
+                    </div>
+                </a>
+
+                <a href="#">
+                    <img id="rlive-news-image" src="images/rliveNewsImg2.png" alt="News alert image 2">
+                    <div id="rlive-news-text"> 
+                        Vinerea neagră revine! Percheziții </br>
+                        în dosarul "fraudei bancare": </br>
+                        Sunt cel puțin șase reținuți!
+                    </div>
+                </a>
+
+                <div id="rlive-news-nav-panel">
+                    <span id="rlive-news-left-arrow" class="icon">
+                    </span>
+                    <span id="rlive-news-right-arrow" class="icon">
+                    </span>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="headline-news">
-
         <div class="row flex-row">
 
             <div class="col-5 large-news-unit">
@@ -295,14 +326,16 @@
             </div>
             <div class="col-5 small-news-unit">
                 <div class="row flex-row">
-                    <a href="#" class="col-6 small-news-block">
+                    <a href="#" id="small-headline-block-1" class="col-6 small-news-block">
+                        <div class="category-text">politica<span class="category-dot icon"></span></div>
                         <img class="block-image" src="images/img2.png" alt="Andrian Candu">
                         <div class="article-title">
                             Președintele Pro Moldova Andrian</br>
                             Candu, susține un briefing de presă</br>
                         </div>
                       </a>
-                    <a href="#" class="col-6 small-news-block">
+                    <a href="#" id="small-headline-block-2" class="col-6 small-news-block">
+                        <div class="category-text"><span class="category-dot icon"></span></div>
                         <img class="block-image" src="images/img3.png" alt="Protest antiguvernare">
                         <div class="article-title">
                             Protest antiguvernare în PMAN</br>
@@ -311,7 +344,8 @@
                     </a>
                 </div>
                 <div class="row flex-row">
-                    <a href="#" class="col-6 small-news-block">
+                    <a href="#" id="small-headline-block-3" class="col-6 small-news-block">
+                        <div class="category-text">politica<span class="category-dot icon"></span></div>
                         <img class="block-image" src="images/img4.png" alt="Maia Sandu">
                         <div class="article-title">
                             Maia Sandu anunță că a avut o întreve-
@@ -319,7 +353,8 @@
                             nu spune un cuvânt despre întrevedere
                         </div>
                     </a>
-                    <a href="#" class="col-6 small-news-block">
+                    <a href="#" id="small-headline-block-4" class="col-6 small-news-block">
+                        <div class="category-text">in lume<span class="category-dot icon"></span></div>
                         <img class="block-image" src="images/img5.png" alt="Record negativ COVID-19">
                         <div class="article-title">
                             Un alt record negativ depășit de cazuri</br>
@@ -334,12 +369,1140 @@
         <div class="row flex-row">
             <div class="adblock col-10">
                 <a href="https://www.ikea.com/ro/ro/">
-                    <img src="images/add2.png" alt="IKEA add.">
+                    <img src="images/ad2.png" alt="IKEA add.">
                 </a>
                 <span class="close-icon icon"></span>
             </div>
         </div>
     </section>
+
+    <section class="rlive">
+        <div class="row">
+            <div class="col-3 logo-col">
+                <a href="#" class="logo-rlive">
+                    <img src="images/logoRLive.png" alt="RLive">
+                </a>
+            </div>
+            <div class="col-2">
+                <a href="#" class="call-to-action">
+                    Toate Liveuri<span class="icon"></span>
+                </a>
+            </div>
+        </div>
+        <div class="row flex-row">
+            <a href="#" id="article-1"  class="col-3">
+                <img src="images/rliveImg.png" alt="RLive video">
+                <div class="article-header">Realitatea AZI</div>
+                <div class="article-text">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
+            </a>
+            <a href="#" id="article-2" class="col-3">
+                <img src="images/rliveImg2.png" alt="RLive video">
+                <div class="article-header">Realitatea AZI</div>
+                <div class="article-text">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
+            </a>
+            <a href="#" id="article-3" class="col-3">
+                <img src="images/rliveImg3.png" alt="RLive video">
+                <div class="article-header">Realitatea AZI</div>
+                <div class="article-text">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
+            </a>
+        </div>
+    </section>
+    <section class="actualitate">
+        <div class="row flex-row">
+            <div class="col-7">
+                <div class="section-logo">
+                    Actualitate
+                    <span class="section-dot icon"></span>
+                </div>
+            </div>
+            <div class="col-3 top-news">
+                <div class="section-logo">
+                    Top news
+                    <span class="section-dot icon"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row flex-row">
+            <div class="col-7">
+                <div class="row flex-row">
+                    <div class="col-6" id="article-1">
+                        <a href="#" class="big-article">
+                            <img src="images/actualitateImg.png" alt="Actualitate Image">
+                            <div class="article-title">
+                                politica<span class="article-title-dot icon"></span>
+                            </div>
+                            <div class="article-header">Gheorghe Cavacaliuc, acuzat de profanarea monumentului lui Ștefan cel Mare! „El tot are nevoie de protecție” (VIDEO)</div>
+                        </a>
+                        <a href="#" class="small-article">
+                            <img src="images/actualitateEconomieImg.png" alt="Actualitate Image">
+                            <div class="article-title">
+                                economie<span class="article-title-dot icon"></span>
+                            </div>
+                            <div class="article-header">Vinerea neagră revine! Percheziții în dosarul "fraudei bancare": Sunt cel puțin șase reținuți.</div>
+                        </a>
+                        <a href="#" class="small-article">
+                            <img src="images/actualitateEconomieImg2.png" alt="Actualitate Image">
+                            <div class="article-title">
+                                economie<span class="article-title-dot icon"></span>
+                            </div>
+                            <div class="article-header">Vinerea neagră revine! Percheziții în dosarul "fraudei bancare": Sunt cel puțin șase reținuți.</div>
+                        </a>
+                    </div>
+                    <div class="col-6" id="article-2">
+                        <a href="#" class="big-article">
+                            <img src="images/actualitateImg2.png" alt="Actualitate Image">
+                            <div class="article-title">
+                                politica<span class="article-title-dot icon"></span>
+                            </div>
+                            <div class="article-header">Ultima oră! Monica Babuc, demisă din funcția de vicepreședintă a Parlamentului, iar deputatul transfug, Vladimir Vitiuc, numit în locul ei</div>
+                        </a>
+                        <a href="#" class="small-article">
+                            <img src="images/actualitateEconomieImg3.png" alt="Actualitate Image">
+                            <div class="article-title">
+                                economie<span class="article-title-dot icon"></span>
+                            </div>
+                            <div class="article-header">Vinerea neagră revine! Percheziții în dosarul "fraudei bancare": Sunt cel puțin șase reținuți.</div>
+                        </a>
+                        <a href="#" class="small-article">
+                            <img src="images/actualitateEconomieImg4.png" alt="Actualitate Image">
+                            <div class="article-title">
+                                economie<span class="article-title-dot icon"></span>
+                            </div>
+                            <div class="article-header">Vinerea neagră revine! Percheziții în dosarul "fraudei bancare": Sunt cel puțin șase reținuți.</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 top-news">
+                <ul>
+                    <li class="article">
+                        <a href="#">
+                            <div class="article-no">1</div>
+                            <div class="article-header">
+                                Cu vizite în Rusia și toate fără rezultate! 
+                                De ce Igor Dodon nu merită un nou mandat la 
+                                șefia statului
+                            </div>
+                        </a>
+                    </li>
+                    <li class="article">
+                        <a href="#">
+                            <div class="article-no">2</div>
+                            <div class="article-header">
+                                RLIVE! Protest în Piața Marii Adunări Naționale 
+                                față de actuala guvernare
+                            </div>
+                        </a>
+                    </li>
+                    <li class="article">
+                        <a href="#">
+                            <div class="article-no">3</div>
+                            <div class="article-header">
+                                RLIVE! Șeful adjunct al IGP, Marin Maxian, susține 
+                                un briefing de presă cu privire la măsurile de asigurare a 
+                                ordinii publice la protestul de duminică
+                            </div>
+                        </a>
+                    </li>
+                    <li class="article">
+                        <a href="#">
+                            <div class="article-no">4</div>
+                            <div class="article-header">
+                                Cu vizite în Rusia și toate fără rezultate! 
+                                De ce Igor Dodon nu merită un nou mandat la 
+                                șefia statului
+                            </div>
+                        </a>
+                    </li>
+                    <li class="article last">
+                        <a href="#">
+                            <div class="article-no">5</div>
+                            <div class="article-header">
+                                Periculos! Kremlinul vrea să istovească Moldova. 
+                                Tănase: „Trebuie să fim gata că vom asista curând
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a href="#" class="call-to-action">
+            View all
+            <div class="icon"></div>
+        </a>
+    </section>
+
+    <section class="sub-economie">
+        <div class="row flex-row">
+            <div class="col-3 small-article">
+                <a href="#">
+                    <img src="images/economieSubImg.png" alt="Economie Subsection Image">
+                    <div class="article-title">economie<span class="article-dot icon"></span></div>
+                    <div class="article-header">
+                        Vinerea neagră revine! Percheziții în dosarul 
+                        „fraudei bancare”: Sunt cel puțin șase reținuți!
+                    </div>
+                </a>
+            </div>
+            <div class="col-3 small-article">
+                <a href="#">
+                    <img src="images/economieSubImg2.png" alt="Economie Subsection Image">
+                    <div class="article-title">economie<span class="article-dot icon"></span></div>
+                    <div class="article-header">
+                        Vinerea neagră revine! Percheziții în dosarul 
+                        „fraudei bancare”: Sunt cel puțin șase reținuți!
+                    </div>
+                </a>
+            </div>
+            <div class="col-3 small-article">
+                <a href="#">
+                    <img src="images/economieSubImg3.png" alt="Economie Subsection Image">
+                    <div class="article-title">economie<span class="article-dot icon"></span></div>
+                    <div class="article-header">
+                        Vinerea neagră revine! Percheziții în dosarul 
+                        „fraudei bancare”: Sunt cel puțin șase reținuți!
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="politica">
+        <div class="row flex-row">
+            <div class="col-3">
+
+                <div class="adblock">
+                    <a href="https://www.tucanocoffee.com/">
+                        <img src="images/ad3.png" alt="Tucano Coffee ad.">
+                    </a>
+                    <span class="close-icon icon"></span>
+                </div>
+            </div>
+            <div class="col-7">
+                <div class="section-logo">
+                    Politica
+                    <span class="section-dot icon"></span>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <a href="#" class="big-article">
+                            <img src="images/politicaImg.png" alt="">
+                            <div class="article-header">
+                                Democrații se alătură protestului de mâine din PMAN. 
+                                Pavel Filip: Să spunem clar și răspicat că noi vrem 
+                                altfel de politică (VIDEO)
+                            </div>
+                        </a>
+                        <a href="#" class="small-article">
+                            <img src="images/politicaImg3.png" alt="">
+                            <div class="article-title">
+                                societate <span class="article-dot icon"></span>
+                            </div>
+                            <div class="article-header">
+                                Vinerea neagră revine! Percheziții în dosarul 
+                                „fraudei bancare”: Sunt cel puțin șase 
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="big-article">
+                            <img src="images/politicaImg2.png" alt="">
+                            <div class="article-header">
+                                Adresarea președintelui ales Maia Sandu la „Moldova 1”: 
+                                „Acest Parlament trebuie să plece. Duminică vom avea o consultare 
+                                cu cetățenii” (VIDEO)
+                            </div>
+                        </a>
+                        <a href="#" class="small-article">
+                            <img src="images/politicaImg4.png" alt="">
+                            <div class="article-title">
+                                societate <span class="article-dot icon"></span>
+                            </div>
+                            <div class="article-header">
+                                Vinerea neagră revine! Percheziții în dosarul 
+                                „fraudei bancare”: Sunt cel puțin șase 
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="call-to-action">
+            View all
+            <div class="icon"></div>
+        </a>
+    </section>
+
+    <section class="realitatea-tv">
+        <div class="row">
+            <div class="col-3 logo-col">
+                <a href="#" class="logo-realitatea-tv">
+                    <img src="images/logoRealitateaTV.png" alt="Realitatea TV">
+                </a>
+            </div>
+            <div class="col-2">
+                <a href="#" class="call-to-action">
+                    Toate Emisiuni<span class="icon"></span>
+                </a>
+            </div>
+        </div>
+        <div class="row flex-row">
+            <a href="#" id="article-1"  class="col-3">
+                <img src="images/realitateaTvImg.png" alt="Realitatea TV video">
+                <div class="article-header">Realitatea AZI</div>
+                <div class="article-text">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
+            </a>
+            <a href="#" id="article-2" class="col-3">
+                <img src="images/realitateaTvImg.png" alt="Realitatea TV video">
+                <div class="article-header">Честно говоря</div>
+                <div class="article-text">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
+            </a>
+            <a href="#" id="article-3" class="col-3">
+                <img src="images/realitateaTvImg.png" alt="Realitatea TV video">
+                <div class="article-header">Catre Europa</div>
+                <div class="article-text">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
+            </a>
+        </div>
+    </section>
+
+    <section class="societate">
+        <div class="section-logo">
+            Societate
+            <span class="section-dot icon"></span>
+        </div>
+        <div class="row flex-row">
+            <div class="col-4">
+                <a href="#" id="article-1" class="big-article">
+                    <img src="images/societateImg.png" alt="Societate image.">
+                    <div class="article-header">
+                        Sute de polițiști au împânzit Guvernul. 
+                        Intrarea în clădirea Executivului din PMAN, 
+                        blocată de oamenii legii (FOTO)
+                    </div>
+                </a>
+            </div>
+            <div class="col-3">
+                <a href="#" id="article-2" class="small-article">
+                    <img src="images/societateEconomieImg.png" alt="Societate image.">
+                    <div class="article-title">
+                        economie <span class="article-dot icon"></span>
+                    </div>
+                    <div class="article-header">
+                        Vinerea neagră revine! Percheziții în 
+                        dosarul „fraudei bancare”: Sunt cel puțin șase 
+                    </div>
+                </a>
+                <a href="#" id="article-3" class="small-article">
+                    <div class="article-title">
+                        societate <span class="article-dot icon"></span>
+                    </div>
+                    <div class="article-header">
+                        Vinerea neagră revine! Percheziții în 
+                        dosarul „fraudei bancare”: Sunt cel puțin șase 
+                    </div>
+                </a>
+                <a href="#" id="article-4" class="small-article last">
+                    <div class="article-title">
+                        societate <span class="article-dot icon"></span>
+                    </div>
+                    <div class="article-header">
+                        Vinerea neagră revine! Percheziții în 
+                        dosarul „fraudei bancare”: Sunt cel puțin șase 
+                    </div>
+                </a>
+            </div>
+            <div class="col-3">
+                <a href="#" id="article-5" class="small-article">
+                    <img src="images/societateSocietateImg.png" alt="Societate image.">
+                    <div class="article-title">
+                        societate <span class="article-dot icon"></span>
+                    </div>
+                    <div class="article-header">
+                        Vinerea neagră revine! Percheziții în 
+                        dosarul „fraudei bancare”: Sunt cel puțin șase 
+                    </div>
+                </a>
+                <a href="#" id="article-6" class="small-article">
+                    <div class="article-title">
+                        societate <span class="article-dot icon"></span>
+                    </div>
+                    <div class="article-header">
+                        Vinerea neagră revine! Percheziții în 
+                        dosarul „fraudei bancare”: Sunt cel puțin șase 
+                    </div>
+                </a>
+                <a href="#" id="article-7" class="small-article last">
+                    <div class="article-title">
+                        societate <span class="article-dot icon"></span>
+                    </div>
+                    <div class="article-header">
+                        Vinerea neagră revine! Percheziții în 
+                        dosarul „fraudei bancare”: Sunt cel puțin șase 
+                    </div>
+                </a>
+            </div>
+        </div>
+        <a href="#" class="call-to-action">
+            View all
+            <div class="icon"></div>
+        </a>
+    </section>
+    <section class="opinii">
+        <div class="row flex-row">
+            <div class="col-3">
+                <div class="section-logo">
+                    Opinii
+                    <span class="section-dot icon"></span>
+                </div>
+                <ul class="opinions">
+                    <li id="opinion-1">
+                        <img src="images/opiniiImg.png" alt="Opinii image.">
+                        <div class="opinion-name">Dumitru Rosca</div>
+                        <div class="opinion-description">
+                            «A spart geamul unui automobil parcat de unde 
+                            a sustras un telefon, încărcător și alte bunuri.» 
+                        </div>
+                    </li>
+                    <li id="opinion-2">
+                        <img src="images/opiniiImg2.png" alt="Opinii image.">
+                        <div class="opinion-name">Anton Dolin</div>
+                        <div class="opinion-description">
+                            «A spart geamul unui automobil parcat de unde 
+                            a sustras un telefon, încărcător și alte bunuri.» 
+                        </div>
+                    </li>
+                    <li id="opinion-3" class="last">
+                        <img src="images/opiniiImg3.png" alt="Opinii image.">
+                        <div class="opinion-name">Sam Mendez</div>
+                        <div class="opinion-description">
+                            «A spart geamul unui automobil parcat de unde 
+                            a sustras un telefon, încărcător și alte bunuri.» 
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-7 horoscope">
+                <div class="section-header">
+                    <div class="section-logo">
+                        Horoscope
+                        <span class="section-dot icon"></span>
+                    </div>
+                    <div class="article-time">
+                        <div class="article-day">pe Duminica</div>
+                        <div class="article-date">21.02.2021</div>
+                    </div>
+                </div>
+                <ul class="zodii">
+                    <li id="zodie-1" class="selected">
+                        <a href="#">
+                            Berbec
+                        </a>
+                    </li>
+                    <li id="zodie-2">
+                        <a href="#">
+                            Taurus
+                        </a>
+                    </li>
+                    <li id="zodie-3">
+                        <a href="#">
+                            Gemeni
+                        </a>
+                    </li>
+                    <li id="zodie-4">
+                        <a href="#">
+                            Rac
+                        </a>
+                    </li>
+                    <li id="zodie-5">
+                        <a href="#">
+                            Leu
+                        </a>
+                    </li>
+                    <li id="zodie-6">
+                        <a href="#">
+                            Fecioară
+                        </a>
+                    </li>
+                    <li id="zodie-7">
+                        <a href="#">
+                            Balanță
+                        </a>
+                    </li>
+                    <li id="zodie-8">
+                        <a href="#">
+                            Scorpion
+                        </a>
+                    </li>
+                    <li id="zodie-9">
+                        <a href="#">
+                            Săgetător
+                        </a>
+                    </li>
+                    <li id="zodie-10">
+                        <a href="#">
+                            Capricorn
+                        </a>
+                    </li>
+                    <li id="zodie-11">
+                        <a href="#">
+                            Vărsător
+                        </a>
+                    </li>
+                    <li id="zodie-12">
+                        <a href="#">
+                            Pești
+                        </a>
+                    </li>
+                </ul>
+                <div class="zodiac-article">
+                    <div class="zodiac-header">
+                        <span class="zodiac-icon icon"></span>
+                        <div class="zodiac-name">Berbec</div>
+                        <div class="zodiac-period">(21 martie - 20 aprilie)</div>
+                    </div>
+                    <div class="zodiac-description">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took 
+                        a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including 
+                        versions of Lorem Ipsum.
+                    </div>
+                    <div class="zodiac-footer">
+                        Share
+                        <ul class="share">
+                            <li><a class="facebook icon" href="#"></a></li>
+                            <li><a class="odnoklasniki icon" href="#"></a></li>
+                            <li><a class="telegram icon" href="#"></a></li>
+                            <li><a class="twitter icon" href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="economie">
+        <div class="section-logo">
+            Economie
+            <span class="section-dot icon"></span>
+        </div>
+        <div class="row flex-row">
+            <div class="col-4">
+                <a href="#" id="article-1" class="big-article">
+                    <img src="images/economieImg.png" alt="Economie image.">
+                    <div class="article-header">
+                        Sute de polițiști au împânzit Guvernul. 
+                        Intrarea în clădirea Executivului din PMAN, 
+                        blocată de oamenii legii (FOTO)
+                    </div>
+                </a>
+            </div>
+            <div class="col-3">
+                <a href="#" id="article-2" class="small-article">
+                    <img src="images/economieImg2.png" alt="Economie image.">
+                    <div class="article-title">
+                        economie <span class="article-dot icon"></span>
+                    </div>
+                    <div class="article-header">
+                        Vinerea neagră revine! Percheziții în 
+                        dosarul „fraudei bancare”: Sunt cel puțin șase 
+                    </div>
+                </a>
+                <a href="#" id="article-3" class="small-article">
+                    <div class="article-title">
+                        economie <span class="article-dot icon"></span>
+                    </div>
+                    <div class="article-header">
+                        A spart geamul unui automobil 
+                        parcat de unde a sustras un telefon, 
+                        încărcător și alte bunuri. 
+                        Acum riscă 4 ani de detenție
+                    </div>
+                </a>
+                <a href="#" id="article-4" class="small-article last">
+                    <div class="article-title">
+                        economie <span class="article-dot icon"></span>
+                    </div>
+                    <div class="article-header">
+                        A spart geamul unui automobil 
+                        parcat de unde a sustras un telefon, 
+                        încărcător și alte bunuri. 
+                        Acum riscă 4 ani de detenție
+                    </div>
+                </a>
+            </div>
+            <div class="col-3">
+                <a href="#" id="article-5" class="small-article">
+                    <img src="images/economieImg3.png" alt="Economie image.">
+                    <div class="article-title">
+                        economie <span class="article-dot icon"></span>
+                    </div>
+                    <div class="article-header">
+                        Vinerea neagră revine! Percheziții în 
+                        dosarul „fraudei bancare”: Sunt cel puțin șase 
+                    </div>
+                </a>
+                <a href="#" id="article-6" class="small-article">
+                    <div class="article-title">
+                        economie <span class="article-dot icon"></span>
+                    </div>
+                    <div class="article-header">
+                        A spart geamul unui automobil 
+                        parcat de unde a sustras un telefon, 
+                        încărcător și alte bunuri. 
+                        Acum riscă 4 ani de detenție
+                    </div>
+                </a>
+                <a href="#" id="article-7" class="small-article last">
+                    <div class="article-title">
+                        economie <span class="article-dot icon"></span>
+                    </div>
+                    <div class="article-header">
+                        A spart geamul unui automobil 
+                        parcat de unde a sustras un telefon, 
+                        încărcător și alte bunuri. 
+                        Acum riscă 4 ani de detenție
+                    </div>
+                </a>
+            </div>
+        </div>
+        <a href="#" class="call-to-action">
+            View all
+            <div class="icon"></div>
+        </a>
+    </section>
+
+    <section class="top-tags">
+        <div class="section-logo">
+            Top Tags
+            <div class="section-hash">
+                #
+            </div>
+        </div>
+        <ul>
+            <li class="tag"><a href="#">MaiaSandu</a></li>
+            <li class="tag"><a href="#">Andrian Candu</a></li>
+            <li class="tag"><a href="#">Приднестровье</a></li>
+            <li class="tag"><a href="#">Новый год</a></li>
+            <li class="tag"><a href="#">Игорь Додон</a></li>
+            <li class="tag"><a href="#">Путин</a></li>
+            <li class="tag"><a href="#">COVID</a></li>
+            <li class="tag more-info"><a href="#"></a></li>
+        </ul>
+    </section>
+
+    <section class="additional-articles">
+        <div class="row">
+            <div class="col-3">
+                <img src="images/subImg.png" alt="Additional articles image">
+                <div class="source">DIEZ.MD</div>
+                <div class="article-heading">
+                    Vinerea neagră revine! Percheziții 
+                    în dosarul „fraudei bancare”: 
+                    Sunt cel puțin șase reținuți!
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="images/subImg.png" alt="Additional articles image">
+                <div class="source">NORDNEWS</div>
+                <div class="article-heading">
+                    Vinerea neagră revine! Percheziții 
+                    în dosarul „fraudei bancare”: 
+                    Sunt cel puțin șase reținuți!
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="images/subImg.png" alt="Additional articles image">
+                <div class="source">DIEZ.MD</div>
+                <div class="article-heading">
+                    Vinerea neagră revine! Percheziții 
+                    în dosarul „fraudei bancare”: 
+                    Sunt cel puțin șase reținuți!
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <img src="images/subImg.png" alt="Additional articles image">
+                <div class="source">ZIARULNAȚIONAL</div>
+                <div class="article-heading">
+                    Vinerea neagră revine! Percheziții 
+                    în dosarul „fraudei bancare”: 
+                    Sunt cel puțin șase reținuți!
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="images/subImg.png" alt="Additional articles image">
+                <div class="source">DIEZ.MD</div>
+                <div class="article-heading">
+                    Vinerea neagră revine! Percheziții 
+                    în dosarul „fraudei bancare”: 
+                    Sunt cel puțin șase reținuți!
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="images/subImg.png" alt="Additional articles image">
+                <div class="source">DIEZ.MD</div>
+                <div class="article-heading">
+                    Vinerea neagră revine! Percheziții 
+                    în dosarul „fraudei bancare”: 
+                    Sunt cel puțin șase reținuți!
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="in-lume">
+        <div class="section-logo">
+            In lume
+            <span class="section-dot icon"></span>
+        </div>
+        <div class="row flex-row">
+            <div class="col-4">
+                <a href="#" id="article-1" class="big-article">
+                    <img src="images/inLumeImg.png" alt="In Lume image.">
+                    <div class="article-header">
+                        Sute de polițiști au împânzit Guvernul. 
+                        Intrarea în clădirea Executivului din PMAN, 
+                        blocată de oamenii legii (FOTO)
+                    </div>
+                </a>
+            </div>
+            <div class="col-3">
+                <a href="#" id="article-2" class="small-article">
+                    <img src="images/inLumeImg2.png" alt="In Lume image.">
+                    <div class="article-title">
+                        in lume <span class="article-dot icon"></span>
+                    </div>
+                    <div class="article-header">
+                        Vinerea neagră revine! Percheziții în 
+                        dosarul „fraudei bancare”: Sunt cel puțin șase 
+                    </div>
+                </a>
+                <a href="#" id="article-3" class="small-article">
+                    <div class="article-title">
+                        in lume <span class="article-dot icon"></span>
+                    </div>
+                    <div class="article-header">
+                        A spart geamul unui automobil 
+                        parcat de unde a sustras un telefon, 
+                        încărcător și alte bunuri. 
+                        Acum riscă 4 ani de detenție
+                    </div>
+                </a>
+                <a href="#" id="article-4" class="small-article last">
+                    <div class="article-title">
+                        in lume <span class="article-dot icon"></span>
+                    </div>
+                    <div class="article-header">
+                        A spart geamul unui automobil 
+                        parcat de unde a sustras un telefon, 
+                        încărcător și alte bunuri. 
+                        Acum riscă 4 ani de detenție
+                    </div>
+                </a>
+            </div>
+            <div class="col-3">
+                <a href="#" id="article-5" class="small-article">
+                    <img src="images/economieImg3.png" alt="Economie image.">
+                    <div class="article-title">
+                        in lume <span class="article-dot icon"></span>
+                    </div>
+                    <div class="article-header">
+                        Vinerea neagră revine! Percheziții în 
+                        dosarul „fraudei bancare”: Sunt cel puțin șase 
+                    </div>
+                </a>
+                <a href="#" id="article-6" class="small-article">
+                    <div class="article-title">
+                        in lume <span class="article-dot icon"></span>
+                    </div>
+                    <div class="article-header">
+                        A spart geamul unui automobil 
+                        parcat de unde a sustras un telefon, 
+                        încărcător și alte bunuri. 
+                        Acum riscă 4 ani de detenție
+                    </div>
+                </a>
+                <a href="#" id="article-7" class="small-article last">
+                    <div class="article-title">
+                        in lume <span class="article-dot icon"></span>
+                    </div>
+                    <div class="article-header">
+                        A spart geamul unui automobil 
+                        parcat de unde a sustras un telefon, 
+                        încărcător și alte bunuri. 
+                        Acum riscă 4 ani de detenție
+                    </div>
+                </a>
+            </div>
+        </div>
+        <a href="#" class="call-to-action">
+            View all
+            <div class="icon"></div>
+        </a>
+    </section>
+
+    <section class="life">
+        <div class="section-logo">
+            Life
+            <span class="section-dot icon"></span>
+        </div>
+        <div class="row flex-row">
+            <div class="col-4">
+                <a href="#" id="article-1" class="big-article">
+                    <img src="images/lifeImg.png" alt="Life image.">
+                    <div class="article-header">
+                        Sute de polițiști au împânzit Guvernul. 
+                        Intrarea în clădirea Executivului din PMAN, 
+                        blocată de oamenii legii (FOTO)
+                    </div>
+                </a>
+            </div>
+            <div class="col-3">
+                <a href="#" id="article-2" class="small-article">
+                    <img src="images/lifeImg2.png" alt="Life image.">
+                    <div class="article-title">
+                        in lume <span class="article-dot icon"></span>
+                    </div>
+                    <div class="article-header">
+                        Vinerea neagră revine! Percheziții în 
+                        dosarul „fraudei bancare”: Sunt cel puțin șase 
+                    </div>
+                </a>
+                <a href="#" id="article-3" class="small-article">
+                    <img src="images/lifeImg3.png" alt="Life image.">
+                    <div class="article-title">
+                        in lume <span class="article-dot icon"></span>
+                    </div>
+                    <div class="article-header">
+                        A spart geamul unui automobil 
+                        parcat de unde a sustras un telefon, 
+                        încărcător și alte bunuri.
+                    </div>
+                </a>
+                <a href="#" id="article-4" class="small-article last">
+                    <img src="images/lifeImg4.png" alt="Life image.">
+                    <div class="article-title">
+                        in lume <span class="article-dot icon"></span>
+                    </div>
+                    <div class="article-header">
+                        A spart geamul unui automobil 
+                        parcat de unde a sustras un telefon, 
+                        încărcător și alte bunuri. 
+                    </div>
+                </a>
+            </div>
+            <div class="col-3">
+                <a href="#" id="article-5" class="small-article">
+                    <img src="images/lifeImg5.png" alt="Life image.">
+                    <div class="article-title">
+                        in lume <span class="article-dot icon"></span>
+                    </div>
+                    <div class="article-header">
+                        Vinerea neagră revine! Percheziții în 
+                        dosarul „fraudei bancare”: Sunt cel puțin șase 
+                    </div>
+                </a>
+                <a href="#" id="article-6" class="small-article">
+                    <img src="images/lifeImg6.png" alt="Life image.">
+                    <div class="article-title">
+                        in lume <span class="article-dot icon"></span>
+                    </div>
+                    <div class="article-header">
+                        A spart geamul unui automobil 
+                        parcat de unde a sustras un telefon, 
+                        încărcător și alte bunuri. 
+                    </div>
+                </a>
+                <a href="#" id="article-7" class="small-article last">
+                    <img src="images/lifeImg7.png" alt="Life image.">
+                    <div class="article-title">
+                        in lume <span class="article-dot icon"></span>
+                    </div>
+                    <div class="article-header">
+                        A spart geamul unui automobil 
+                        parcat de unde a sustras un telefon, 
+                        încărcător și alte bunuri. 
+                    </div>
+                </a>
+            </div>
+        </div>
+        <a href="#" class="call-to-action">
+            View all
+            <div class="icon"></div>
+        </a>
+    </section>
+
+    <section class="auto-tech-sport">
+        <subsection class="auto">
+            <div class="section-logo">
+                Auto                
+                <span class="section-dot icon"></span>
+            </div>
+          <ul>
+              <li>
+                  <img src="images/autoImg.png" alt="Auto image.">
+                  <div class="article-title">
+                      auto
+                      <span class="article-dot icon"></span>
+                </div>
+                  <div class="article-content">
+                      A spart geamul unui automobil parcat de unde a sustras un telefon, încărcător și alte bunuri. Acum riscă 4 ani de detenție
+                  </div>
+              </li>
+              <li>
+                  <div class="article-title">
+                      auto
+                      <span class="article-dot icon"></span>
+                  </div>
+                  <div class="article-content">
+                      A spart geamul unui automobil parcat de unde a sustras un telefon, încărcător și alte bunuri. Acum riscă 4 ani de detenție
+                    </div>
+              </li>
+              <li>
+                  <div class="article-title">
+                      auto
+                      <span class="article-dot icon"></span>
+                  </div>
+                  <div class="article-content">
+                      A spart geamul unui automobil parcat de unde a sustras un telefon, încărcător și alte bunuri. Acum riscă 4 ani de detenție
+                  </div>
+              </li>
+          </ul>  
+          <a href="#" class="call-to-action">
+            View all
+            <div class="icon"></div>
+          </a>
+        </subsection>
+        <subsection class="tech">
+            <div class="section-logo">
+                Tech                
+                <span class="section-dot icon"></span>
+            </div>
+          <ul>
+              <li>
+                  <img src="images/techImg.png" alt="Auto image.">
+                  <div class="article-title">
+                      tech
+                      <span class="article-dot icon"></span>
+                </div>
+                  <div class="article-content">
+                      A spart geamul unui automobil parcat de unde a sustras un telefon, încărcător și alte bunuri. Acum riscă 4 ani de detenție
+                  </div>
+              </li>
+              <li>
+                  <div class="article-title">
+                      tech
+                      <span class="article-dot icon"></span>
+                  </div>
+                  <div class="article-content">
+                      A spart geamul unui automobil parcat de unde a sustras un telefon, încărcător și alte bunuri. Acum riscă 4 ani de detenție
+                    </div>
+              </li>
+              <li>
+                  <div class="article-title">
+                      tech
+                      <span class="article-dot icon"></span>
+                  </div>
+                  <div class="article-content">
+                      A spart geamul unui automobil parcat de unde a sustras un telefon, încărcător și alte bunuri. Acum riscă 4 ani de detenție
+                  </div>
+              </li>
+          </ul>  
+          <a href="#" class="call-to-action">
+            View all
+            <div class="icon"></div>
+          </a>
+        </subsection>
+        <subsection class="sport">
+            <div class="section-logo">
+                Sport               
+                <span class="section-dot icon"></span>
+            </div>
+          <ul>
+              <li>
+                  <img src="images/sportImg.png" alt="Auto image.">
+                  <div class="article-title">
+                      sport
+                      <span class="article-dot icon"></span>
+                </div>
+                  <div class="article-content">
+                      A spart geamul unui automobil parcat de unde a sustras un telefon, încărcător și alte bunuri. Acum riscă 4 ani de detenție
+                  </div>
+              </li>
+              <li>
+                  <div class="article-title">
+                      sport
+                      <span class="article-dot icon"></span>
+                  </div>
+                  <div class="article-content">
+                      A spart geamul unui automobil parcat de unde a sustras un telefon, încărcător și alte bunuri. Acum riscă 4 ani de detenție
+                    </div>
+              </li>
+              <li>
+                  <div class="article-title">
+                      sport
+                      <span class="article-dot icon"></span>
+                  </div>
+                  <div class="article-content">
+                      A spart geamul unui automobil parcat de unde a sustras un telefon, încărcător și alte bunuri. Acum riscă 4 ani de detenție
+                  </div>
+              </li>
+          </ul>  
+          <a href="#" class="call-to-action">
+            View all
+            <div class="icon"></div>
+          </a>
+        </subsection>
+    </section>
+
+    <section class="top-tags">
+        <div class="section-logo">
+            Social networks
+            <span class="section-dot icon"></span>
+        </div>
+        <ul>
+            <li class="social-network" id="facebook">
+                <a href="#">Facebook</a>
+            </li>
+            <li class="social-network" id="twitter">
+                <a href="#">Twitter</a>
+            </li>
+            <li class="social-network" id="odnoklasniki">
+                <a href="#">Odnoklasniki</a>
+            </li>
+            <li class="social-network" id="youtube">
+                <a href="#">Youtube</a>
+            </li>
+            <li class="social-network" id="telegram">
+                <a href="#">Telegram</a>
+            </li>
+            <li class="social-network" id="instagram">
+                <a href="#">Instagram</a>
+            </li>
+            <li class="tag more-info"><a href="#"></a></li>
+        </ul>
+    </section>
+
+    <section class="toate-stirile">
+        <div class="section-logo">
+            Toate stirile
+            <span class="section-dot icon"></span>
+        </div>
+        <div class="row">
+            <div class="col-3" id="article-1">
+                <div class="article-time">12:22</div>
+                <div class="article-description">
+                    Cu vizite în Rusia și toate fără rezultate! 
+                    De ce Igor Dodon nu merită un nou mandat la șefia statului
+                </div>
+            </div>
+            <div class="col-3" id="article-2">
+                <div class="article-time">11:02</div>
+                <div class="article-description">
+                    Cu vizite în Rusia și toate fără rezultate! 
+                    De ce Igor Dodon nu merită un nou mandat la șefia statului
+                </div>
+            </div>
+            <div class="col-3" id="article-3">
+                <div class="article-time">09:22</div>
+                <div class="article-description">
+                    Cu vizite în Rusia și toate fără rezultate! 
+                    De ce Igor Dodon nu merită un nou mandat la șefia statului
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3" id="article-1">
+                <div class="article-time">12:19</div>
+                <div class="article-description">
+                    RLIVE! Protest în Piața Marii Adunări Naționale față de actuala guvernare
+                </div>
+            </div>
+            <div class="col-3" id="article-2">
+                <div class="article-time">10:47</div>
+                <div class="article-description">
+                    RLIVE! Protest în Piața Marii Adunări Naționale față de actuala guvernare
+                </div>
+            </div>
+            <div class="col-3" id="article-3">
+                <div class="article-time">08:52</div>
+                <div class="article-description">
+                    RLIVE! Protest în Piața Marii Adunări Naționale față de actuala guvernare
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3" id="article-1">
+                <div class="article-time">12:04</div>
+                <div class="article-description">
+                    RLIVE! Șeful adjunct al IGP, Marin Maxian, susține un briefing de presă cu privire 
+                    la măsurile de asigurare a ordinii publice la protestul de duminică
+                </div>
+            </div>
+            <div class="col-3" id="article-2">
+                <div class="article-time">10:22</div>
+                <div class="article-description">
+                    RLIVE! Șeful adjunct al IGP, Marin Maxian, susține un briefing de presă cu privire 
+                    la măsurile de asigurare a ordinii publice la protestul de duminică
+                </div>
+            </div>
+            <div class="col-3" id="article-3">
+                <div class="article-time">08:41</div>
+                <div class="article-description">
+                    RLIVE! Șeful adjunct al IGP, Marin Maxian, susține un briefing de presă cu privire 
+                    la măsurile de asigurare a ordinii publice la protestul de duminică
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3" id="article-1">
+                <div class="article-time">11:59</div>
+                <div class="article-description">
+                    Cu vizite în Rusia și toate fără rezultate! 
+                    De ce Igor Dodon nu merită un nou mandat la șefia statului
+                </div>
+            </div>
+            <div class="col-3" id="article-2">
+                <div class="article-time">10:19</div>
+                <div class="article-description">
+                    Cu vizite în Rusia și toate fără rezultate! 
+                    De ce Igor Dodon nu merită un nou mandat la șefia statului
+                </div>
+            </div>
+            <div class="col-3" id="article-3">
+                <div class="article-time">08:15</div>
+                <div class="article-description">
+                    Cu vizite în Rusia și toate fără rezultate! 
+                    De ce Igor Dodon nu merită un nou mandat la șefia statului
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3" id="article-1">
+                <div class="article-time">11:44</div>
+                <div class="article-description">
+                    Periculos! Kremlinul vrea să istovească Moldova. 
+                    Tănase: „Trebuie să fim gata că vom asista curând
+                </div>
+            </div>
+            <div class="col-3" id="article-2">
+                <div class="article-time">09:24</div>
+                <div class="article-description">
+                    Periculos! Kremlinul vrea să istovească Moldova. 
+                    Tănase: „Trebuie să fim gata că vom asista curând
+                </div>
+            </div>
+            <div class="col-3" id="article-3">
+                <div class="article-time">08:12</div>
+                <div class="article-description">
+                    Periculos! Kremlinul vrea să istovească Moldova.
+                    Tănase: „Trebuie să fim gata că vom asista curând
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="row flex-row">
             <div class="col-10 flex-row">

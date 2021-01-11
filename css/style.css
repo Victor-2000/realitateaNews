@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/inter/v2/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfMZg.ttf) format('truetype');
+}
+a {
+  text-decoration: inherit;
+  color: inherit;
+  display: block;
+}
+a:hover {
+  color: inherit;
+}
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -17,6 +31,9 @@ li {
 a:hover {
   text-decoration: none;
 }
+.last {
+  border-bottom: none !important;
+}
 .flex-row {
   display: flex;
   justify-content: center;
@@ -28,12 +45,126 @@ a:hover {
 .hide-text * {
   font-size: 0px;
 }
+.section-logo {
+  cursor: default;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Inter", san-serif;
+  font-weight: bold;
+  font-size: 20pt;
+  color: black;
+  padding: 1.5em;
+}
+.section-logo .section-dot {
+  right: 0;
+  margin-top: 5px;
+  background-position: -103px -27px;
+}
+.section-logo .section-hash {
+  color: #ffd100;
+  padding-left: 5pt;
+}
+.big-article {
+  margin: 0.7em 0;
+  display: block;
+  position: relative;
+}
+.big-article img {
+  width: 100%;
+}
+.big-article .article-header {
+  font-family: "Inter", san-serif;
+  font-weight: 600;
+  line-height: 19pt;
+  font-size: 18pt;
+  color: black;
+  margin: 1em 0;
+}
+.big-article .article-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  background-color: white;
+}
+.big-article .article-title .icon {
+  background-position: -52px -13px;
+  background-size: 100px 100px;
+  width: 10px;
+  height: 10px;
+}
+.small-article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+.small-article img {
+  width: 30%;
+  height: auto;
+}
+.small-article .article-title,
+.small-article .article-header {
+  font-family: "Inter", san-serif;
+  font-weight: 600;
+  line-height: 11pt;
+  font-size: 10pt;
+}
+.small-article .article-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  width: 75px;
+}
+.small-article .article-title .icon {
+  background-position: -52px -13px;
+  background-size: 100px 100px;
+  width: 10px;
+  height: 10px;
+}
+.small-article .article-header {
+  margin: 1em 0;
+  padding: 0 1.5em;
+  padding-top: 2em;
+  color: #6b6b6b;
+}
+section {
+  position: relative;
+  margin: 2em 0;
+}
+.call-to-action {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: black;
+  font-family: "Inter", san-serif;
+  font-weight: 600;
+  position: absolute;
+  right: 11.3%;
+  bottom: 0px;
+  transition: 0.2s ease-in-out;
+}
+.call-to-action:hover {
+  color: #444444;
+}
+.call-to-action .icon {
+  background-position: -70px -72px;
+  margin-left: 5px;
+}
 header {
   margin-top: 30px;
 }
 .adblock {
   display: flex;
   justify-content: center;
+  position: relative;
   margin-bottom: 30px;
 }
 .adblock a {
@@ -65,17 +196,19 @@ header {
   font-size: 5pt;
   left: 40px;
   bottom: 15px;
-  font-family: Inter SemiBold;
+  font-family: "Inter", san-serif;
+  font-weight: 600;
 }
 .adblock .ad-title {
   font-size: 19pt;
-  font-family: Inter SemiBold;
+  font-family: "Inter", san-serif;
+  font-weight: 600;
   left: 40px;
   bottom: 52px;
 }
 .adblock .mercedes-icon {
   background-size: 250px 250px;
-  background-position: -123px -90px;
+  background-position: -122px -90px;
   width: 35px;
   height: 35px;
   cursor: pointer;
@@ -225,6 +358,9 @@ header {
   background-position: -52px -21px;
   background-size: 225px 225px;
 }
+.navbar ul {
+  margin-bottom: 0;
+}
 .navbar li a {
   color: #020202;
   font-weight: 500;
@@ -264,7 +400,7 @@ header {
 }
 .navbar .navbar-side-menu .live {
   background-size: 270px 270px;
-  background-position: -95px -26px;
+  background-position: -106px -38px;
 }
 .navbar .navbar-side-menu a {
   display: flex;
@@ -283,7 +419,8 @@ header {
   height: 100%;
   z-index: 100;
   top: 0;
-  font-family: Inter SemiBold;
+  font-family: "Inter", san-serif;
+  font-weight: 600;
 }
 .additional-info .additional-info-background {
   position: absolute;
@@ -465,10 +602,14 @@ header {
   justify-content: center;
   margin: 0 1em;
 }
+.banners {
+  margin-top: 0.5em;
+}
 .breaking-news-banner-row {
   padding-left: 15px;
   padding-right: 15px;
 }
+.rlive-news-banner,
 .news-alert-banner,
 .breaking-news-banner {
   display: flex;
@@ -480,8 +621,36 @@ header {
   margin: 0.7em auto;
   margin-top: 0;
 }
+.breaking-news-title,
+.news-alert-title,
+.rlive-news-title {
+  font-size: 17pt;
+  font-family: "Inter", san-serif;
+  font-weight: 600;
+  position: relative;
+  width: 103px;
+}
+.breaking-news-dot,
+.news-alert-dot,
+.rlive-news-dot {
+  background-size: 300px 300px;
+  background-position: -121px -47px;
+  position: absolute;
+  right: 20px;
+  bottom: 5px;
+}
 .breaking-news-banner {
   background-color: #e50000;
+}
+.breaking-news-banner .breaking-news-dot {
+  background-size: 300px 300px;
+  background-position: -121px -47px;
+  position: absolute;
+  right: 35px;
+  bottom: 5px;
+}
+.breaking-news-banner .breaking-news-title {
+  width: 120px;
 }
 .breaking-news-banner a {
   display: flex;
@@ -509,10 +678,40 @@ header {
   width: 25px;
   height: 25px;
 }
+#main .breaking-news-banner {
+  background-color: #ffd100;
+  color: #000000;
+  justify-content: start;
+}
+#main .breaking-news-banner #breaking-news-text {
+  color: #000000;
+}
+#main .news-alert-banner {
+  background-color: #e50000;
+  color: #fffdff;
+}
+#main .news-alert-banner #news-alert-right-arrow {
+  background-position: -165px -80px;
+}
+#main .news-alert-banner #news-alert-text {
+  color: #fffdff;
+}
+#main .rlive-news-banner {
+  background-color: #009d8d;
+  color: #000000;
+}
+#main .rlive-news-banner #rlive-news-right-arrow {
+  background-position: -165px -80px;
+}
+#main .rlive-news-banner #rlive-news-text {
+  color: #fffdff;
+}
+.rlive-news-banner,
 .news-alert-banner {
   background-color: #f2f2f2;
   justify-content: space-between;
 }
+.rlive-news-banner a,
 .news-alert-banner a {
   display: flex;
   align-items: center;
@@ -521,6 +720,9 @@ header {
 .news-alert-banner #news-alert-text-image {
   height: 50px;
   margin-right: 32px;
+}
+.news-alert-banner .news-alert-dot {
+  background-position: -159px -46px;
 }
 .news-alert-banner #news-alert-image {
   height: 70px;
@@ -550,6 +752,73 @@ header {
 }
 .news-alert-banner #news-alert-right-arrow {
   background-position: -80px -80px;
+}
+.rlive-news-banner #rlive-news-text-image {
+  height: 50px;
+  margin-right: 32px;
+}
+.rlive-news-banner .rlive-news-dot {
+  background-position: -159px -46px;
+}
+.rlive-news-banner #rlive-news-image {
+  height: 70px;
+  margin: 1.5em;
+}
+.rlive-news-banner #rlive-news-text {
+  color: #fffdff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.rlive-news-banner #rlive-news-nav-panel {
+  display: flex;
+  margin-right: -15px;
+  margin-left: 25px;
+}
+.rlive-news-banner #rlive-news-left-arrow,
+.rlive-news-banner #rlive-news-right-arrow {
+  background-size: 220px 220px;
+  width: 15px;
+  height: 25px;
+  margin: 8px;
+  cursor: pointer;
+}
+.rlive-news-banner #rlive-news-left-arrow {
+  background-position: 0 -80px;
+}
+.rlive-news-banner #rlive-news-right-arrow {
+  background-position: -80px -80px;
+}
+.headline-news {
+  margin-top: 10px;
+}
+.category-text,
+.category-dot {
+  display: none;
+}
+.category-text {
+  position: absolute;
+  align-items: center;
+  font-family: "Inter", san-serif;
+  font-weight: 600;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+}
+.category-dot {
+  background-position: -52px -13px;
+  background-size: 100px 100px;
+  width: 10px;
+  height: 10px;
+  margin: 2px;
+}
+#small-headline-block-1 .category-text,
+#small-headline-block-3 .category-text,
+#small-headline-block-4 .category-text,
+#small-headline-block-1 .category-dot,
+#small-headline-block-3 .category-dot,
+#small-headline-block-4 .category-dot {
+  display: flex;
 }
 .block-image {
   width: 100%;
@@ -593,6 +862,371 @@ header {
 }
 .large-news-unit .block-image {
   margin-bottom: 1em;
+}
+.realitatea-tv,
+.rlive {
+  background-color: #333347;
+  font-family: "Inter", san-serif;
+  font-weight: 600;
+  color: white;
+  padding: 1em 0;
+}
+.realitatea-tv .logo-col,
+.rlive .logo-col {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.realitatea-tv #article-1,
+.rlive #article-1,
+.realitatea-tv #article-2,
+.rlive #article-2,
+.realitatea-tv #article-3,
+.rlive #article-3 {
+  flex: 0 0 27.5%;
+  max-width: 27.5%;
+}
+.realitatea-tv .call-to-action,
+.rlive .call-to-action {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: -35%;
+  height: 100%;
+  width: fit-content;
+  color: white;
+  right: 40%;
+}
+.realitatea-tv .call-to-action .icon,
+.rlive .call-to-action .icon {
+  margin-left: 0.3em;
+  background-position: -70px -72px;
+}
+.realitatea-tv .logo-rlive,
+.rlive .logo-rlive {
+  width: 120px;
+  margin-right: 22.2%;
+  border-radius: 0;
+}
+.realitatea-tv .row,
+.rlive .row {
+  margin: 1em 0;
+}
+.realitatea-tv img,
+.rlive img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 1em 0;
+}
+.realitatea-tv .article-text,
+.rlive .article-text {
+  color: #7a7a8a;
+  font-size: 10pt;
+  font-weight: 400;
+  margin: 1em;
+}
+.realitatea-tv .article-header,
+.rlive .article-header {
+  margin: 0.5em;
+  color: white;
+  font-size: 15pt;
+}
+.realitatea-tv .article-header,
+.rlive .article-header,
+.realitatea-tv .article-text,
+.rlive .article-text {
+  margin-left: 0;
+}
+.actualitate {
+  margin-bottom: 5em;
+}
+.actualitate .section-logo {
+  margin: auto;
+  width: 96.5%;
+  padding-left: 0;
+}
+.actualitate ul {
+  display: flex;
+  flex-direction: column;
+}
+.actualitate .top-news {
+  margin-left: -20px;
+}
+.actualitate .big-article {
+  height: 400px;
+}
+.article {
+  display: flex;
+  font-family: "Inter", san-serif;
+  font-weight: 600;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #c6c6c6;
+}
+.article > * {
+  display: flex;
+}
+.article .article-no {
+  color: #ffd100;
+  font-size: 40pt;
+  margin-top: -15px;
+  padding-right: 10px;
+}
+.article .article-header {
+  font-size: 10.5pt;
+  line-height: 12pt;
+}
+.sub-economie {
+  background-color: #efefef;
+  padding: 2em 0;
+}
+.sub-economie .small-article {
+  flex: 0 0 27.5%;
+  max-width: 27.5%;
+  margin: 2em 0;
+}
+.sub-economie .small-article a {
+  display: inherit;
+}
+.sub-economie .small-article img {
+  width: 45%;
+}
+.sub-economie .small-article .article-header {
+  padding-left: 15px;
+  padding-right: 25px;
+}
+.sub-economie .small-article .article-title {
+  left: 50%;
+}
+.politica {
+  padding-bottom: 4em;
+}
+.politica .section-logo {
+  padding-left: 0;
+  padding-bottom: 1em;
+}
+.politica .adblock {
+  height: auto;
+  margin-top: 28%;
+}
+.politica .adblock .close-icon {
+  right: 14px;
+}
+.politica .adblock a {
+  height: auto;
+}
+.politica .adblock a img {
+  height: auto;
+  overflow: initial;
+}
+.politica .big-article {
+  height: 330px;
+  border-bottom: 1px solid #c6c6c6;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+.politica .big-article .article-header {
+  font-size: 13pt;
+  line-height: 16pt;
+}
+.politica .small-article {
+  padding-top: 10px;
+  align-items: flex-end;
+}
+.politica .small-article img {
+  width: 35%;
+}
+.politica .small-article .article-header {
+  padding-left: 10px;
+  padding-right: 0;
+  padding-top: 1em;
+  margin-bottom: 0;
+  font-size: 11pt;
+  line-height: 13pt;
+}
+.politica .small-article .article-title {
+  left: 37.7%;
+}
+.realitatea-tv .logo-realitatea-tv {
+  width: 170px;
+  margin-right: 5.2%;
+}
+.realitatea-tv .logo-realitatea-tv * {
+  border-radius: 0px;
+}
+.realitatea-tv .call-to-action {
+  margin-left: -5%;
+}
+.societate .section-logo,
+.economie .section-logo,
+.in-lume .section-logo,
+.life .section-logo {
+  padding-left: 9.5%;
+}
+.societate .big-article .article-header,
+.economie .big-article .article-header,
+.in-lume .big-article .article-header,
+.life .big-article .article-header {
+  font-size: 15pt;
+  line-height: 17pt;
+}
+.societate .small-article,
+.economie .small-article,
+.in-lume .small-article,
+.life .small-article {
+  border-bottom: 1px solid #c6c6c6;
+  padding-bottom: 0.7em;
+  margin-bottom: 0.3em;
+}
+.societate .small-article img,
+.economie .small-article img,
+.in-lume .small-article img,
+.life .small-article img {
+  width: 35%;
+}
+.societate .small-article .article-title,
+.economie .small-article .article-title,
+.in-lume .small-article .article-title,
+.life .small-article .article-title {
+  top: 15%;
+  left: 39.5%;
+}
+.societate .small-article .article-header,
+.economie .small-article .article-header,
+.in-lume .small-article .article-header,
+.life .small-article .article-header {
+  padding-left: 1em;
+  padding-right: 0;
+  line-height: 14.5pt;
+}
+.life .small-article .article-title,
+.in-lume .small-article .article-title {
+  width: 60px;
+}
+.life {
+  padding-bottom: 2em;
+}
+.opinii .horoscope .section-logo {
+  padding-left: 2%;
+}
+.opinii .section-logo {
+  padding-left: 5%;
+}
+.opinii .opinions {
+  display: flex;
+  flex-direction: column;
+}
+.opinii .opinions li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid #c6c6c6;
+  padding: 1em;
+}
+.opinii .opinions li img {
+  width: 25%;
+}
+.opinii .opinions li .opinion-name,
+.opinii .opinions li .opinion-description {
+  font-family: "Inter", san-serif;
+  font-weight: 600;
+}
+.opinii .opinions li .opinion-description {
+  line-height: 11pt;
+  font-size: 10pt;
+  padding-top: 2em;
+  padding-left: 1em;
+}
+.opinii .opinions li .opinion-name {
+  position: absolute;
+  font-size: 12pt;
+  top: 15%;
+  left: 30.5%;
+}
+.opinii .section-header {
+  display: flex;
+  align-items: center;
+}
+.opinii .section-header .section-logo {
+  padding-right: 0;
+}
+.opinii .article-time {
+  display: flex;
+  padding-top: 10px;
+  font-family: "Inter", san-serif;
+  font-weight: 600;
+}
+.opinii .article-time .article-day {
+  color: #959595;
+}
+.opinii .article-time .article-date {
+  margin-left: 3pt;
+  color: black;
+}
+.opinii .zodii {
+  flex-wrap: wrap;
+}
+.opinii .zodii a {
+  font-family: "Inter", san-serif;
+  font-weight: 600;
+  font-size: 10pt;
+  background-color: #f6f5f7;
+  border-radius: 20px;
+  padding: 0.5em 0.7em;
+  transition: 0.2s ease-in-out;
+}
+.opinii .zodii a:hover {
+  background-color: #f8d744;
+  color: white;
+}
+.opinii .zodii .selected a {
+  background-color: #ffd100;
+  color: white;
+}
+.opinii .zodiac-article {
+  background-color: #f6f5f7;
+  border-radius: 20px;
+  padding: 2em;
+  font-family: "Inter", san-serif;
+  font-weight: 600;
+}
+.opinii .zodiac-article .zodiac-description {
+  color: #686868;
+  font-size: 10pt;
+  line-height: 13pt;
+  padding: 2em 0;
+}
+.opinii .zodiac-article .zodiac-header {
+  display: flex;
+  align-items: center;
+  font-size: 11pt;
+}
+.opinii .zodiac-article .zodiac-header .zodiac-name {
+  font-size: 21pt;
+}
+.opinii .zodiac-article .zodiac-header .zodiac-period {
+  padding-top: 7px;
+  padding-left: 10px;
+}
+.opinii .zodiac-article .zodiac-header .zodiac-icon {
+  padding: 0 20px;
+  background-size: 250px 250px;
+  background-position: -217px -92px;
+  width: 30px;
+  height: 30px;
+}
+.opinii .zodiac-article .zodiac-footer {
+  display: flex;
+  align-items: center;
+  color: #959595;
+  font-size: 9pt;
+}
+.opinii .zodiac-article .zodiac-footer .share {
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+.opinii .zodiac-article .zodiac-footer .share li {
+  margin: 3px;
 }
 footer .navbar,
 footer #search-panel {

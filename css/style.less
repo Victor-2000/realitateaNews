@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter");
 //----------------------VARIABLES-----------------------
 
 @text-header-menu-color: #b3b3b3;
@@ -19,17 +20,63 @@
 
 @side-navbar-text-color: #d9d9d9;
 
-@breaking-news-panel-color: #e50000;
-@news-alert-panel-color: #f2f2f2;
+@breaking-news-panel-color-template: #e50000;
+@news-alert-panel-color-template: #f2f2f2;
+
+@breaking-news-panel-color-main: #ffd100;
+@news-alert-panel-color-main: #e50000;
+@rlive-news-panel-color: #009d8d;
 
 @breaking-news-text-color: #fffdff;
 @news-alert-text-color: #000000;
+@rlive-news-text-color: #fffdff;
+@rlive-news-header-color: #fffdff;
+
+@breaking-news-text-color-main: #000000;
+@breaking-news-header-color-main: #000000;
+@news-alert-text-color-main: #fffdff;
+@news-alert-header-color-main: #fffdff;
+@rlive-news-text-color-main: #fffdff;
+@rlive-news-header-color-main: #000000;
 
 @article-details-text-color: #686868;
 
 @search-text-color: #b7b7b7;
 @search-panel-color: #f6f6f6;
 @footer-copyright-text-color: #c8c8c8;
+
+@main-font: "Inter", san-serif;
+@main-font-weight: 600;
+
+@rlive-section-background-color: #333347;
+@rlive-section-text-color: white;
+@rlive-section-description-color: #7a7a8a;
+
+@small-article-text-color: #6b6b6b;
+@article-no-color: #ffd100;
+
+@separation-line-color: #c6c6c6;
+
+@sub-economie-background-color: #efefef;
+
+@day-text-color: #959595;
+
+@zodii-link-color: #f6f5f7;
+@zodii-link-selected-color: #ffd100;
+@zodii-link-hover-color: #f8d744;
+
+@logo-hash-color: #ffd100;
+
+//----------------------ADDITIONAL RESET-------------------------
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+  display: block;
+  &:hover {
+    color: inherit;
+  }
+}
 
 //----------------------UTILITY-------------------------
 
@@ -58,6 +105,10 @@ a:hover {
   text-decoration: none;
 }
 
+.last {
+  border-bottom: none !important;
+}
+
 .flex-row {
   display: flex;
   justify-content: center;
@@ -71,6 +122,134 @@ a:hover {
   }
 }
 
+.section-logo {
+  cursor: default;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  font-family: @main-font;
+  font-weight: bold;
+  font-size: 20pt;
+  color: black;
+  padding: 1.5em;
+
+  .section-dot {
+    right: 0;
+    margin-top: 5px;
+    background-position: -103px -27px;
+  }
+
+  .section-hash {
+    color: @logo-hash-color;
+    padding-left: 5pt;
+  }
+}
+
+.big-article {
+  margin: 0.7em 0;
+  display: block;
+  position: relative;
+  img {
+    width: 100%;
+  }
+  .article-header {
+    font-family: @main-font;
+    font-weight: @main-font-weight;
+    line-height: 19pt;
+    font-size: 18pt;
+    color: black;
+
+    margin: 1em 0;
+  }
+
+  .article-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    background-color: white;
+    .icon {
+      background-position: -52px -13px;
+      background-size: 100px 100px;
+      width: 10px;
+      height: 10px;
+    }
+  }
+}
+
+.small-article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  img {
+    width: 30%;
+    height: auto;
+  }
+
+  .article-title,
+  .article-header {
+    font-family: @main-font;
+    font-weight: @main-font-weight;
+    line-height: 11pt;
+    font-size: 10pt;
+  }
+  .article-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    width: 75px;
+    .icon {
+      background-position: -52px -13px;
+      background-size: 100px 100px;
+      width: 10px;
+      height: 10px;
+    }
+  }
+  .article-header {
+    margin: 1em 0;
+
+    padding: 0 1.5em;
+    padding-top: 2em;
+
+    color: @small-article-text-color;
+  }
+}
+
+section {
+  position: relative;
+  margin: 2em 0;
+}
+
+.call-to-action {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: black;
+  font-family: @main-font;
+  font-weight: @main-font-weight;
+  position: absolute;
+  right: 11.3%;
+  bottom: 0px;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    color: @navbar-text-color-hover;
+  }
+
+  .icon {
+    background-position: -70px -72px;
+    margin-left: 5px;
+  }
+}
+
 header {
   margin-top: 30px;
 }
@@ -78,6 +257,8 @@ header {
 .adblock {
   display: flex;
   justify-content: center;
+
+  position: relative;
 
   margin-bottom: 30px;
 
@@ -119,12 +300,14 @@ header {
     left: 40px;
     bottom: 15px;
 
-    font-family: Inter SemiBold;
+    font-family: @main-font;
+    font-weight: @main-font-weight;
   }
 
   .ad-title {
     font-size: 19pt;
-    font-family: Inter SemiBold;
+    font-family: @main-font;
+    font-weight: @main-font-weight;
 
     left: 40px;
     bottom: 52px;
@@ -132,7 +315,7 @@ header {
 
   .mercedes-icon {
     background-size: 250px 250px;
-    background-position: -123px -90px;
+    background-position: -122px -90px;
 
     width: 35px;
     height: 35px;
@@ -310,6 +493,9 @@ header {
 }
 
 .navbar {
+  ul {
+    margin-bottom: 0;
+  }
   li {
     a {
       color: @navbar-text-color;
@@ -358,7 +544,7 @@ header {
 
     .live {
       background-size: 270px 270px;
-      background-position: -95px -26px;
+      background-position: -106px -38px;
     }
 
     a {
@@ -388,7 +574,8 @@ header {
   z-index: 100;
   top: 0;
 
-  font-family: Inter SemiBold;
+  font-family: @main-font;
+  font-weight: @main-font-weight;
 
   .additional-info-background {
     position: absolute;
@@ -605,11 +792,16 @@ header {
 }
 // ----------------------BANNERS-------------------------
 
+.banners {
+  margin-top: 0.5em;
+}
+
 .breaking-news-banner-row {
   padding-left: 15px;
   padding-right: 15px;
 }
 
+.rlive-news-banner,
 .news-alert-banner,
 .breaking-news-banner {
   display: flex;
@@ -623,8 +815,40 @@ header {
   margin-top: 0;
 }
 
+.breaking-news-title,
+.news-alert-title,
+.rlive-news-title {
+  font-size: 17pt;
+  font-family: @main-font;
+  font-weight: @main-font-weight;
+  position: relative;
+  width: 103px;
+}
+
+.breaking-news-dot,
+.news-alert-dot,
+.rlive-news-dot {
+  background-size: 300px 300px;
+  background-position: -121px -47px;
+  position: absolute;
+  right: 20px;
+  bottom: 5px;
+}
+
 .breaking-news-banner {
-  background-color: @breaking-news-panel-color;
+  background-color: @breaking-news-panel-color-template;
+
+  .breaking-news-dot {
+    background-size: 300px 300px;
+    background-position: -121px -47px;
+    position: absolute;
+    right: 35px;
+    bottom: 5px;
+  }
+
+  .breaking-news-title {
+    width: 120px;
+  }
 
   a {
     display: flex;
@@ -660,19 +884,57 @@ header {
   }
 }
 
-.news-alert-banner {
-  background-color: @news-alert-panel-color;
-  justify-content: space-between;
+#main {
+  .breaking-news-banner {
+    background-color: @breaking-news-panel-color-main;
+    color: @breaking-news-header-color-main;
+    justify-content: start;
 
+    #breaking-news-text {
+      color: @breaking-news-text-color-main;
+    }
+  }
+  .news-alert-banner {
+    background-color: @news-alert-panel-color-main;
+    color: @news-alert-header-color-main;
+    #news-alert-right-arrow {
+      background-position: -165px -80px;
+    }
+    #news-alert-text {
+      color: @news-alert-text-color-main;
+    }
+  }
+  .rlive-news-banner {
+    background-color: @rlive-news-panel-color;
+    color: @rlive-news-header-color-main;
+    #rlive-news-right-arrow {
+      background-position: -165px -80px;
+    }
+    #rlive-news-text {
+      color: @rlive-news-text-color-main;
+    }
+  }
+}
+
+.rlive-news-banner,
+.news-alert-banner {
+  background-color: @news-alert-panel-color-template;
+  justify-content: space-between;
   a {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+}
 
+.news-alert-banner {
   #news-alert-text-image {
     height: 50px;
     margin-right: 32px;
+  }
+
+  .news-alert-dot {
+    background-position: -159px -46px;
   }
 
   #news-alert-image {
@@ -709,6 +971,90 @@ header {
 
   #news-alert-right-arrow {
     background-position: -80px -80px;
+  }
+}
+
+.rlive-news-banner {
+  #rlive-news-text-image {
+    height: 50px;
+    margin-right: 32px;
+  }
+
+  .rlive-news-dot {
+    background-position: -159px -46px;
+  }
+
+  #rlive-news-image {
+    height: 70px;
+    margin: 1.5em;
+  }
+
+  #rlive-news-text {
+    color: @rlive-news-text-color;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+
+  #rlive-news-nav-panel {
+    display: flex;
+    margin-right: -15px;
+    margin-left: 25px;
+  }
+
+  #rlive-news-left-arrow,
+  #rlive-news-right-arrow {
+    background-size: 220px 220px;
+    width: 15px;
+    height: 25px;
+    margin: 8px;
+    cursor: pointer;
+  }
+
+  #rlive-news-left-arrow {
+    background-position: 0 -80px;
+  }
+
+  #rlive-news-right-arrow {
+    background-position: -80px -80px;
+  }
+}
+
+//----------------------HEADLINE-------------------------
+.headline-news {
+  margin-top: 10px;
+}
+
+.category-text,
+.category-dot {
+  display: none;
+}
+
+.category-text {
+  position: absolute;
+  align-items: center;
+  font-family: @main-font;
+  font-weight: @main-font-weight;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+}
+
+.category-dot {
+  background-position: -52px -13px;
+  background-size: 100px 100px;
+  width: 10px;
+  height: 10px;
+  margin: 2px;
+}
+
+#small-headline-block-1,
+#small-headline-block-3,
+#small-headline-block-4 {
+  .category-text,
+  .category-dot {
+    display: flex;
   }
 }
 
@@ -766,6 +1112,417 @@ header {
   }
 }
 
+//----------------------RLIVE SECTION-------------------------
+
+.realitatea-tv,
+.rlive {
+  background-color: @rlive-section-background-color;
+  font-family: @main-font;
+  font-weight: @main-font-weight;
+  color: @rlive-section-text-color;
+  padding: 1em 0;
+
+  .logo-col {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  #article-1,
+  #article-2,
+  #article-3 {
+    flex: 0 0 27.5%;
+    max-width: 27.5%;
+  }
+
+  .call-to-action {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: -35%;
+    height: 100%;
+    width: fit-content;
+    color: @rlive-section-text-color;
+    right: 40%;
+
+    .icon {
+      margin-left: 0.3em;
+      background-position: -70px -72px;
+    }
+  }
+
+  .logo-rlive {
+    width: 120px;
+    margin-right: 22.2%;
+    border-radius: 0;
+  }
+
+  .row {
+    margin: 1em 0;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 1em 0;
+  }
+
+  .article-text {
+    color: @rlive-section-description-color;
+    font-size: 10pt;
+    font-weight: 400;
+    margin: 1em;
+  }
+
+  .article-header {
+    margin: 0.5em;
+    color: @rlive-section-text-color;
+    font-size: 15pt;
+  }
+
+  .article-header,
+  .article-text {
+    margin-left: 0;
+  }
+}
+//----------------------ACTUALITATE SECTION-------------------------
+
+.actualitate {
+  margin-bottom: 5em;
+  .section-logo {
+    margin: auto;
+    width: 96.5%;
+    padding-left: 0;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .top-news {
+    margin-left: -20px;
+  }
+  .big-article {
+    height: 400px;
+  }
+}
+
+.article {
+  > * {
+    display: flex;
+  }
+  display: flex;
+  font-family: @main-font;
+  font-weight: @main-font-weight;
+  padding-bottom: 1em;
+
+  border-bottom: 1px solid @separation-line-color;
+
+  .article-no {
+    color: @article-no-color;
+    font-size: 40pt;
+    margin-top: -15px;
+    padding-right: 10px;
+  }
+
+  .article-header {
+    font-size: 10.5pt;
+    line-height: 12pt;
+  }
+}
+
+//----------------------SUB ECONOMIE SECTION-------------------------
+.sub-economie {
+  background-color: @sub-economie-background-color;
+  padding: 2em 0;
+  .small-article {
+    a {
+      display: inherit;
+    }
+    flex: 0 0 27.5%;
+    max-width: 27.5%;
+    margin: 2em 0;
+    img {
+      width: 45%;
+    }
+    .article-header {
+      padding-left: 15px;
+      padding-right: 25px;
+    }
+    .article-title {
+      left: 50%;
+    }
+  }
+}
+
+//----------------------POLITICA SECTION-------------------------
+
+.politica {
+  padding-bottom: 4em;
+
+  .section-logo {
+    padding-left: 0;
+    padding-bottom: 1em;
+  }
+  .adblock {
+    height: auto;
+    margin-top: 28%;
+    .close-icon {
+      right: 14px;
+    }
+    a {
+      height: auto;
+      img {
+        height: auto;
+        overflow: initial;
+      }
+    }
+  }
+  .big-article {
+    height: 330px;
+    .article-header {
+      font-size: 13pt;
+      line-height: 16pt;
+    }
+
+    border-bottom: 1px solid @separation-line-color;
+
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+  }
+  .small-article {
+    padding-top: 10px;
+    align-items: flex-end;
+    img {
+      width: 35%;
+    }
+    .article-header {
+      padding-left: 10px;
+      padding-right: 0;
+      padding-top: 1em;
+      margin-bottom: 0;
+      font-size: 11pt;
+      line-height: 13pt;
+    }
+    .article-title {
+      left: 37.7%;
+    }
+  }
+}
+
+//----------------------REALITATEA TV SECTION-------------------------
+.realitatea-tv {
+  .logo-realitatea-tv {
+    width: 170px;
+    margin-right: 5.2%;
+    * {
+      border-radius: 0px;
+    }
+  }
+  .call-to-action {
+    margin-left: -5%;
+  }
+}
+
+//----------------------SOCIETATE ECONOMIE IN LUME AND LIFE SECTION-------------------------
+
+.societate,
+.economie,
+.in-lume,
+.life {
+  .section-logo {
+    padding-left: 9.5%;
+  }
+
+  .big-article {
+    .article-header {
+      font-size: 15pt;
+      line-height: 17pt;
+    }
+  }
+
+  .small-article {
+    border-bottom: 1px solid @separation-line-color;
+
+    img {
+      width: 35%;
+    }
+
+    .article-title {
+      top: 15%;
+      left: 39.5%;
+    }
+
+    .article-header {
+      padding-left: 1em;
+      padding-right: 0;
+      line-height: 14.5pt;
+    }
+    padding-bottom: 0.7em;
+    margin-bottom: 0.3em;
+  }
+}
+
+.life,
+.in-lume {
+  .small-article .article-title {
+    width: 60px;
+  }
+}
+
+.life {
+  padding-bottom: 2em;
+}
+
+//----------------------OPINII SECTION-------------------------
+
+.opinii {
+  .horoscope {
+    .section-logo {
+      padding-left: 2%;
+    }
+  }
+
+  .section-logo {
+    padding-left: 5%;
+  }
+
+  .opinions {
+    display: flex;
+    flex-direction: column;
+    li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      position: relative;
+
+      border-bottom: 1px solid @separation-line-color;
+
+      padding: 1em;
+
+      img {
+        width: 25%;
+      }
+      .opinion-name,
+      .opinion-description {
+        font-family: @main-font;
+        font-weight: @main-font-weight;
+      }
+
+      .opinion-description {
+        line-height: 11pt;
+        font-size: 10pt;
+        padding-top: 2em;
+        padding-left: 1em;
+      }
+
+      .opinion-name {
+        position: absolute;
+        font-size: 12pt;
+        top: 15%;
+        left: 30.5%;
+      }
+    }
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    .section-logo {
+      padding-right: 0;
+    }
+  }
+
+  .article-time {
+    display: flex;
+    padding-top: 10px;
+    font-family: @main-font;
+    font-weight: @main-font-weight;
+    .article-day {
+      color: @day-text-color;
+    }
+    .article-date {
+      margin-left: 3pt;
+      color: black;
+    }
+  }
+  .zodii {
+    flex-wrap: wrap;
+    a {
+      font-family: @main-font;
+      font-weight: @main-font-weight;
+      font-size: 10pt;
+
+      background-color: @zodii-link-color;
+      border-radius: 20px;
+      padding: 0.5em 0.7em;
+
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        background-color: @zodii-link-hover-color;
+        color: white;
+      }
+    }
+    .selected a {
+      background-color: @zodii-link-selected-color;
+      color: white;
+    }
+  }
+  .zodiac-article {
+    background-color: @zodii-link-color;
+    border-radius: 20px;
+    padding: 2em;
+    font-family: @main-font;
+    font-weight: @main-font-weight;
+
+    .zodiac-description {
+      color: @article-details-text-color;
+      font-size: 10pt;
+      line-height: 13pt;
+      padding: 2em 0;
+    }
+
+    .zodiac-header {
+      display: flex;
+      align-items: center;
+      font-size: 11pt;
+
+      .zodiac-name {
+        font-size: 21pt;
+      }
+      .zodiac-period {
+        padding-top: 7px;
+        padding-left: 10px;
+      }
+      .zodiac-icon {
+        padding: 0 20px;
+        background-size: 250px 250px;
+        background-position: -217px -92px;
+
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .zodiac-footer {
+      display: flex;
+      align-items: center;
+      color: @day-text-color;
+      font-size: 9pt;
+
+      .share {
+        margin-bottom: 0;
+        margin-left: 10px;
+        li {
+          margin: 3px;
+        }
+      }
+    }
+  }
+}
+
+//----------------------FOOTER-------------------------
 footer {
   .navbar,
   #search-panel {

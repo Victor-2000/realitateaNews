@@ -49,5 +49,33 @@ function setupAdditionalInfo(){
     });
 }
 
+
+function setupBody(){
+    var fileName = location.pathname.split("/").slice(-1)[0];
+    for(let i = 0; i < fileName.length; i++){
+        if(fileName[i] == '.'){
+            fileName = fileName.substring(0,i);
+            break;
+        }
+    }
+
+    document.querySelector("body").id = fileName;
+}
+
+function setupSmallArticles(){
+    let smallArticles = document.querySelectorAll(".small-article");
+
+    smallArticles.forEach(positionTitle);
+}
+
+function positionTitle(item){
+    if(!item.querySelector("img")){
+        item.querySelector(".article-title").style.left = "0";
+        item.querySelector(".article-header").style["padding-left"] = "0";
+    }
+}
+
+setupSmallArticles();
+setupBody();
 setupAds();
 setupAdditionalInfo();
