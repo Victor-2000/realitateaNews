@@ -39,6 +39,17 @@ a:hover {
   justify-content: center;
   margin: 0;
 }
+.more-info {
+  background-color: #efefef !important;
+  color: white;
+  font-size: 30pt;
+  line-height: 10pt;
+  margin: 0.1em;
+  margin-left: 50px;
+  padding: 0 0.3em 0 0.3em !important;
+  font-weight: 600;
+  height: 40px;
+}
 .hide-text {
   font-size: 0px !important;
 }
@@ -46,7 +57,6 @@ a:hover {
   font-size: 0px;
 }
 .section-logo {
-  cursor: default;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -114,6 +124,7 @@ a:hover {
   line-height: 11pt;
   font-size: 10pt;
 }
+.small-article .source,
 .small-article .article-title {
   display: flex;
   align-items: center;
@@ -123,6 +134,7 @@ a:hover {
   left: 35%;
   width: 75px;
 }
+.small-article .source .icon,
 .small-article .article-title .icon {
   background-position: -52px -13px;
   background-size: 100px 100px;
@@ -863,6 +875,7 @@ header {
 .large-news-unit .block-image {
   margin-bottom: 1em;
 }
+.bani,
 .realitatea-tv,
 .rlive {
   background-color: #333347;
@@ -871,21 +884,26 @@ header {
   color: white;
   padding: 1em 0;
 }
+.bani .logo-col,
 .realitatea-tv .logo-col,
 .rlive .logo-col {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
+.bani #article-1,
 .realitatea-tv #article-1,
 .rlive #article-1,
+.bani #article-2,
 .realitatea-tv #article-2,
 .rlive #article-2,
+.bani #article-3,
 .realitatea-tv #article-3,
 .rlive #article-3 {
   flex: 0 0 27.5%;
   max-width: 27.5%;
 }
+.bani .call-to-action,
 .realitatea-tv .call-to-action,
 .rlive .call-to-action {
   display: flex;
@@ -897,27 +915,32 @@ header {
   color: white;
   right: 40%;
 }
+.bani .call-to-action .icon,
 .realitatea-tv .call-to-action .icon,
 .rlive .call-to-action .icon {
   margin-left: 0.3em;
   background-position: -70px -72px;
 }
+.bani .logo-rlive,
 .realitatea-tv .logo-rlive,
 .rlive .logo-rlive {
   width: 120px;
   margin-right: 22.2%;
   border-radius: 0;
 }
+.bani .row,
 .realitatea-tv .row,
 .rlive .row {
   margin: 1em 0;
 }
+.bani img,
 .realitatea-tv img,
 .rlive img {
   width: 100%;
   border-radius: 10px;
   margin: 1em 0;
 }
+.bani .article-text,
 .realitatea-tv .article-text,
 .rlive .article-text {
   color: #7a7a8a;
@@ -925,14 +948,17 @@ header {
   font-weight: 400;
   margin: 1em;
 }
+.bani .article-header,
 .realitatea-tv .article-header,
 .rlive .article-header {
   margin: 0.5em;
   color: white;
   font-size: 15pt;
 }
+.bani .article-header,
 .realitatea-tv .article-header,
 .rlive .article-header,
+.bani .article-text,
 .realitatea-tv .article-text,
 .rlive .article-text {
   margin-left: 0;
@@ -960,11 +986,12 @@ header {
   font-family: "Inter", san-serif;
   font-weight: 600;
   padding-bottom: 1em;
-  border-bottom: 1px solid #c6c6c6;
+  border-bottom: 2px solid #c6c6c6;
 }
 .article > * {
   display: flex;
 }
+.article .article-time,
 .article .article-no {
   color: #ffd100;
   font-size: 40pt;
@@ -1020,7 +1047,7 @@ header {
 }
 .politica .big-article {
   height: 330px;
-  border-bottom: 1px solid #c6c6c6;
+  border-bottom: 2px solid #c6c6c6;
   margin-bottom: 1em;
   padding-bottom: 1em;
 }
@@ -1073,7 +1100,7 @@ header {
 .economie .small-article,
 .in-lume .small-article,
 .life .small-article {
-  border-bottom: 1px solid #c6c6c6;
+  border-bottom: 2px solid #c6c6c6;
   padding-bottom: 0.7em;
   margin-bottom: 0.3em;
 }
@@ -1120,7 +1147,7 @@ header {
   flex-direction: row;
   align-items: center;
   position: relative;
-  border-bottom: 1px solid #c6c6c6;
+  border-bottom: 2px solid #c6c6c6;
   padding: 1em;
 }
 .opinii .opinions li img {
@@ -1228,6 +1255,171 @@ header {
 .opinii .zodiac-article .zodiac-footer .share li {
   margin: 3px;
 }
+.bani {
+  background-color: #f1f1f1;
+}
+.bani .article-header,
+.bani .article-text {
+  color: black;
+}
+.bani .bani-logo {
+  width: 40%;
+  margin-right: 22%;
+}
+.bani img {
+  border-radius: 0;
+}
+.bani .article-text {
+  font-weight: 600;
+}
+.social-networks,
+.top-tags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  margin: auto;
+  border-bottom: 2px solid #c6c6c6;
+  border-top: 2px solid #c6c6c6;
+}
+.social-networks ul,
+.top-tags ul {
+  margin-bottom: 0;
+}
+.social-networks ul .social-network,
+.top-tags ul .social-network,
+.social-networks ul .tag,
+.top-tags ul .tag {
+  background-color: #ffd100;
+  border-radius: 20px;
+  padding: 0.3em 0.5em;
+  transition: 0.3s ease-in-out;
+}
+.social-networks ul .social-network:hover,
+.top-tags ul .social-network:hover,
+.social-networks ul .tag:hover,
+.top-tags ul .tag:hover {
+  background-color: #f8d744;
+}
+.social-networks .social-network {
+  font-family: "Inter", san-serif;
+  font-weight: 600;
+  font-size: 10pt;
+  line-height: 20pt;
+  padding: 0.3em;
+  color: white;
+}
+.social-networks .social-network#facebook {
+  background-color: #1f429f;
+}
+.social-networks .social-network#twitter {
+  background-color: #00afe8;
+}
+.social-networks .social-network#odnoklasniki {
+  background-color: #ff9b00;
+}
+.social-networks .social-network#youtube {
+  background-color: #ff0000;
+}
+.social-networks .social-network#telegram {
+  background-color: #5ac6fc;
+}
+.social-networks .social-network#instagram {
+  background-color: #ff4d9c;
+}
+.additional-articles {
+  background-color: #f6f5f7;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+.additional-articles .row > div {
+  flex: 0 0 27.5%;
+  max-width: 27.5%;
+}
+.additional-articles .small-article {
+  margin: 1em;
+}
+.additional-articles .small-article img {
+  width: 44%;
+}
+.additional-articles .small-article .source {
+  color: white;
+  background-color: #c5c5c5;
+  border-radius: 20px;
+  padding: 0.4em;
+  font-size: 8pt;
+  font-weight: 600;
+  width: auto;
+  left: 50%;
+}
+.additional-articles .small-article .article-header {
+  color: black;
+  padding-right: 0;
+}
+.auto-tech-sport {
+  padding-bottom: 5em;
+}
+.auto-tech-sport subsection {
+  flex: 0 0 27.5%;
+  max-width: 27.5%;
+}
+.auto-tech-sport subsection .section-logo {
+  padding-left: 0.3em;
+  padding-bottom: 0.5em;
+}
+.auto-tech-sport subsection ul {
+  display: flex;
+  flex-direction: column;
+}
+.auto-tech-sport subsection ul .small-article {
+  border-bottom: 2px solid #c6c6c6;
+  padding-bottom: 5%;
+}
+.auto-tech-sport subsection ul img {
+  width: 30%;
+  height: 30%;
+  padding-top: 35px;
+}
+.auto-tech-sport subsection ul .article-title {
+  width: 45px;
+  left: 36%;
+  top: 17%;
+}
+.auto-tech-sport subsection ul .article-header {
+  padding-right: 0;
+  font-size: 10pt;
+  line-height: 13pt;
+}
+.auto-tech-sport subsection ul a {
+  display: flex;
+}
+.toate-stirile .row > div {
+  flex: 0 0 27.5%;
+  max-width: 27.5%;
+}
+.toate-stirile .section-logo {
+  padding-left: 13.5%;
+}
+.toate-stirile hr {
+  margin-top: 4em;
+  border: 1px solid #c6c6c6;
+  flex: 0 0 82.5%;
+  max-width: 82.5%;
+}
+.toate-stirile .article {
+  padding: 1.5em 0;
+}
+.toate-stirile .article .article-time {
+  padding-top: 15pt;
+  font-size: 15pt;
+  height: fit-content;
+}
+.toate-stirile .article .article-description {
+  font-size: 10pt;
+}
+footer {
+  padding-top: 2em;
+}
 footer .navbar,
 footer #search-panel {
   display: flex;
@@ -1242,6 +1434,7 @@ footer #search-panel {
   background-color: #f6f6f6;
   font-size: 14px;
   font-weight: 400;
+  margin-bottom: 1em;
   padding: 0.5em 1.5em;
   padding-right: 2em;
   border-radius: 20px;
@@ -1263,6 +1456,7 @@ footer .navbar {
   font-weight: bolder;
 }
 footer .copyright-text {
+  padding-top: 2em;
   color: #c8c8c8;
   font-size: 12px;
   text-align: center;

@@ -67,8 +67,21 @@
 
 @logo-hash-color: #ffd100;
 
-//----------------------ADDITIONAL RESET-------------------------
+@more-info-background-color: #efefef;
 
+@facebook-link-color: #1f429f;
+@twitter-link-color: #00afe8;
+@odnoklasniki-link-color: #ff9b00;
+@youtube-link-color: #ff0000;
+@telegram-link-color: #5ac6fc;
+@instagram-link-color: #ff4d9c;
+
+@additional-articles-background-color: #f6f5f7;
+@additional-articles-source-background-color: #c5c5c5;
+
+@bani-background-color: #f1f1f1;
+
+//----------------------ADDITIONAL RESET-------------------------
 a {
   text-decoration: inherit;
   color: inherit;
@@ -115,6 +128,18 @@ a:hover {
   margin: 0;
 }
 
+.more-info {
+  background-color: @more-info-background-color !important;
+  color: white;
+  font-size: 30pt;
+  line-height: 10pt;
+  margin: 0.1em;
+  margin-left: 50px;
+  padding: 0 0.3em 0 0.3em !important;
+  font-weight: @main-font-weight;
+  height: 40px;
+}
+
 .hide-text {
   font-size: 0.000000001px !important;
   * {
@@ -123,7 +148,7 @@ a:hover {
 }
 
 .section-logo {
-  cursor: default;
+  // cursor: pointer;
 
   display: flex;
   justify-content: flex-start;
@@ -199,6 +224,8 @@ a:hover {
     line-height: 11pt;
     font-size: 10pt;
   }
+
+  .source,
   .article-title {
     display: flex;
     align-items: center;
@@ -1113,7 +1140,7 @@ header {
 }
 
 //----------------------RLIVE SECTION-------------------------
-
+.bani,
 .realitatea-tv,
 .rlive {
   background-color: @rlive-section-background-color;
@@ -1215,8 +1242,9 @@ header {
   font-weight: @main-font-weight;
   padding-bottom: 1em;
 
-  border-bottom: 1px solid @separation-line-color;
+  border-bottom: 2px solid @separation-line-color;
 
+  .article-time,
   .article-no {
     color: @article-no-color;
     font-size: 40pt;
@@ -1284,7 +1312,7 @@ header {
       line-height: 16pt;
     }
 
-    border-bottom: 1px solid @separation-line-color;
+    border-bottom: 2px solid @separation-line-color;
 
     margin-bottom: 1em;
     padding-bottom: 1em;
@@ -1341,7 +1369,7 @@ header {
   }
 
   .small-article {
-    border-bottom: 1px solid @separation-line-color;
+    border-bottom: 2px solid @separation-line-color;
 
     img {
       width: 35%;
@@ -1396,7 +1424,7 @@ header {
 
       position: relative;
 
-      border-bottom: 1px solid @separation-line-color;
+      border-bottom: 2px solid @separation-line-color;
 
       padding: 1em;
 
@@ -1522,8 +1550,184 @@ header {
   }
 }
 
+//----------------------BANI-------------
+.bani {
+  background-color: @bani-background-color;
+  .article-header,
+  .article-text {
+    color: black;
+  }
+
+  .bani-logo {
+    width: 40%;
+    margin-right: 22%;
+  }
+
+  img {
+    border-radius: 0;
+  }
+
+  .article-text {
+    font-weight: @main-font-weight;
+  }
+}
+
+//----------------------TOP TAGS & SOCIAL NETWORKS-------------
+.social-networks,
+.top-tags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  margin: auto;
+  border-bottom: 2px solid @separation-line-color;
+  border-top: 2px solid @separation-line-color;
+  ul {
+    margin-bottom: 0;
+    .social-network,
+    .tag {
+      background-color: @zodii-link-selected-color;
+      border-radius: 20px;
+      padding: 0.3em 0.5em;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        background-color: @zodii-link-hover-color;
+      }
+    }
+  }
+}
+
+.social-networks {
+  .social-network {
+    font-family: @main-font;
+    font-weight: @main-font-weight;
+    font-size: 10pt;
+    line-height: 20pt;
+    padding: 0.3em;
+    color: white;
+    &#facebook {
+      background-color: @facebook-link-color;
+    }
+    &#twitter {
+      background-color: @twitter-link-color;
+    }
+    &#odnoklasniki {
+      background-color: @odnoklasniki-link-color;
+    }
+    &#youtube {
+      background-color: @youtube-link-color;
+    }
+    &#telegram {
+      background-color: @telegram-link-color;
+    }
+    &#instagram {
+      background-color: @instagram-link-color;
+    }
+  }
+}
+
+//----------------------ADDITIONAL ARTICLES-------------------
+.additional-articles {
+  background-color: @additional-articles-background-color;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  .row > div {
+    flex: 0 0 27.5%;
+    max-width: 27.5%;
+  }
+  .small-article {
+    margin: 1em;
+    img {
+      width: 44%;
+    }
+    .source {
+      color: white;
+      background-color: @additional-articles-source-background-color;
+      border-radius: 20px;
+      padding: 0.4em;
+      font-size: 8pt;
+      font-weight: @main-font-weight;
+      width: auto;
+      left: 50%;
+    }
+    .article-header {
+      color: black;
+      padding-right: 0;
+    }
+  }
+}
+
+//----------------------AUTO TECH SPORT----------------------
+.auto-tech-sport {
+  padding-bottom: 5em;
+  subsection {
+    .section-logo {
+      padding-left: 0.3em;
+      padding-bottom: 0.5em;
+    }
+    flex: 0 0 27.5%;
+    max-width: 27.5%;
+    ul {
+      display: flex;
+      flex-direction: column;
+      .small-article {
+        border-bottom: 2px solid @separation-line-color;
+        padding-bottom: 5%;
+      }
+      img {
+        width: 30%;
+        height: 30%;
+        padding-top: 35px;
+      }
+      .article-title {
+        width: 45px;
+        left: 36%;
+        top: 17%;
+      }
+      .article-header {
+        padding-right: 0;
+        font-size: 10pt;
+        line-height: 13pt;
+      }
+      a {
+        display: flex;
+      }
+    }
+  }
+}
+
+//----------------------TOATE STIRILE-------------------------
+.toate-stirile {
+  .row > div {
+    flex: 0 0 27.5%;
+    max-width: 27.5%;
+  }
+  .section-logo {
+    padding-left: 13.5%;
+  }
+  hr {
+    margin-top: 4em;
+    border: 1px solid @separation-line-color;
+    flex: 0 0 82.5%;
+    max-width: 82.5%;
+  }
+  .article {
+    padding: 1.5em 0;
+    .article-time {
+      padding-top: 15pt;
+      font-size: 15pt;
+      height: fit-content;
+    }
+    .article-description {
+      font-size: 10pt;
+    }
+  }
+}
+
 //----------------------FOOTER-------------------------
 footer {
+  padding-top: 2em;
   .navbar,
   #search-panel {
     display: flex;
@@ -1542,6 +1746,8 @@ footer {
 
     font-size: 14px;
     font-weight: 400;
+
+    margin-bottom: 1em;
 
     padding: 0.5em 1.5em;
     padding-right: 2em;
@@ -1570,6 +1776,7 @@ footer {
   }
 
   .copyright-text {
+    padding-top: 2em;
     color: @footer-copyright-text-color;
     font-size: 12px;
     text-align: center;
