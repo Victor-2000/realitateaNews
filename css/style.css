@@ -1,9 +1,20 @@
+/*=============================================
+=            Imports            =
+=============================================*/
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/inter/v2/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfMZg.ttf) format('truetype');
 }
+/*=====  End of Imports  ======*/
+/*=============================================
+=            Variables            =
+=============================================*/
+/*=====  End of Variables  ======*/
+/*=============================================
+=            Additional Reset            =
+=============================================*/
 a {
   text-decoration: inherit;
   color: inherit;
@@ -12,6 +23,10 @@ a {
 a:hover {
   color: inherit;
 }
+/*=====  End of Additional Reset  ======*/
+/*=============================================
+=            Utility            =
+=============================================*/
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -233,6 +248,10 @@ header {
   background-repeat: no-repeat;
   background-size: 200px 200px;
 }
+/*=====  End of Utility  ======*/
+/*=============================================
+=            Header            =
+=============================================*/
 .contact-options {
   display: flex;
   align-items: center;
@@ -419,6 +438,10 @@ header {
   margin: 0 5px;
   height: 20px;
 }
+/*=====  End of Header  ======*/
+/*=============================================
+=            Additional Info            =
+=============================================*/
 .additional-info {
   display: none;
   justify-content: center;
@@ -614,6 +637,10 @@ header {
   justify-content: center;
   margin: 0 1em;
 }
+/*=====  End of Additional Info  ======*/
+/*=============================================
+=            Banners            =
+=============================================*/
 .banners {
   margin-top: 0.5em;
 }
@@ -801,6 +828,10 @@ header {
 .rlive-news-banner #rlive-news-right-arrow {
   background-position: -80px -80px;
 }
+/*=====  End of Banners  ======*/
+/*=============================================
+=            Headline            =
+=============================================*/
 .headline-news {
   margin-top: 10px;
 }
@@ -875,6 +906,10 @@ header {
 .large-news-unit .block-image {
   margin-bottom: 1em;
 }
+/*=====  End of Headline  ======*/
+/*=============================================
+=            Rlive            =
+=============================================*/
 .bani,
 .realitatea-tv,
 .rlive {
@@ -963,6 +998,10 @@ header {
 .rlive .article-text {
   margin-left: 0;
 }
+/*=====  End of Rlive  ======*/
+/*=============================================
+=            Actualitate            =
+=============================================*/
 .actualitate {
   margin-bottom: 5em;
 }
@@ -1002,6 +1041,10 @@ header {
   font-size: 10.5pt;
   line-height: 12pt;
 }
+/*=====  End of Actualitate  ======*/
+/*=============================================
+=            Sub Economie            =
+=============================================*/
 .sub-economie {
   background-color: #efefef;
   padding: 2em 0;
@@ -1024,6 +1067,10 @@ header {
 .sub-economie .small-article .article-title {
   left: 50%;
 }
+/*=====  End of Sub Economie  ======*/
+/*=============================================
+=            Politica            =
+=============================================*/
 .politica {
   padding-bottom: 4em;
 }
@@ -1073,6 +1120,10 @@ header {
 .politica .small-article .article-title {
   left: 37.7%;
 }
+/*=====  End of Politica  ======*/
+/*=============================================
+=            Realitatea TV            =
+=============================================*/
 .realitatea-tv .logo-realitatea-tv {
   width: 170px;
   margin-right: 5.2%;
@@ -1083,6 +1134,10 @@ header {
 .realitatea-tv .call-to-action {
   margin-left: -5%;
 }
+/*=====  End of Realitatea TV  ======*/
+/*=============================================
+=            Societate, Economie and In Lume            =
+=============================================*/
 .societate .section-logo,
 .economie .section-logo,
 .in-lume .section-logo,
@@ -1132,6 +1187,10 @@ header {
 .life {
   padding-bottom: 2em;
 }
+/*=====  End of Societate, Economie and In Lume  ======*/
+/*=============================================
+=            Opinii            =
+=============================================*/
 .opinii .horoscope .section-logo {
   padding-left: 2%;
 }
@@ -1255,6 +1314,10 @@ header {
 .opinii .zodiac-article .zodiac-footer .share li {
   margin: 3px;
 }
+/*=====  End of Opinii  ======*/
+/*=============================================
+=            Bani            =
+=============================================*/
 .bani {
   background-color: #f1f1f1;
 }
@@ -1272,6 +1335,10 @@ header {
 .bani .article-text {
   font-weight: 600;
 }
+/*=====  End of Bani  ======*/
+/*=============================================
+=            Tags and Social Networks            =
+=============================================*/
 .social-networks,
 .top-tags {
   display: flex;
@@ -1327,6 +1394,10 @@ header {
 .social-networks .social-network#instagram {
   background-color: #ff4d9c;
 }
+/*=====  End of Tags and Social Networks  ======*/
+/*=============================================
+=            Additional Articles            =
+=============================================*/
 .additional-articles {
   background-color: #f6f5f7;
   padding-top: 3em;
@@ -1356,6 +1427,10 @@ header {
   color: black;
   padding-right: 0;
 }
+/*=====  End of Additional Articles  ======*/
+/*=============================================
+=            Auto, Tech and Sport            =
+=============================================*/
 .auto-tech-sport {
   padding-bottom: 5em;
 }
@@ -1393,6 +1468,10 @@ header {
 .auto-tech-sport subsection ul a {
   display: flex;
 }
+/*=====  End of Auto, Tech and Sport  ======*/
+/*=============================================
+=            Toate Stirile            =
+=============================================*/
 .toate-stirile .row > div {
   flex: 0 0 27.5%;
   max-width: 27.5%;
@@ -1417,6 +1496,10 @@ header {
 .toate-stirile .article .article-description {
   font-size: 10pt;
 }
+/*=====  End of Toate Stirile  ======*/
+/*=============================================
+=            Footer            =
+=============================================*/
 footer {
   padding-top: 2em;
 }
@@ -1461,3 +1544,4 @@ footer .copyright-text {
   font-size: 12px;
   text-align: center;
 }
+/*=====  End of Footer  ======*/
