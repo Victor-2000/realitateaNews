@@ -78,20 +78,20 @@
               </div>
           </div>
           <div class="meteo">
-              <div id="weather-current" class="row flex-row meteo-header">
+              <div id="weather-current" class="row row-flex meteo-header">
                   <div class="col-4 city">Chisinau</div>
-                  <div class="col-3"> 
+                  <div class="col-12 col-lg-3"> 
                       <span class="icon weather-icon"></span>
                   </div>
                   <div class="col-4 weather-info">
-                      <div class="row flex-row">
+                      <div class="row row-flex">
                           <div id="current-weather" class="col-6">Partly Cloudy</div>
                           <div id="current-temp">7 ℃</div>
                       </div>
                   </div>
               </div>
-              <div class="row flex-row meteo-content">
-                  <div class="col-11 flex-row">
+              <div class="row row-flex meteo-content">
+                  <div class="col-11 row-flex">
                       <ul>
                           <li id="weather-1">
                               <div class="day">Lun</div>
@@ -142,28 +142,16 @@
       </section>
 
     <header>
-        <div class="row flex-row">
+        <div class="row row-flex non-mobile">
             <div class="adblock col-10">
                 <a href="https://www.mercedes-benz.md/ro/desktop/home.html">
                     <img src="images/ad1.png" alt="Mercedes Car add.">
-                    <div class="ad-title">
-                        A double victory. One single reason
-                    </div>
-                    <div class="ad-description">
-                        <span class="mercedes-icon icon"></span>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the</br> 1500s,
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                        It has survived not only five centuries, but also the</br> leap into electronic typesetting, 
-                        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
-                        sheets containing Lorem
-                    </div>
                 </a>
                 <span class="close-icon icon"></span>
             </div>
         </div>
-        <div class="row flex-row">
-            <div class="col-4 left-nav">
+        <div class="row row-flex non-mobile">
+            <div class="col-lg-4 col-3 left-nav row-flex">
                 <ul class="contact-options">
                     <li><a href="#" class="icon hide-text facebook">facebook</a></li>
                     <li><a href="#" class="icon hide-text odnoklasniki">odnoklasniki</a></li>
@@ -179,7 +167,7 @@
             </div>
     
             
-            <div class="col-3">
+            <div class="col-4 col-lg-3">
                 <a href="#"><span class="logo hide-text"><h1>Realitatea</h1></span></a>
             </div>
             
@@ -198,9 +186,9 @@
                 </ul>
             </div>
         </div>
-        <div class="row flex-row">
-            <div class="col-xs-10 navbar">
-                <ul>
+        <div class="row row-flex non-mobile">
+            <div class="col-lg-10 navbar row-flex">
+                <ul class="col-xs-12">
                     <li><a href="#">Actualitate</a></li>
                     <li><a href="#">Alegeri</a></li>
                     <li><a href="#">Politica</a></li>
@@ -212,55 +200,63 @@
                     <li><a href="#">Tech</a></li>
                     <li><a href="#">Sport</a></li>
                     <li><a href="#">Toate stirile</a></li>
-                    <li id="navbar-list-item">
-                        <div class="navbar-side-menu">
-                            <a href="#">
-                                <span class="icon hide-text business">Realitatea TV</span>
-                            </a>
-                            <span class="icon hide-text currency-button">Curs Valutar</span>
-                            <span class="icon hide-text weather-button">Vremea</span>
+                    <li class="live-block-sm">
+                        <a href="#">
+                            <span class="icon live"></span> Live
+                        </a>
+                    </li>
+                </ul>
+                <div class="col-xs-4" id="navbar-list-item">
+                    <div class="navbar-side-menu">
+                        <a href="#">
+                            <span class="icon hide-text business">Realitatea TV</span>
+                        </a>
+                        <span class="icon hide-text currency-button">Curs Valutar</span>
+                        <span class="icon hide-text weather-button">Vremea</span>
+                        
+                        <div class="live-block-lg">
                             
                             <span>|</span>
-
+    
                             <a href="#">
                                 <span class="icon live"></span> Live
                             </a>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
     
     <section class="banners">
-        <div class="row flex-row breaking-news-banner-row">
-            <div class="col-10 breaking-news-banner">
+        <div class="row row-flex breaking-news-banner-row">
+            <div class="col-12 col-lg-10 breaking-news-banner">
                 <a href="#" class="breaking-news-title">
                     Breaking News <span class="breaking-news-dot icon"></span>
                 </a>
                 <a href="#">
-                    <img id="breaking-news-image" src="images/emergencyNewsImg.png" alt="Breaking news image">
+                    <img class="non-mobile" src="images/emergencyNewsImg.png" alt="Breaking news image">
                     <div id="breaking-news-text"> CNESP urmează să decidă astăzi dacă interzice zborurile din Marea Britanie</div>
                 </a>
             </div>
-            <div class="col-10 news-alert-banner">
+            <div class="col-10 news-alert-banner non-mobile">
                 <a href="#" class="news-alert-title">
                     News Alert <span class="news-alert-dot icon"></span>
                 </a>
                 <a href="#">
-                    <img id="news-alert-image" src="images/newsAlertImg.png" alt="News alert image">
+                    <img  src="images/newsAlertImg.png" alt="News alert image">
                     <div id="news-alert-text"> 
-                        Cu vizite în Rusia și toate fără rezultate! </br> 
-                        De ce Igor Dodon nu merită un </br>
+                        Cu vizite în Rusia și toate fără rezultate!   
+                        De ce Igor Dodon nu merită un  
                         nou mandat la șefia statului
                     </div>
                 </a>
 
                 <a href="#">
-                    <img id="news-alert-image" src="images/newsAlertImg2.png" alt="News alert image 2">
+                    <img src="images/newsAlertImg2.png" alt="News alert image 2">
                     <div id="news-alert-text"> 
-                        Vinerea neagră revine! Percheziții </br>
-                        în dosarul "fraudei bancare": </br>
+                        Vinerea neagră revine! Percheziții  
+                        în dosarul "fraudei bancare":  
                         Sunt cel puțin șase reținuți!
                     </div>
                 </a>
@@ -272,24 +268,24 @@
                     </span>
                 </div>
             </div>
-            <div class="col-10 rlive-news-banner">
+            <div class="col-10 rlive-news-banner non-mobile">
                 <a href="#" class="rlive-news-title">
                     RLive News <span class="rlive-news-dot icon"></span>
                 </a>
                 <a href="#">
-                    <img id="rlive-news-image" src="images/rliveNewsImg.png" alt="News alert image">
+                    <img src="images/rliveNewsImg.png" alt="News alert image">
                     <div id="rlive-news-text"> 
-                        Cu vizite în Rusia și toate fără rezultate! </br> 
-                        De ce Igor Dodon nu merită un </br>
+                        Cu vizite în Rusia și toate fără rezultate!   
+                        De ce Igor Dodon nu merită un  
                         nou mandat la șefia statului
                     </div>
                 </a>
 
                 <a href="#">
-                    <img id="rlive-news-image" src="images/rliveNewsImg2.png" alt="News alert image 2">
+                    <img src="images/rliveNewsImg2.png" alt="News alert image 2">
                     <div id="rlive-news-text"> 
-                        Vinerea neagră revine! Percheziții </br>
-                        în dosarul "fraudei bancare": </br>
+                        Vinerea neagră revine! Percheziții  
+                        în dosarul "fraudei bancare":  
                         Sunt cel puțin șase reținuți!
                     </div>
                 </a>
@@ -305,46 +301,46 @@
     </section>
 
     <section class="headline-news">
-        <div class="row flex-row">
+        <div class="row row-flex">
 
-            <div class="col-5 large-news-unit">
+            <div class="col-12 col-lg-5 large-news-unit">
                 <a href="#" class="large-news-block">
                     <img class="block-image" src="images/img1.png" alt="Scandalul Anabolizantelor">
                     <div class="article-info">
                         <div class="article-title">
-                            Pe lângă scandalul anabolizantelor, Ambasada</br>
-                            Moldovei la Moscova ar fi implicată și în alte "afaceri":</br>
-                            băuturi alcoolice și numere diplomatice</br>
+                            Pe lângă scandalul anabolizantelor, Ambasada 
+                            Moldovei la Moscova ar fi implicată și în alte "afaceri": 
+                            băuturi alcoolice și numere diplomatice 
                         </div>
                         <div class="article-brief">
-                            Lorem Ipsum is simply dummy text for printing and typesetting industry. Lorem </br>
-                            Ipsum has been the industry's standard dummy text ever since the 1500s. Text of the </br>
+                            Lorem Ipsum is simply dummy text for printing and typesetting industry. Lorem  
+                            Ipsum has been the industry's standard dummy text ever since the 1500s. Text of the  
                             printing and typesetting industry.
                         </div>
                     </div>
                 </a>
             </div>
-            <div class="col-5 small-news-unit">
-                <div class="row flex-row">
-                    <a href="#" id="small-headline-block-1" class="col-6 small-news-block">
+            <div class="col-12 col-lg-5 small-news-unit">
+                <div class="row row-flex">
+                    <a href="#" id="small-headline-block-1" class="col-12 col-lg-6 small-news-block">
                         <div class="category-text">politica<span class="category-dot icon"></span></div>
                         <img class="block-image" src="images/img2.png" alt="Andrian Candu">
                         <div class="article-title">
-                            Președintele Pro Moldova Andrian</br>
-                            Candu, susține un briefing de presă</br>
+                            Președintele Pro Moldova Andrian 
+                            Candu, susține un briefing de presă 
                         </div>
                       </a>
-                    <a href="#" id="small-headline-block-2" class="col-6 small-news-block">
+                    <a href="#" id="small-headline-block-2" class="col-12 col-lg-6 non-mobile small-news-block">
                         <div class="category-text"><span class="category-dot icon"></span></div>
                         <img class="block-image" src="images/img3.png" alt="Protest antiguvernare">
                         <div class="article-title">
-                            Protest antiguvernare în PMAN</br>
-                            Live From Realitatea.md</br>
+                            Protest antiguvernare în PMAN 
+                            Live From Realitatea.md 
                         </div>
                     </a>
                 </div>
-                <div class="row flex-row">
-                    <a href="#" id="small-headline-block-3" class="col-6 small-news-block">
+                <div class="row row-flex">
+                    <a href="#" id="small-headline-block-3" class="col-12 col-lg-6 small-news-block">
                         <div class="category-text">politica<span class="category-dot icon"></span></div>
                         <img class="block-image" src="images/img4.png" alt="Maia Sandu">
                         <div class="article-title">
@@ -353,20 +349,30 @@
                             nu spune un cuvânt despre întrevedere
                         </div>
                     </a>
-                    <a href="#" id="small-headline-block-4" class="col-6 small-news-block">
+                    <a href="#" id="small-headline-block-4" class="col-12 col-lg-6 small-news-block">
                         <div class="category-text">in lume<span class="category-dot icon"></span></div>
                         <img class="block-image" src="images/img5.png" alt="Record negativ COVID-19">
                         <div class="article-title">
-                            Un alt record negativ depășit de cazuri</br>
-                            noi de COVID-19! Moldova trece de 115 </br>
-                            mii de cazuri și 2.400 de decese </br>
+                            Un alt record negativ depășit de cazuri 
+                            noi de COVID-19! Moldova trece de 115  
+                            mii de cazuri și 2.400 de decese  
+                        </div>
+                    </a>
+                </div>
+                <div class="row row-flex mobile">
+                    <a href="#" id="small-headline-block-2" class="col-12 small-news-block">
+                        <div class="category-text"><span class="category-dot icon"></span></div>
+                        <img class="block-image" src="images/img3.png" alt="Protest antiguvernare">
+                        <div class="article-title">
+                            Protest antiguvernare în PMAN 
+                            Live From Realitatea.md 
                         </div>
                     </a>
                 </div>
             </div>
         </div>
 
-        <div class="row flex-row">
+        <div class="row row-flex non-mobile">
             <div class="adblock col-10">
                 <a href="https://www.ikea.com/ro/ro/">
                     <img src="images/ad2.png" alt="IKEA add.">
@@ -376,20 +382,21 @@
         </div>
     </section>
 
-    <section class="rlive">
+    <section class="rlive non-mobile">
         <div class="row">
             <div class="col-3 logo-col">
                 <a href="#" class="logo-rlive">
                     <img src="images/logoRLive.png" alt="RLive">
                 </a>
             </div>
+            
             <div class="col-2">
                 <a href="#" class="call-to-action">
                     Toate Liveuri<span class="icon"></span>
                 </a>
             </div>
         </div>
-        <div class="row flex-row">
+        <div class="row row-flex">
             <a href="#" id="article-1"  class="col-3">
                 <img src="images/rliveImg.png" alt="RLive video">
                 <div class="article-header">Realitatea AZI</div>
@@ -408,24 +415,28 @@
         </div>
     </section>
     <section class="actualitate">
-        <div class="row flex-row">
-            <div class="col-7">
+        <div class="row row-flex">
+            <div class="col-lg-7 col-12 row-flex">
                 <a href="#" class="section-logo">
                     Actualitate
                     <span class="section-dot icon"></span>
                 </a>
+                <a href="#" class="call-to-action mobile">
+                    View all
+                    <div class="icon"></div>
+                </a>
             </div>
-            <div class="col-3 top-news">
+            <div class="col-lg-3 col-4 top-news non-mobile">
                 <a href="#" class="section-logo">
                     Top news
                     <span class="section-dot icon"></span>
                 </a>
             </div>
         </div>
-        <div class="row flex-row">
-            <div class="col-7">
-                <div class="row flex-row">
-                    <div class="col-6" id="article-1">
+        <div class="row row-flex">
+            <div class="col-lg-7 col-12">
+                <div class="row row-flex">
+                    <div class="col-12 col-lg-6" id="article-1">
                         <a href="#" class="big-article">
                             <img src="images/actualitateImg.png" alt="Actualitate Image">
                             <div class="article-title">
@@ -433,14 +444,14 @@
                             </div>
                             <div class="article-header">Gheorghe Cavacaliuc, acuzat de profanarea monumentului lui Ștefan cel Mare! „El tot are nevoie de protecție” (VIDEO)</div>
                         </a>
-                        <a href="#" class="small-article">
+                        <a href="#" class="small-article non-mobile">
                             <img src="images/actualitateEconomieImg.png" alt="Actualitate Image">
                             <div class="article-title">
                                 economie<span class="article-title-dot icon"></span>
                             </div>
                             <div class="article-header">Vinerea neagră revine! Percheziții în dosarul "fraudei bancare": Sunt cel puțin șase reținuți.</div>
                         </a>
-                        <a href="#" class="small-article">
+                        <a href="#" class="small-article non-mobile">
                             <img src="images/actualitateEconomieImg2.png" alt="Actualitate Image">
                             <div class="article-title">
                                 economie<span class="article-title-dot icon"></span>
@@ -448,7 +459,7 @@
                             <div class="article-header">Vinerea neagră revine! Percheziții în dosarul "fraudei bancare": Sunt cel puțin șase reținuți.</div>
                         </a>
                     </div>
-                    <div class="col-6" id="article-2">
+                    <div class="col-12 col-lg-6" id="article-2">
                         <a href="#" class="big-article">
                             <img src="images/actualitateImg2.png" alt="Actualitate Image">
                             <div class="article-title">
@@ -456,14 +467,14 @@
                             </div>
                             <div class="article-header">Ultima oră! Monica Babuc, demisă din funcția de vicepreședintă a Parlamentului, iar deputatul transfug, Vladimir Vitiuc, numit în locul ei</div>
                         </a>
-                        <a href="#" class="small-article">
+                        <a href="#" class="small-article non-mobile">
                             <img src="images/actualitateEconomieImg3.png" alt="Actualitate Image">
                             <div class="article-title">
                                 economie<span class="article-title-dot icon"></span>
                             </div>
                             <div class="article-header">Vinerea neagră revine! Percheziții în dosarul "fraudei bancare": Sunt cel puțin șase reținuți.</div>
                         </a>
-                        <a href="#" class="small-article">
+                        <a href="#" class="small-article non-mobile">
                             <img src="images/actualitateEconomieImg4.png" alt="Actualitate Image">
                             <div class="article-title">
                                 economie<span class="article-title-dot icon"></span>
@@ -473,7 +484,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3 top-news">
+            <div class="col-lg-3 col-12 top-news">
+                <div class="mobile">
+                    <a href="#" class="section-logo">
+                        Top news
+                        <span class="section-dot icon"></span>
+                    </a>
+                </div>
                 <ul>
                     <li class="article">
                         <a href="#">
@@ -525,16 +542,78 @@
                     </li>
                 </ul>
             </div>
+            <div class="col-12 mobile">
+                <a href="#" class="small-article">
+                    <img src="images/actualitateEconomieImg.png" alt="Actualitate Image">
+                    <div class="article-title">
+                        economie<span class="article-title-dot icon"></span>
+                    </div>
+                    <div class="article-header">Vinerea neagră revine! Percheziții în dosarul "fraudei bancare": Sunt cel puțin șase reținuți.</div>
+                </a>
+                <a href="#" class="small-article">
+                    <img src="images/actualitateEconomieImg2.png" alt="Actualitate Image">
+                    <div class="article-title">
+                        economie<span class="article-title-dot icon"></span>
+                    </div>
+                    <div class="article-header">Vinerea neagră revine! Percheziții în dosarul "fraudei bancare": Sunt cel puțin șase reținuți.</div>
+                </a>
+                <a href="#" class="small-article">
+                    <img src="images/actualitateEconomieImg3.png" alt="Actualitate Image">
+                    <div class="article-title">
+                        economie<span class="article-title-dot icon"></span>
+                    </div>
+                    <div class="article-header">Vinerea neagră revine! Percheziții în dosarul "fraudei bancare": Sunt cel puțin șase reținuți.</div>
+                </a>
+                <a href="#" class="small-article">
+                    <img src="images/actualitateEconomieImg4.png" alt="Actualitate Image">
+                    <div class="article-title">
+                        economie<span class="article-title-dot icon"></span>
+                    </div>
+                    <div class="article-header">Vinerea neagră revine! Percheziții în dosarul "fraudei bancare": Sunt cel puțin șase reținuți.</div>
+                </a>
+            </div>
         </div>
-        <a href="#" class="call-to-action">
+        <a href="#" class="call-to-action non-mobile">
             View all
             <div class="icon"></div>
         </a>
     </section>
 
+    <section class="rlive mobile">
+        <div class="row">
+            <div class="col-6 col-lg-3 logo-col">
+                <a href="#" class="logo-rlive">
+                    <img src="images/logoRLive.png" alt="RLive">
+                </a>
+            </div>
+            <div class="col-6 col-lg-2">
+                <a href="#" class="call-to-action">
+                    Toate Liveuri<span class="icon"></span>
+                </a>
+            </div>
+        </div>
+        <div class="row row-flex">
+            <a href="#" id="article-1" class="col-12">
+                <img src="images/rliveImg.png" alt="RLive video">
+                <div class="article-header">Realitatea AZI</div>
+                <div class="article-text">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
+            </a>
+            <a href="#" id="article-2" class="col-6">
+                <img src="images/rliveImg2.png" alt="RLive video">
+                <div class="article-header">Realitatea AZI</div>
+                <div class="article-text">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
+            </a>
+            <a href="#" id="article-3" class="col-6">
+                <img src="images/rliveImg3.png" alt="RLive video">
+                <div class="article-header">Realitatea AZI</div>
+                <div class="article-text">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
+            </a>
+        </div>
+    </section>
+
     <section class="sub-economie">
-        <div class="row flex-row">
-            <div class="col-3 small-article">
+        <div class="row row-flex">
+            <div class="col-12 col-lg-3 small-article">
                 <a href="#">
                     <img src="images/economieSubImg.png" alt="Economie Subsection Image">
                     <div class="article-title">economie<span class="article-dot icon"></span></div>
@@ -544,7 +623,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-3 small-article">
+            <div class="col-12 col-lg-3 small-article">
                 <a href="#">
                     <img src="images/economieSubImg2.png" alt="Economie Subsection Image">
                     <div class="article-title">economie<span class="article-dot icon"></span></div>
@@ -554,7 +633,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-3 small-article">
+            <div class="col-12 col-lg-3 small-article">
                 <a href="#">
                     <img src="images/economieSubImg3.png" alt="Economie Subsection Image">
                     <div class="article-title">economie<span class="article-dot icon"></span></div>
@@ -568,8 +647,8 @@
     </section>
 
     <section class="politica">
-        <div class="row flex-row">
-            <div class="col-3">
+        <div class="row row-flex">
+            <div class="col-12 col-lg-3">
 
                 <div class="adblock">
                     <a href="https://www.tucanocoffee.com/">
@@ -578,13 +657,19 @@
                     <span class="close-icon icon"></span>
                 </div>
             </div>
-            <div class="col-7">
-                <a href="#" class="section-logo">
-                    Politica
-                    <span class="section-dot icon"></span>
-                </a>
+            <div class="col-12 col-lg-7">
+                <div class="row row-flex logo-row">
+                    <a href="#" class="section-logo">
+                        Politica
+                        <span class="section-dot icon"></span>
+                    </a>
+                    <a href="#" class="call-to-action mobile">
+                        View all
+                        <div class="icon"></div>
+                    </a>
+                </div>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6">
                         <a href="#" class="big-article">
                             <img src="images/politicaImg.png" alt="">
                             <div class="article-header">
@@ -593,6 +678,38 @@
                                 altfel de politică (VIDEO)
                             </div>
                         </a>
+                        <a href="#" class="small-article non-mobile">
+                            <img src="images/politicaImg3.png" alt="">
+                            <div class="article-title">
+                                societate <span class="article-dot icon"></span>
+                            </div>
+                            <div class="article-header">
+                                Vinerea neagră revine! Percheziții în dosarul 
+                                „fraudei bancare”: Sunt cel puțin șase 
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <a href="#" class="big-article">
+                            <img src="images/politicaImg2.png" alt="">
+                            <div class="article-header">
+                                Adresarea președintelui ales Maia Sandu la „Moldova 1”: 
+                                „Acest Parlament trebuie să plece. Duminică vom avea o consultare 
+                                cu cetățenii” (VIDEO)
+                            </div>
+                        </a>
+                        <a href="#" class="small-article non-mobile">
+                            <img src="images/politicaImg4.png" alt="">
+                            <div class="article-title">
+                                societate <span class="article-dot icon"></span>
+                            </div>
+                            <div class="article-header">
+                                Vinerea neagră revine! Percheziții în dosarul 
+                                „fraudei bancare”: Sunt cel puțin șase 
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 mobile">
                         <a href="#" class="small-article">
                             <img src="images/politicaImg3.png" alt="">
                             <div class="article-title">
@@ -604,15 +721,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-6">
-                        <a href="#" class="big-article">
-                            <img src="images/politicaImg2.png" alt="">
-                            <div class="article-header">
-                                Adresarea președintelui ales Maia Sandu la „Moldova 1”: 
-                                „Acest Parlament trebuie să plece. Duminică vom avea o consultare 
-                                cu cetățenii” (VIDEO)
-                            </div>
-                        </a>
+                    <div class="col-12 mobile">
                         <a href="#" class="small-article">
                             <img src="images/politicaImg4.png" alt="">
                             <div class="article-title">
@@ -627,7 +736,7 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="call-to-action">
+        <a href="#" class="call-to-action non-mobile">
             View all
             <div class="icon"></div>
         </a>
@@ -635,29 +744,29 @@
 
     <section class="realitatea-tv">
         <div class="row">
-            <div class="col-3 logo-col">
+            <div class="col-6 col-lg-3 logo-col">
                 <a href="#" class="logo-realitatea-tv">
                     <img src="images/logoRealitateaTV.png" alt="Realitatea TV">
                 </a>
             </div>
-            <div class="col-2">
+            <div class="col-6 col-lg-2">
                 <a href="#" class="call-to-action">
                     Toate Emisiuni<span class="icon"></span>
                 </a>
             </div>
         </div>
-        <div class="row flex-row">
-            <a href="#" id="article-1"  class="col-3">
+        <div class="row row-flex">
+            <a href="#" id="article-1"  class="col-12">
                 <img src="images/realitateaTvImg.png" alt="Realitatea TV video">
                 <div class="article-header">Realitatea AZI</div>
                 <div class="article-text">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
             </a>
-            <a href="#" id="article-2" class="col-3">
+            <a href="#" id="article-2" class="col-6">
                 <img src="images/realitateaTvImg.png" alt="Realitatea TV video">
                 <div class="article-header">Честно говоря</div>
                 <div class="article-text">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
             </a>
-            <a href="#" id="article-3" class="col-3">
+            <a href="#" id="article-3" class="col-6">
                 <img src="images/realitateaTvImg.png" alt="Realitatea TV video">
                 <div class="article-header">Catre Europa</div>
                 <div class="article-text">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
@@ -666,12 +775,18 @@
     </section>
 
     <section class="societate">
-        <a href="#" class="section-logo">
-            Societate
-            <span class="section-dot icon"></span>
-        </a>
-        <div class="row flex-row">
-            <div class="col-4">
+        <div class="col-12 col-lg-7 row-flex logo-row">
+            <a href="#" class="section-logo">
+                Societate
+                <span class="section-dot icon"></span>
+            </a>
+            <a href="#" class="call-to-action mobile">
+                View all
+                <div class="icon"></div>
+            </a>
+        </div>
+        <div class="row row-flex">
+            <div class="col-lg-4 col-12">
                 <a href="#" id="article-1" class="big-article">
                     <img src="images/societateImg.png" alt="Societate image.">
                     <div class="article-header">
@@ -681,7 +796,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 col-12">
                 <a href="#" id="article-2" class="small-article">
                     <img src="images/societateEconomieImg.png" alt="Societate image.">
                     <div class="article-title">
@@ -692,7 +807,7 @@
                         dosarul „fraudei bancare”: Sunt cel puțin șase 
                     </div>
                 </a>
-                <a href="#" id="article-3" class="small-article">
+                <a href="#" id="article-3" class="small-article non-mobile">
                     <div class="article-title">
                         societate <span class="article-dot icon"></span>
                     </div>
@@ -701,7 +816,7 @@
                         dosarul „fraudei bancare”: Sunt cel puțin șase 
                     </div>
                 </a>
-                <a href="#" id="article-4" class="small-article last">
+                <a href="#" id="article-4" class="small-article last non-mobile">
                     <div class="article-title">
                         societate <span class="article-dot icon"></span>
                     </div>
@@ -711,7 +826,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 col-12">
                 <a href="#" id="article-5" class="small-article">
                     <img src="images/societateSocietateImg.png" alt="Societate image.">
                     <div class="article-title">
@@ -722,7 +837,7 @@
                         dosarul „fraudei bancare”: Sunt cel puțin șase 
                     </div>
                 </a>
-                <a href="#" id="article-6" class="small-article">
+                <a href="#" id="article-6" class="small-article non-mobile">
                     <div class="article-title">
                         societate <span class="article-dot icon"></span>
                     </div>
@@ -731,7 +846,7 @@
                         dosarul „fraudei bancare”: Sunt cel puțin șase 
                     </div>
                 </a>
-                <a href="#" id="article-7" class="small-article last">
+                <a href="#" id="article-7" class="small-article last non-mobile">
                     <div class="article-title">
                         societate <span class="article-dot icon"></span>
                     </div>
@@ -742,14 +857,14 @@
                 </a>
             </div>
         </div>
-        <a href="#" class="call-to-action">
+        <a href="#" class="call-to-action non-mobile">
             View all
             <div class="icon"></div>
         </a>
     </section>
     <section class="opinii">
-        <div class="row flex-row">
-            <div class="col-3">
+        <div class="row row-flex">
+            <div class="col-lg-3 col-12">
                 <a href="#" class="section-logo">
                     Opinii
                     <span class="section-dot icon"></span>
@@ -781,7 +896,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-7 horoscope">
+            <div class="col-lg-7 col-12 horoscope">
                 <div class="section-header">
                     <a href="#" class="section-logo">
                         Horoscope
@@ -881,12 +996,18 @@
     </section>
 
     <section class="economie">
-        <a href="#" class="section-logo">
-            Economie
-            <span class="section-dot icon"></span>
-        </a>
-        <div class="row flex-row">
-            <div class="col-4">
+        <div class="col-12 col-lg-7 row-flex logo-row">
+            <a href="#" class="section-logo">
+                Economie
+                <span class="section-dot icon"></span>
+            </a>
+            <a href="#" class="call-to-action mobile">
+                View all
+                <div class="icon"></div>
+            </a>
+        </div>
+        <div class="row row-flex">
+            <div class="col-12 col-lg-4">
                 <a href="#" id="article-1" class="big-article">
                     <img src="images/economieImg.png" alt="Economie image.">
                     <div class="article-header">
@@ -896,7 +1017,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-lg-3">
                 <a href="#" id="article-2" class="small-article">
                     <img src="images/economieImg2.png" alt="Economie image.">
                     <div class="article-title">
@@ -907,7 +1028,7 @@
                         dosarul „fraudei bancare”: Sunt cel puțin șase 
                     </div>
                 </a>
-                <a href="#" id="article-3" class="small-article">
+                <a href="#" id="article-3" class="small-article non-mobile">
                     <div class="article-title">
                         economie <span class="article-dot icon"></span>
                     </div>
@@ -918,7 +1039,7 @@
                         Acum riscă 4 ani de detenție
                     </div>
                 </a>
-                <a href="#" id="article-4" class="small-article last">
+                <a href="#" id="article-4" class="small-article last non-mobile">
                     <div class="article-title">
                         economie <span class="article-dot icon"></span>
                     </div>
@@ -930,7 +1051,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-lg-3">
                 <a href="#" id="article-5" class="small-article">
                     <img src="images/economieImg3.png" alt="Economie image.">
                     <div class="article-title">
@@ -941,7 +1062,7 @@
                         dosarul „fraudei bancare”: Sunt cel puțin șase 
                     </div>
                 </a>
-                <a href="#" id="article-6" class="small-article">
+                <a href="#" id="article-6" class="small-article non-mobile">
                     <div class="article-title">
                         economie <span class="article-dot icon"></span>
                     </div>
@@ -952,7 +1073,7 @@
                         Acum riscă 4 ani de detenție
                     </div>
                 </a>
-                <a href="#" id="article-7" class="small-article last">
+                <a href="#" id="article-7" class="small-article last non-mobile">
                     <div class="article-title">
                         economie <span class="article-dot icon"></span>
                     </div>
@@ -965,7 +1086,7 @@
                 </a>
             </div>
         </div>
-        <a href="#" class="call-to-action">
+        <a href="#" class="call-to-action non-mobile">
             View all
             <div class="icon"></div>
         </a>
@@ -978,21 +1099,22 @@
                 #
             </div>
         </a>
+        <div class="new-line mobile"></div>
         <ul>
             <li class="tag"><a href="#">MaiaSandu</a></li>
             <li class="tag"><a href="#">Andrian Candu</a></li>
             <li class="tag"><a href="#">Приднестровье</a></li>
-            <li class="tag"><a href="#">Новый год</a></li>
-            <li class="tag"><a href="#">Игорь Додон</a></li>
-            <li class="tag"><a href="#">Путин</a></li>
-            <li class="tag"><a href="#">COVID</a></li>
-            <li class="tag more-info"><a href="#">...</a></li>
+            <li class="tag last-tag-lg"><a href="#">Новый год</a></li>
+            <li class="tag last-tag-lg"><a href="#">Игорь Додон</a></li>
+            <li class="tag last-tag"><a href="#">Путин</a></li>
+            <li class="tag last-tag"><a href="#">COVID</a></li>
+            <li class="tag more-info last-tag"><a href="#">...</a></li>
         </ul>
     </section>
 
     <section class="additional-articles">
-        <div class="row flex-row">
-            <div class="col-3">
+        <div class="row row-flex">
+            <div class="col-12 col-lg-3">
                 <a href="#">
                     <div class="small-article">
                         <img src="images/subImg.png" alt="Additional articles image">
@@ -1005,7 +1127,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-lg-3">
                 <a href="#">
                     <div class="small-article">
                         <img src="images/subImg.png" alt="Additional articles image">
@@ -1018,7 +1140,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-lg-3">
                 <a href="#">
                     <div class="small-article">
                         <img src="images/subImg.png" alt="Additional articles image">
@@ -1032,8 +1154,8 @@
                 </a>
             </div>
         </div>
-        <div class="row flex-row">
-            <div class="col-3">
+        <div class="row row-flex">
+            <div class="col-12 col-lg-3">
                 <a href="#">
                     <div class="small-article">
                         <img src="images/subImg.png" alt="Additional articles image">
@@ -1046,7 +1168,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-lg-3">
                 <a href="#">
                     <div class="small-article">
                         <img src="images/subImg.png" alt="Additional articles image">
@@ -1059,7 +1181,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-lg-3">
                 <a href="#">
                     <div class="small-article">
                         <img src="images/subImg.png" alt="Additional articles image">
@@ -1076,12 +1198,18 @@
     </section>
 
     <section class="in-lume">
-        <a href="#" class="section-logo">
-            In lume
-            <span class="section-dot icon"></span>
-        </a>
-        <div class="row flex-row">
-            <div class="col-4">
+        <div class="col-12 col-lg-7 row-flex logo-row">
+            <a href="#" class="section-logo">
+                In lume
+                <span class="section-dot icon"></span>
+            </a>
+            <a href="#" class="call-to-action mobile">
+                View all
+                <div class="icon"></div>
+            </a>
+        </div>
+        <div class="row row-flex">
+            <div class="col-12 col-lg-4">
                 <a href="#" id="article-1" class="big-article">
                     <img src="images/inLumeImg.png" alt="In Lume image.">
                     <div class="article-header">
@@ -1091,7 +1219,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-lg-3">
                 <a href="#" id="article-2" class="small-article">
                     <img src="images/inLumeImg2.png" alt="In Lume image.">
                     <div class="article-title">
@@ -1102,7 +1230,7 @@
                         dosarul „fraudei bancare”: Sunt cel puțin șase 
                     </div>
                 </a>
-                <a href="#" id="article-3" class="small-article">
+                <a href="#" id="article-3" class="small-article non-mobile">
                     <div class="article-title">
                         in lume <span class="article-dot icon"></span>
                     </div>
@@ -1113,7 +1241,7 @@
                         Acum riscă 4 ani de detenție
                     </div>
                 </a>
-                <a href="#" id="article-4" class="small-article last">
+                <a href="#" id="article-4" class="small-article last non-mobile">
                     <div class="article-title">
                         in lume <span class="article-dot icon"></span>
                     </div>
@@ -1125,7 +1253,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-lg-3">
                 <a href="#" id="article-5" class="small-article">
                     <img src="images/economieImg3.png" alt="Economie image.">
                     <div class="article-title">
@@ -1136,7 +1264,7 @@
                         dosarul „fraudei bancare”: Sunt cel puțin șase 
                     </div>
                 </a>
-                <a href="#" id="article-6" class="small-article">
+                <a href="#" id="article-6" class="small-article non-mobile">
                     <div class="article-title">
                         in lume <span class="article-dot icon"></span>
                     </div>
@@ -1147,7 +1275,7 @@
                         Acum riscă 4 ani de detenție
                     </div>
                 </a>
-                <a href="#" id="article-7" class="small-article last">
+                <a href="#" id="article-7" class="small-article last non-mobile">
                     <div class="article-title">
                         in lume <span class="article-dot icon"></span>
                     </div>
@@ -1160,7 +1288,7 @@
                 </a>
             </div>
         </div>
-        <a href="#" class="call-to-action">
+        <a href="#" class="call-to-action non-mobile">
             View all
             <div class="icon"></div>
         </a>
@@ -1168,24 +1296,28 @@
 
     <section class="bani">
         <div class="row">
-            <div class="col-3 logo-col">
+            <div class="col-12 col-lg-7 row-flex logo-row logo-col">
                 <a href="#" class="bani-logo">
                     <img src="images/logoBani.png" alt="Bani">
                 </a>
+                <a href="#" class="call-to-action mobile">
+                    View more
+                    <div class="icon"></div>
+                </a>
             </div>
         </div>
-        <div class="row flex-row">
-            <a href="#" id="article-1"  class="col-3">
+        <div class="row row-flex">
+            <a href="#" id="article-1"  class="col-12 col-lg-3">
                 <img src="images/baniImg.png" alt="Bani video">
                 <div class="article-header">Realitatea AZI</div>
                 <div class="article-text">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
             </a>
-            <a href="#" id="article-2" class="col-3">
+            <a href="#" id="article-2" class="col-6 col-lg-3">
                 <img src="images/baniImg2.png" alt="Bani video">
                 <div class="article-header">Честно говоря</div>
                 <div class="article-text">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
             </a>
-            <a href="#" id="article-3" class="col-3">
+            <a href="#" id="article-3" class="col-6 col-lg-3">
                 <img src="images/baniImg3.png" alt="Bani video">
                 <div class="article-header">Catre Europa - 2</div>
                 <div class="article-text">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
@@ -1194,12 +1326,18 @@
     </section>
 
     <section class="life">
-        <a href="#" class="section-logo">
-            Life
-            <span class="section-dot icon"></span>
-        </a>
-        <div class="row flex-row">
-            <div class="col-4">
+        <div class="col-12 col-lg-7 row-flex logo-row">
+            <a href="#" class="section-logo">
+                Life
+                <span class="section-dot icon"></span>
+            </a>
+            <a href="#" class="call-to-action mobile">
+                View all
+                <div class="icon"></div>
+            </a>
+        </div>
+        <div class="row row-flex">
+            <div class="col-12 col-lg-4">
                 <a href="#" id="article-1" class="big-article">
                     <img src="images/lifeImg.png" alt="Life image.">
                     <div class="article-header">
@@ -1209,7 +1347,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-lg-3">
                 <a href="#" id="article-2" class="small-article">
                     <img src="images/lifeImg2.png" alt="Life image.">
                     <div class="article-title">
@@ -1231,7 +1369,7 @@
                         încărcător și alte bunuri.
                     </div>
                 </a>
-                <a href="#" id="article-4" class="small-article last">
+                <a href="#" id="article-4" class="small-article last non-mobile">
                     <img src="images/lifeImg4.png" alt="Life image.">
                     <div class="article-title">
                         in lume <span class="article-dot icon"></span>
@@ -1243,8 +1381,8 @@
                     </div>
                 </a>
             </div>
-            <div class="col-3">
-                <a href="#" id="article-5" class="small-article">
+            <div class="col-3 non-mobile">
+                <a href="#" id="article-5" class="small-article ">
                     <img src="images/lifeImg5.png" alt="Life image.">
                     <div class="article-title">
                         in lume <span class="article-dot icon"></span>
@@ -1278,16 +1416,35 @@
                 </a>
             </div>
         </div>
-        <a href="#" class="call-to-action">
+        <a href="#" class="call-to-action non-mobile">
             View all
             <div class="icon"></div>
         </a>
     </section>
 
     <section class="auto-tech-sport">
-        <div class="row flex-row">
-            <subsection class="auto col-3">
+        <div class="row row-flex">
+
+            <div class="col-12 col-lg-7 row-flex logo-row mobile">
                 <a href="#" class="section-logo">
+                    Auto                
+                    <span class="section-dot icon"></span>
+                </a>
+                <a href="#" class="section-logo">
+                    Tech               
+                    <span class="section-dot icon"></span>
+                </a>
+                <a href="#" class="section-logo">
+                    Sport                
+                    <span class="section-dot icon"></span>
+                </a>
+                <a href="#" class="call-to-action">
+                    View all
+                    <div class="icon"></div>
+                  </a>
+            </div>
+            <subsection class="auto col-12 col-lg-3">
+                <a href="#" class="section-logo non-mobile">
                     Auto                
                     <span class="section-dot icon"></span>
                 </a>
@@ -1304,7 +1461,7 @@
                           </div>
                       </a>
                   </li>
-                  <li class="small-article">
+                  <li class="small-article non-mobile">
                     <a href="#">
                       <div class="article-title">
                           auto
@@ -1315,7 +1472,7 @@
                         </div>
                     </a>
                   </li>
-                  <li class="small-article last">
+                  <li class="small-article last non-mobile">
                     <a href="#">
                       <div class="article-title">
                           auto
@@ -1327,13 +1484,13 @@
                     </a>
                   </li>
               </ul>  
-              <a href="#" class="call-to-action">
+              <a href="#" class="call-to-action non-mobile">
                 View all
                 <div class="icon"></div>
               </a>
             </subsection>
-            <subsection class="tech col-3">
-                <a href="#" class="section-logo">
+            <subsection class="tech col-12 col-lg-3">
+                <a href="#" class="section-logo non-mobile">
                     Tech                
                     <span class="section-dot icon"></span>
                 </a>
@@ -1350,7 +1507,7 @@
                         </div>
                     </a>
                   </li>
-                  <li class="small-article">
+                  <li class="small-article non-mobile">
                     <a href="#">
                         <div class="article-title">
                             tech
@@ -1361,7 +1518,7 @@
                         </div>
                     </a>
                   </li>
-                  <li class="small-article last">
+                  <li class="small-article last non-mobile">
                     <a href="#">
                       <div class="article-title">
                           tech
@@ -1373,13 +1530,13 @@
                     </a>
                   </li>
               </ul>  
-              <a href="#" class="call-to-action">
+              <a href="#" class="call-to-action  non-mobile">
                 View all
                 <div class="icon"></div>
               </a>
             </subsection>
-            <subsection class="sport col-3">
-                <a href="#" class="section-logo">
+            <subsection class="sport col-12 col-lg-3">
+                <a href="#" class="section-logo non-mobile">
                     Sport               
                     <span class="section-dot icon"></span>
                 </a>
@@ -1396,7 +1553,7 @@
                         </div>
                     </a>
                   </li>
-                  <li class="small-article">
+                  <li class="small-article non-mobile">
                     <a href="#">
                         <div class="article-title">
                             sport
@@ -1407,7 +1564,7 @@
                         </div>
                     </a>
                   </li>
-                  <li class="small-article last">
+                  <li class="small-article last non-mobile">
                      <a href="#">
                       <div class="article-title">
                           sport
@@ -1419,7 +1576,7 @@
                     </a>
                   </li>
               </ul>  
-              <a href="#" class="call-to-action">
+              <a href="#" class="call-to-action non-mobile">
                 View all
                 <div class="icon"></div>
               </a>
@@ -1451,7 +1608,7 @@
             <li class="social-network" id="instagram">
                 <a href="#">Instagram</a>
             </li>
-            <li class="tag more-info"><a href="#">...</a></li>
+            <li class="tag more-info last-tag"><a href="#">...</a></li>
         </ul>
     </section>
 
@@ -1460,8 +1617,8 @@
             Toate stirile
             <span class="section-dot icon"></span>
         </a>
-        <div class="row flex-row">
-            <div class="col-3">
+        <div class="row row-flex">
+            <div class="col-12 col-lg-3">
                 <div id="article-1"  class="article">
                     <a href="#">
                         <div class="article-time">12:22</div>
@@ -1472,7 +1629,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-lg-3">
                 <div class="article" id="article-2">
                     <a href="#">
                         <div class="article-time">11:02</div>
@@ -1483,7 +1640,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-lg-3">
                 <div class="article" id="article-3">
                     <a href="#">
                         <div class="article-time">09:22</div>
@@ -1495,8 +1652,8 @@
                 </div>
             </div>
         </div>
-        <div class="row flex-row">
-            <div class="col-3">
+        <div class="row row-flex">
+            <div class="col-12 col-lg-3">
                 <div class="article" id="article-4">
                     <a href="#">
                         <div class="article-time">12:19</div>
@@ -1506,7 +1663,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-lg-3">
                 <div class="article" id="article-5">
                     <a href="#">
                         <div class="article-time">10:47</div>
@@ -1516,7 +1673,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-lg-3">
                 <div class="article" id="article-6">
                     <a href="#">
                         <div class="article-time">08:52</div>
@@ -1527,8 +1684,8 @@
                 </div>
             </div>
         </div>
-        <div class="row flex-row">
-            <div class="col-3">
+        <div class="row row-flex">
+            <div class="col-12 col-lg-3">
                 <div class="article" id="article-7">
                     <a href="#">
                         <div class="article-time">12:04</div>
@@ -1539,7 +1696,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-lg-3">
                 <div class="article" id="article-8">
                     <a href="#">
                         <div class="article-time">10:22</div>
@@ -1550,7 +1707,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-3" id="article-3">
+            <div class="col-12 col-lg-3" id="article-3">
                 <div class="article" id="article-9">
                     <a href="#">
                         <div class="article-time">08:41</div>
@@ -1562,8 +1719,8 @@
                 </div>
             </div>
         </div>
-        <div class="row flex-row">
-            <div class="col-3">
+        <div class="row row-flex">
+            <div class="col-12 col-lg-3">
                 <div class="article" id="article-10">
                     <a href="#">
                         <div class="article-time">11:59</div>
@@ -1574,7 +1731,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-lg-3">
                 <div class="article" id="article-11">
                     <a href="#">
                         <div class="article-time">10:19</div>
@@ -1585,7 +1742,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-3" id="article-3">
+            <div class="col-12 col-lg-3" id="article-3">
                 <div class="article" id="article-12">
                     <a href="#">
                         <div class="article-time">08:15</div>
@@ -1597,8 +1754,8 @@
                 </div>
             </div>
         </div>
-        <div class="row flex-row">
-            <div class="col-3">
+        <div class="row row-flex">
+            <div class="col-12 col-lg-3">
                 <div class="article last" id="article-13">
                     <a href="#">
                         <div class="article-time">11:44</div>
@@ -1609,7 +1766,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-lg-3">
                 <div class="article last" id="article-14">
                     <a href="#">
                         <div class="article-time">09:24</div>
@@ -1620,7 +1777,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-lg-3">
                 <div class="article last" id="article-15">
                     <a href="#">
                         <div class="article-time">08:12</div>
@@ -1632,20 +1789,20 @@
                 </div>
             </div>
         </div>
-        <hr>
+        <hr class="non-mobile">
     </section>
 
     <footer>
-        <div class="row flex-row">
-            <div class="col-10 flex-row">
+        <div class="row row-flex">
+            <div class="col-12 col-lg-10 row-flex">
                 <div class="search-box">
                     <input type="search" name="search-panel" class="search-field"  id="search-panel" placeholder="Search">
                     <button class="icon search-icon"></button>
                 </div>
             </div>
         </div>
-        <div class="row flex-row">
-            <div class="col-10 navbar">
+        <div class="row row-flex non-mobile">
+            <div class="col-lg-10 col-12 navbar">
                 <ul>
                     <li><a href="#">Actualitate</a></li>
                     <li><a href="#">Alegeri</a></li>
@@ -1667,8 +1824,8 @@
                 </ul>
             </div>
         </div>
-        <div class="row flex-row">
-            <div class="col-8 copyright-text">
+        <div class="row row-flex">
+            <div class="col-12 col-lg-8 copyright-text">
                  Mollit reprehenderit sunt dolore est ex commodo mollit. Enim ullamco magna quis minim dolore veniam in. 
                  Sunt culpa ullamco reprehenderit ut mollit ut minim. Sint quis dolor fugiat et.
             </div>
