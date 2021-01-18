@@ -434,21 +434,21 @@ header {
   width: 25px;
   height: 25px;
 }
-.navbar .navbar-side-menu .business {
-  background-position: 2px -53px;
-}
-.navbar .navbar-side-menu .currency-button {
-  cursor: pointer;
-  background-position: -24px -53px;
-}
-.navbar .navbar-side-menu .weather-button {
-  cursor: pointer;
-  background-position: -52px -53px;
-}
 .navbar .navbar-side-menu a {
   display: flex;
   margin: 0 5px;
   height: 20px;
+}
+.currency-button {
+  cursor: pointer;
+  background-position: -24px -53px;
+}
+.weather-button {
+  cursor: pointer;
+  background-position: -52px -53px;
+}
+.business {
+  background-position: 2px -53px;
 }
 /*=====  End of Header  ======*/
 /*=============================================
@@ -866,6 +866,7 @@ header {
   width: 100%;
 }
 .article-brief {
+  font-family: "Inter", san-serif;
   color: #686868;
   font-size: 14px;
   font-weight: 400;
@@ -873,6 +874,7 @@ header {
 }
 .article-title {
   color: #000000;
+  font-family: "Inter", san-serif;
   font-weight: bold;
 }
 .small-news-unit {
@@ -1024,6 +1026,14 @@ header {
   margin-top: -15px;
   padding-right: 10px;
 }
+.article .article-time {
+  padding-top: 15pt;
+  font-size: 15pt;
+  height: fit-content;
+}
+.article .article-description {
+  font-size: 10pt;
+}
 .article .article-header {
   font-size: 10.5pt;
   line-height: 12pt;
@@ -1147,7 +1157,6 @@ header {
 .in-lume .small-article,
 .life .small-article {
   border-bottom: 2px solid #c6c6c6;
-  padding-bottom: 0.7em;
   margin-bottom: 0.3em;
 }
 .societate .small-article img,
@@ -1314,7 +1323,7 @@ header {
 }
 .bani .article-header,
 .bani .article-text {
-  color: black;
+  color: #323232;
 }
 .bani .bani-logo {
   width: 20%;
@@ -1482,14 +1491,6 @@ header {
 }
 .toate-stirile .article {
   padding: 1.5em 0;
-}
-.toate-stirile .article .article-time {
-  padding-top: 15pt;
-  font-size: 15pt;
-  height: fit-content;
-}
-.toate-stirile .article .article-description {
-  font-size: 10pt;
 }
 /*=====  End of Toate Stirile  ======*/
 /*=============================================
@@ -1684,16 +1685,298 @@ footer .copyright-text {
     flex: 0 0 27.5%;
     max-width: 27.5%;
   }
+  .mobile {
+    display: none;
+  }
 }
 @media (max-width: 991.98px) {
+  body {
+    overflow-x: hidden;
+  }
+  header.mobile {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    margin-top: 0;
+    top: 0;
+  }
+  header.mobile .header-replacement,
+  header.mobile .container:first-child {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    background-color: white;
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    padding: 0.5em 1px;
+  }
+  header.mobile .header-replacement .row,
+  header.mobile .container:first-child .row {
+    justify-content: space-between;
+  }
+  header.mobile .header-replacement .row > div,
+  header.mobile .container:first-child .row > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header.mobile .header-replacement .row .left-nav-mobile,
+  header.mobile .container:first-child .row .left-nav-mobile {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 1.6em;
+  }
+  header.mobile .header-replacement .row .logo-col,
+  header.mobile .container:first-child .row .logo-col {
+    padding-right: 0;
+  }
+  header.mobile .header-replacement .row .right-nav-mobile,
+  header.mobile .container:first-child .row .right-nav-mobile {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0;
+  }
+  header.mobile .header-replacement .logo-col a,
+  header.mobile .container:first-child .logo-col a {
+    width: fit-content;
+  }
+  header.mobile .header-replacement .logo-col a .logo,
+  header.mobile .container:first-child .logo-col a .logo {
+    margin: 0;
+  }
+  header.mobile .header-replacement .icon,
+  header.mobile .container:first-child .icon {
+    cursor: pointer;
+    background-size: 350px;
+    width: 35px;
+    height: 35px;
+  }
+  header.mobile .header-replacement .menu-icon,
+  header.mobile .container:first-child .menu-icon {
+    background-position: -5px -222px;
+  }
+  header.mobile .header-replacement .search-icon-header,
+  header.mobile .container:first-child .search-icon-header {
+    background-position: -90px -218px;
+    background-size: 340px;
+    margin-right: 15px;
+  }
+  header.mobile .header-replacement .business-black,
+  header.mobile .container:first-child .business-black {
+    background-position: -131px -217px;
+    background-size: 340px;
+  }
+  header.mobile .search-box {
+    position: relative;
+    bottom: 100px;
+    transition: 0.3s ease-in-out;
+    z-index: 9;
+    height: 1px;
+  }
+  header.mobile .search-box .search-field {
+    position: absolute;
+    margin-top: 0.5em;
+    right: 0;
+    z-index: 9;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    color: #b7b7b7;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 1em;
+    padding: 0.5em 1.5em;
+    padding-right: 2em;
+    border-radius: 20px;
+  }
+  header.mobile .search-box .icon {
+    right: 3px;
+  }
+  header.mobile .header-replacement {
+    position: absolute;
+    top: -55px;
+    left: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  header.mobile .header-replacement > div {
+    display: flex;
+    align-items: center;
+  }
+  header.mobile .header-replacement .right-nav-mobile {
+    display: flex;
+  }
+  header.mobile .header-replacement .close-menu-icon {
+    background-position: -48px -222px;
+  }
+  .article {
+    border-bottom: 1px solid #dbdbdb;
+  }
+  .article .article-description,
+  .article .article-header {
+    font-size: 14pt;
+    line-height: 15pt;
+  }
+  .article .article-time {
+    font-size: 20pt;
+  }
+  .big-article,
+  .small-article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    margin: 0.7em 0;
+    padding: 2em 0;
+    border-bottom: 1px solid #dbdbdb;
+  }
+  .big-article img,
+  .small-article img {
+    width: 36%;
+    height: 100%;
+  }
+  .big-article .article-title,
+  .small-article .article-title,
+  .big-article .article-header,
+  .small-article .article-header {
+    font-family: "Inter", san-serif;
+    font-weight: 600;
+    line-height: 12pt;
+    font-size: 12pt;
+  }
+  .big-article .source,
+  .small-article .source,
+  .big-article .article-title,
+  .small-article .article-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: fit-content;
+    background-color: transparent;
+    white-space: nowrap;
+  }
+  .big-article .source .icon,
+  .small-article .source .icon,
+  .big-article .article-title .icon,
+  .small-article .article-title .icon {
+    background-position: -52px -13px;
+    background-size: 100px 100px;
+    width: 10px;
+    height: 10px;
+  }
+  .big-article .article-header,
+  .small-article .article-header {
+    margin: 1em 0;
+    padding: 0 1em;
+    padding-top: 1.1em;
+    color: #6b6b6b;
+  }
+  .additional-articles .small-article .source {
+    left: 48%;
+  }
+  .additional-articles .small-article .article-header {
+    margin: 1em 0;
+    padding: 0 1em;
+    padding-top: 1.1em;
+    color: #6b6b6b;
+  }
+  .small-news-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    margin: 0 1em;
+    border-bottom: 1px solid #dbdbdb;
+  }
+  .small-news-block img {
+    width: 33%;
+    height: 100%;
+  }
+  .small-news-block .article-title,
+  .small-news-block .article-header {
+    font-family: "Inter", san-serif;
+    font-weight: 600;
+    line-height: 11pt;
+    font-size: 10pt;
+  }
+  .small-news-block .source,
+  .small-news-block .article-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+  }
+  .small-news-block .source .icon,
+  .small-news-block .article-title .icon {
+    background-position: -52px -13px;
+    background-size: 100px 100px;
+    width: 10px;
+    height: 10px;
+  }
+  .small-news-block .article-title {
+    margin: 0;
+    line-height: 12pt;
+    font-size: 12pt;
+    padding: 1em;
+    padding-left: 0;
+    color: #6b6b6b;
+  }
+  .small-news-block .category-text {
+    top: 0;
+    left: 35%;
+    background-color: transparent;
+  }
+  .horoscope .section-logo {
+    padding: 0.5em 0;
+  }
+  .horoscope .zodiac-article .zodiac-description {
+    font-size: 12pt;
+  }
+  .large-news-block,
+  .large-news-block-mobile {
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 1em;
+  }
+  .large-news-block .article-brief,
+  .large-news-block-mobile .article-brief {
+    font-weight: 600;
+    font-size: 13pt;
+    line-height: 15pt;
+    padding-bottom: 1em;
+  }
+  .large-news-block-mobile {
+    margin: auto;
+    margin-bottom: 1em;
+  }
+  .large-news-block-mobile .article-brief {
+    font-size: 15pt;
+  }
+  .small-news-unit .small-news-block {
+    margin-right: 1em;
+    margin-left: 3em;
+  }
   .last {
-    border-bottom: 2px solid #c6c6c6 !important;
+    border-bottom: 1px solid #dbdbdb !important;
   }
   body {
     background-color: #efefef;
+    position: relative;
   }
   section .mobile {
     display: block;
+  }
+  section {
+    margin: 0.5em 0;
   }
   .breaking-news-banner {
     padding-right: 1em;
@@ -1704,6 +1987,53 @@ footer .copyright-text {
   .breaking-news-banner #breaking-news-text {
     font-size: 13pt;
     line-height: 14pt;
+  }
+  .headline-news .small-news-block {
+    padding-right: 0;
+  }
+  .banners {
+    margin-top: 5em;
+  }
+  .headline-news {
+    margin-bottom: 0.5em;
+  }
+  .opinii .opinions li {
+    border-bottom: 2px solid #dbdbdb;
+  }
+  .opinii .opinions li .opinion-name {
+    line-height: 14pt;
+    font-size: 14pt;
+    left: 32.5%;
+  }
+  .opinii .opinions li img {
+    width: 27%;
+  }
+  .opinii .opinions li .opinion-description {
+    font-family: "Inter", san-serif;
+    font-weight: 600;
+    line-height: 13pt;
+    font-size: 13pt;
+    margin: 1em 0;
+    padding: 0 1em;
+    padding-top: 1.1em;
+    color: #6b6b6b;
+  }
+  .opinii .logo-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .opinii .logo-row .call-to-action {
+    display: flex;
+    position: relative;
+    right: 0;
+  }
+  .economie,
+  .in-lume,
+  .life,
+  .societate,
+  .politica,
+  .actualitate {
+    margin-top: 0.5em;
   }
   .economie .call-to-action,
   .in-lume .call-to-action,
@@ -1724,6 +2054,80 @@ footer .copyright-text {
   .politica .big-article,
   .actualitate .big-article {
     height: unset;
+    padding-top: 0;
+    border-bottom: 1px solid #dbdbdb;
+  }
+  .economie .big-article .article-header,
+  .in-lume .big-article .article-header,
+  .life .big-article .article-header,
+  .societate .big-article .article-header,
+  .politica .big-article .article-header,
+  .actualitate .big-article .article-header {
+    padding-left: 10px;
+    padding-right: 0;
+    padding-top: 1em;
+    margin-bottom: 0;
+    font-size: 11pt;
+    line-height: 13pt;
+  }
+  .economie .big-article .article-title,
+  .in-lume .big-article .article-title,
+  .life .big-article .article-title,
+  .societate .big-article .article-title,
+  .politica .big-article .article-title,
+  .actualitate .big-article .article-title {
+    top: 5%;
+    left: 38.5%;
+  }
+  .economie .small-article,
+  .in-lume .small-article,
+  .life .small-article,
+  .societate .small-article,
+  .politica .small-article,
+  .actualitate .small-article {
+    border-bottom: 1px solid #dbdbdb;
+  }
+  .economie .small-article .article-title,
+  .in-lume .small-article .article-title,
+  .life .small-article .article-title,
+  .societate .small-article .article-title,
+  .politica .small-article .article-title,
+  .actualitate .small-article .article-title {
+    top: 25%;
+    left: 38.7%;
+  }
+  .economie .section-logo,
+  .in-lume .section-logo,
+  .life .section-logo,
+  .societate .section-logo,
+  .politica .section-logo,
+  .actualitate .section-logo {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  .politica .small-article .article-title {
+    top: 10%;
+    left: 37.5%;
+  }
+  .in-lume {
+    margin-bottom: 2em;
+  }
+  .bani {
+    background-color: #dbdbdb;
+  }
+  .bani .bani-logo {
+    width: 30%;
+  }
+  .rlive .article-header,
+  .realitatea-tv .article-header,
+  .bani .article-header {
+    font-size: 13pt;
+  }
+  .sub-economie .small-article {
+    padding: 1em;
+  }
+  .sub-economie .small-article .article-title {
+    left: 48.5%;
   }
   .economie .section-logo,
   .in-lume .section-logo,
@@ -1784,6 +2188,9 @@ footer .copyright-text {
   .bani .call-to-action .icon {
     background-position: -148px -50px;
   }
+  .auto-tech-sport {
+    padding-bottom: 0;
+  }
   .auto-tech-sport .logo-row {
     display: flex;
     flex-direction: row;
@@ -1796,13 +2203,18 @@ footer .copyright-text {
   }
   .auto-tech-sport .section-logo {
     width: fit-content;
-    font-size: 25pt;
     padding: 0.2em;
   }
-  .auto-tech-sport subsection .article-title {
-    width: 45px;
+  .auto-tech-sport subsection ul .article-title {
+    width: fit-content;
     left: 32.5%;
-    top: 10%;
+    top: 21%;
+  }
+  .auto-tech-sport subsection ul .small-article {
+    border-bottom: 1px solid #dbdbdb;
+  }
+  .auto-tech-sport .small-article img {
+    padding-top: 0;
   }
   .auto-tech-sport .section-dot {
     width: 30px;
@@ -1811,23 +2223,32 @@ footer .copyright-text {
     background-size: 300px 300px;
   }
   .section-logo {
-    font-size: 25pt;
+    font-size: 22pt;
   }
   .social-networks {
     border-top: none;
+    width: unset;
+    padding-bottom: 1em;
+    margin: 0 0.8em;
+    border-bottom: 1px solid #dbdbdb;
+  }
+  .social-networks ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .social-networks ul .social-network {
     padding: 0.3em 1em;
   }
   .social-networks .section-logo {
     padding: 0.5em;
+    padding-top: 0;
     position: relative;
-    right: 17%;
+    right: 23%;
   }
-  .social-networks ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  .toate-stirile .section-logo {
+    padding: 1em;
+    padding-left: 0.5em;
   }
   footer .search-box #search-panel {
     padding: 0.7em 2em;
@@ -1842,6 +2263,145 @@ footer .copyright-text {
   }
   .non-mobile {
     display: none !important;
+  }
+  .menu {
+    display: none;
+    width: 100vw;
+    margin: 0;
+    background-color: white;
+    position: relative;
+    z-index: 12;
+    padding: 1em;
+    bottom: 10px;
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+  }
+  .menu .menu-header {
+    position: relative;
+    align-items: center;
+  }
+  .menu .menu-header .col-3 {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0;
+  }
+  .menu .menu-header .col-3 span {
+    margin: 0 0.2em;
+  }
+  .menu .menu-header .right-header-menu {
+    margin-top: 0;
+    padding-left: 0;
+  }
+  .menu .menu-header .language-options {
+    font-family: "Inter", san-serif;
+    font-weight: 600;
+    font-size: 13pt;
+  }
+  .menu .menu-header .language-options .icon {
+    background-size: 300px;
+  }
+  .menu .menu-header .language-options .globe-icon {
+    background-position: -36px -36px;
+  }
+  .menu .menu-header .language-options .dropdown-button-icon {
+    background-position: -71px -32px;
+  }
+  .menu .search-field {
+    position: initial;
+    width: 100%;
+    padding: 0.7em 1em;
+    left: 0;
+    right: unset;
+    font-size: 13pt;
+    font-family: "Inter", san-serif;
+    border-radius: 25px;
+  }
+  .menu .search-icon {
+    width: 30px;
+    height: 30px;
+    background-position: 5px -40px;
+    background-size: 350px;
+    right: 7%;
+    top: 15%;
+  }
+  .menu .menu-middle {
+    margin: 0.5em 0;
+  }
+  .menu .menu-middle li {
+    margin-bottom: 0.3em;
+    transition: 0.3s ease-in-out;
+    width: fit-content;
+  }
+  .menu .menu-middle li:hover {
+    color: #4d4d4d;
+  }
+  .menu .menu-middle ul {
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter", san-serif;
+    font-weight: 600;
+    font-size: 13pt;
+    margin-bottom: 0;
+  }
+  .menu .menu-middle ul .live {
+    background-position: -78px -27px;
+  }
+  .menu .menu-bottom {
+    flex-direction: column;
+  }
+  .menu .menu-bottom li {
+    margin: 0.2em 0.5em;
+  }
+  .menu .menu-bottom li,
+  .menu .menu-bottom .icon {
+    width: 45px;
+    height: 45px;
+    background-size: 490px;
+  }
+  .menu .menu-bottom .odnoklasniki {
+    background-position: -61px 0;
+  }
+  .menu .menu-bottom .telegram {
+    background-position: -123px 0;
+  }
+  .menu .menu-bottom .twitter {
+    background-position: -184px 0;
+  }
+  .menu .menu-bottom .youtube {
+    background-position: -245px 0;
+  }
+  .menu .menu-bottom .business,
+  .menu .menu-bottom .currency-button,
+  .menu .menu-bottom .weather-button {
+    background-size: 200px;
+  }
+  .menu .menu-bottom .business {
+    background-position: -103px -128px;
+  }
+  .menu .menu-bottom .currency-button {
+    background-position: -153px -128px;
+  }
+  .menu .menu-bottom .weather-button {
+    background-position: -3px -151px;
+  }
+  .menu .menu-bottom .additional {
+    margin-bottom: 0;
+  }
+  .menu .menu-footer {
+    font-size: 15pt;
+  }
+  .menu .menu-footer li {
+    transition: 0.3s ease-in-out;
+    color: #b3b3b3;
+  }
+  .menu .menu-footer li:hover {
+    color: #959595;
+  }
+  .menu .menu-footer .copyright-text {
+    color: #c8c8c8;
+    font-size: 12px;
+    text-align: center;
   }
 }
 /*=====  End of Media queries  ======*/

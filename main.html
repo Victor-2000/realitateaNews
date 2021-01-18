@@ -18,6 +18,112 @@
 
     <title>Pagina principala</title>
   </head>
+  <header class="mobile">
+    <div class="container">
+        <div class="row">
+            <div class="col-3 left-nav-mobile">
+                <div class="icon menu-icon"></div>
+            </div> 
+            <div class="col-6 logo-col">
+                <a href="#"><span class="logo hide-text"><h1>Realitatea</h1></span></a>
+            </div>
+            <div class="col-3 right-nav-mobile">
+                <span class="icon search-icon-header"></span>
+                <a href="#">
+                    <span class="icon hide-text business-black">Realitatea TV</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="search-box">
+        <input type="search" name="header-search" class="search-field"  id="header-search" placeholder="Search">
+        <button class="icon search-icon"></button>
+    </div>
+    <div class="menu">
+        <div class="header-replacement row">
+            <div class="col-3 left-nav-mobile">
+                <div class="icon close-menu-icon"></div>
+            </div> 
+            <div class="col-6 logo-col">
+                <a href="#"><span class="logo hide-text"><h1>Realitatea</h1></span></a>
+            </div>
+            <div class="col-3 right-nav-mobile">
+                <span class="icon search-icon-header"></span>
+                <a href="#">
+                    <span class="icon hide-text business-black">Realitatea TV</span>
+                </a>
+            </div>
+        </div>
+        <div class="row row-flex menu-header">
+            <div class="col-3 row-flex">
+                <a class="language-options" href="#">
+                    <span class="icon globe-icon"></span>
+                    RO
+                    <span class="icon dropdown-button-icon"></span>
+                </a>
+            </div>
+            <div class="col-9 right-header-menu">
+                <input type="search" name="header-search" class="search-field"  id="header-search" placeholder="Search">
+                <button class="icon search-icon"></button>
+            </div>
+        </div>
+        <div class="row row-flex menu-middle">
+                <ul class="col-6">
+                    <li><a href="#">Actualitate</a></li>
+                    <li><a href="#">Alegeri</a></li>
+                    <li><a href="#">Politica</a></li>
+                    <li><a href="#">Societate</a></li>
+                    <li><a href="#">Economie</a></li>
+                    <li><a href="#">In lume</a></li>
+                </ul>
+                <ul class="col-6">
+                    <li><a href="#">Life</a></li>
+                    <li><a href="#">Auto</a></li>
+                    <li><a href="#">Tech</a></li>
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="#">Toate stirile</a></li>
+                    <li class="live-block-sm">
+                        <a href="#">
+                            Live <span class="icon live"></span>
+                        </a>
+                    </li>
+                </ul>
+        </div>
+        <div class="row row-flex menu-bottom">
+            <ul class="contact-options">
+                <li><a href="#" class="icon hide-text facebook">facebook</a></li>
+                <li><a href="#" class="icon hide-text odnoklasniki">odnoklasniki</a></li>
+                <li><a href="#" class="icon hide-text telegram">telegram</a></li>
+                <li><a href="#" class="icon hide-text twitter">twitter</a></li>
+                <li><a href="#" class="icon hide-text youtube">youtube</a></li>
+            </ul>
+            <ul class="additional">
+                 <li>
+                     <a href="#">
+                          <span class="icon hide-text business">Realitatea TV</span>
+                      </a>
+                 </li> 
+                 <li>
+                     <span class="icon hide-text currency-button">Curs Valutar</span>
+                 </li>
+                 <li>
+                     <span class="icon hide-text weather-button">Vremea</span>
+                 </li>
+            </ul>
+        </div>
+        <div class="row row-flex menu-footer">
+            <ul class="text-left-nav">
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Cariere</a></li>
+                <li><a href="#">Pub</a></li>
+            </ul>
+            <div class="copyright-text">
+                Mollit reprehenderit sunt dolore est ex commodo mollit. Enim ullamco magna quis minim dolore veniam in. 
+                Sunt culpa ullamco reprehenderit ut mollit ut minim. Sint quis dolor fugiat et.
+           </div>    
+        </div>
+    </div>
+</header>
   <body>
       <section class="additional-info">
             <div class="additional-info-background"></div>
@@ -141,8 +247,8 @@
           </div>
       </section>
 
-    <header>
-        <div class="row row-flex non-mobile">
+    <header class="non-mobile">
+        <div class="row row-flex">
             <div class="adblock col-10">
                 <a href="https://www.mercedes-benz.md/ro/desktop/home.html">
                     <img src="images/ad1.png" alt="Mercedes Car add.">
@@ -150,7 +256,7 @@
                 <span class="close-icon icon"></span>
             </div>
         </div>
-        <div class="row row-flex non-mobile">
+        <div class="row row-flex">
             <div class="col-lg-4 col-3 left-nav row-flex">
                 <ul class="contact-options">
                     <li><a href="#" class="icon hide-text facebook">facebook</a></li>
@@ -186,7 +292,7 @@
                 </ul>
             </div>
         </div>
-        <div class="row row-flex non-mobile">
+        <div class="row row-flex">
             <div class="col-lg-10 navbar row-flex">
                 <ul class="col-xs-12">
                     <li><a href="#">Actualitate</a></li>
@@ -227,7 +333,6 @@
             </div>
         </div>
     </header>
-    
     <section class="banners">
         <div class="row row-flex breaking-news-banner-row">
             <div class="col-12 col-lg-10 breaking-news-banner">
@@ -329,7 +434,7 @@
                             Președintele Pro Moldova Andrian 
                             Candu, susține un briefing de presă 
                         </div>
-                      </a>
+                    </a>
                     <a href="#" id="small-headline-block-2" class="col-12 col-lg-6 non-mobile small-news-block">
                         <div class="category-text"><span class="category-dot icon"></span></div>
                         <img class="block-image" src="images/img3.png" alt="Protest antiguvernare">
@@ -344,8 +449,8 @@
                         <div class="category-text">politica<span class="category-dot icon"></span></div>
                         <img class="block-image" src="images/img4.png" alt="Maia Sandu">
                         <div class="article-title">
-                            Maia Sandu anunță că a avut o întreve-
-                            dere cu Mitropolitul Vladimir. Mitropolia
+                            Maia Sandu anunță că a avut o întrevedere
+                            cu Mitropolitul Vladimir. Mitropolia
                             nu spune un cuvânt despre întrevedere
                         </div>
                     </a>
@@ -360,10 +465,9 @@
                     </a>
                 </div>
                 <div class="row row-flex mobile">
-                    <a href="#" id="small-headline-block-2" class="col-12 small-news-block">
-                        <div class="category-text"><span class="category-dot icon"></span></div>
+                    <a href="#" id="small-headline-block-2" class="col-12 large-news-block-mobile">
                         <img class="block-image" src="images/img3.png" alt="Protest antiguvernare">
-                        <div class="article-title">
+                        <div class="article-brief">
                             Protest antiguvernare în PMAN 
                             Live From Realitatea.md 
                         </div>
@@ -595,18 +699,21 @@
         <div class="row row-flex">
             <a href="#" id="article-1" class="col-12">
                 <img src="images/rliveImg.png" alt="RLive video">
-                <div class="article-header">Realitatea AZI</div>
-                <div class="article-text">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
+                <div class="article-header non-mobile">Realitatea AZI</div>
+                <div class="article-header mobile">Vinerea neagră revine! Percheziții în dosarul „fraudei bancare”: Sunt cel puțin șase reținuți!</div>
+                <div class="article-text non-mobile">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
             </a>
             <a href="#" id="article-2" class="col-6">
                 <img src="images/rliveImg2.png" alt="RLive video">
-                <div class="article-header">Realitatea AZI</div>
-                <div class="article-text">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
+                <div class="article-header non-mobile">Realitatea AZI</div>
+                <div class="article-header mobile">Vinerea neagră revine! Percheziții în dosarul „fraudei bancare”: Sunt cel puțin șase reținuți!</div>
+                <div class="article-text non-mobile">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
             </a>
             <a href="#" id="article-3" class="col-6">
                 <img src="images/rliveImg3.png" alt="RLive video">
-                <div class="article-header">Realitatea AZI</div>
-                <div class="article-text">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
+                <div class="article-header non-mobile">Realitatea AZI</div>
+                <div class="article-header mobile">Vinerea neagră revine! Percheziții în dosarul „fraudei bancare”: Sunt cel puțin șase reținuți!</div>
+                <div class="article-text non-mobile">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
             </a>
         </div>
     </section>
@@ -672,6 +779,10 @@
                     <div class="col-12 col-lg-6">
                         <a href="#" class="big-article">
                             <img src="images/politicaImg.png" alt="">
+                            <div class="article-title mobile">
+                                politica
+                                <span class="article-dot icon"></span>
+                            </div>
                             <div class="article-header">
                                 Democrații se alătură protestului de mâine din PMAN. 
                                 Pavel Filip: Să spunem clar și răspicat că noi vrem 
@@ -692,10 +803,14 @@
                     <div class="col-12 col-lg-6">
                         <a href="#" class="big-article">
                             <img src="images/politicaImg2.png" alt="">
+                            <div class="article-title mobile">
+                                politica
+                                <span class="article-dot icon"></span>
+                            </div>
                             <div class="article-header">
                                 Adresarea președintelui ales Maia Sandu la „Moldova 1”: 
                                 „Acest Parlament trebuie să plece. Duminică vom avea o consultare 
-                                cu cetățenii” (VIDEO)
+                                cu cetățenii”
                             </div>
                         </a>
                         <a href="#" class="small-article non-mobile">
@@ -758,18 +873,21 @@
         <div class="row row-flex">
             <a href="#" id="article-1"  class="col-12">
                 <img src="images/realitateaTvImg.png" alt="Realitatea TV video">
-                <div class="article-header">Realitatea AZI</div>
-                <div class="article-text">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
+                <div class="article-header non-mobile">Realitatea AZI</div>
+                <div class="article-header mobile">Vinerea neagră revine! Percheziții în dosarul „fraudei bancare”: Sunt cel puțin șase reținuți!</div>
+                <div class="article-text non-mobile">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
             </a>
             <a href="#" id="article-2" class="col-6">
                 <img src="images/realitateaTvImg.png" alt="Realitatea TV video">
-                <div class="article-header">Честно говоря</div>
-                <div class="article-text">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
+                <div class="article-header non-mobile">Честно говоря</div>
+                <div class="article-header mobile">Vinerea neagră revine! Percheziții în dosarul „fraudei bancare”: Sunt cel puțin șase reținuți!</div>
+                <div class="article-text non-mobile">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
             </a>
             <a href="#" id="article-3" class="col-6">
                 <img src="images/realitateaTvImg.png" alt="Realitatea TV video">
-                <div class="article-header">Catre Europa</div>
-                <div class="article-text">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
+                <div class="article-header non-mobile">Catre Europa</div>
+                <div class="article-header mobile">Vinerea neagră revine! Percheziții în dosarul „fraudei bancare”: Sunt cel puțin șase reținuți!</div>
+                <div class="article-text non-mobile">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
             </a>
         </div>
     </section>
@@ -789,6 +907,9 @@
             <div class="col-lg-4 col-12">
                 <a href="#" id="article-1" class="big-article">
                     <img src="images/societateImg.png" alt="Societate image.">
+                    <div class="article-title">
+                        societate <span class="article-dot icon"></span>
+                    </div>
                     <div class="article-header">
                         Sute de polițiști au împânzit Guvernul. 
                         Intrarea în clădirea Executivului din PMAN, 
@@ -865,10 +986,16 @@
     <section class="opinii">
         <div class="row row-flex">
             <div class="col-lg-3 col-12">
-                <a href="#" class="section-logo">
-                    Opinii
-                    <span class="section-dot icon"></span>
-                </a>
+                <div class="logo-row">
+                    <a href="#" class="section-logo">
+                        Opinii
+                        <span class="section-dot icon"></span>
+                    </a>
+                    <a href="#" class="call-to-action mobile">
+                        View all
+                        <div class="icon"></div>
+                    </a>
+                </div>
                 <ul class="opinions">
                     <li id="opinion-1">
                         <img src="images/opiniiImg.png" alt="Opinii image.">
@@ -1010,6 +1137,9 @@
             <div class="col-12 col-lg-4">
                 <a href="#" id="article-1" class="big-article">
                     <img src="images/economieImg.png" alt="Economie image.">
+                    <div class="article-title">
+                        economie <span class="article-dot icon"></span>
+                    </div>
                     <div class="article-header">
                         Sute de polițiști au împânzit Guvernul. 
                         Intrarea în clădirea Executivului din PMAN, 
@@ -1212,6 +1342,9 @@
             <div class="col-12 col-lg-4">
                 <a href="#" id="article-1" class="big-article">
                     <img src="images/inLumeImg.png" alt="In Lume image.">
+                    <div class="article-title mobile">
+                        politica<span class="article-dot icon"></span>
+                    </div>
                     <div class="article-header">
                         Sute de polițiști au împânzit Guvernul. 
                         Intrarea în clădirea Executivului din PMAN, 
@@ -1223,7 +1356,7 @@
                 <a href="#" id="article-2" class="small-article">
                     <img src="images/inLumeImg2.png" alt="In Lume image.">
                     <div class="article-title">
-                        in lume <span class="article-dot icon"></span>
+                        in lume<span class="article-dot icon"></span>
                     </div>
                     <div class="article-header">
                         Vinerea neagră revine! Percheziții în 
@@ -1309,18 +1442,21 @@
         <div class="row row-flex">
             <a href="#" id="article-1"  class="col-12 col-lg-3">
                 <img src="images/baniImg.png" alt="Bani video">
-                <div class="article-header">Realitatea AZI</div>
-                <div class="article-text">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
+                <div class="article-header non-mobile">Realitatea AZI</div>
+                <div class="article-header mobile">Vinerea neagră revine! Percheziții în dosarul „fraudei bancare”: Sunt cel puțin șase reținuți!</div>
+                <div class="article-text non-mobile">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
             </a>
             <a href="#" id="article-2" class="col-6 col-lg-3">
                 <img src="images/baniImg2.png" alt="Bani video">
-                <div class="article-header">Честно говоря</div>
-                <div class="article-text">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
+                <div class="article-header non-mobile">Честно говоря</div>
+                <div class="article-header mobile">Vinerea neagră revine! Percheziții în dosarul „fraudei bancare”: Sunt cel puțin șase reținuți!</div>
+                <div class="article-text non-mobile">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
             </a>
             <a href="#" id="article-3" class="col-6 col-lg-3">
                 <img src="images/baniImg3.png" alt="Bani video">
-                <div class="article-header">Catre Europa - 2</div>
-                <div class="article-text">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
+                <div class="article-header non-mobile">Catre Europa - 2</div>
+                <div class="article-header mobile">Vinerea neagră revine! Percheziții în dosarul „fraudei bancare”: Sunt cel puțin șase reținuți!</div>
+                <div class="article-text non-mobile">O emisiune din care veți afla cele mai importante știri ale zilei, iar cele mai fierbinți subiecte sociale și economice vor fi discutate cu invitații în studiou. Vom despica firul în patru pentru a...</div>
             </a>
         </div>
     </section>
@@ -1340,6 +1476,9 @@
             <div class="col-12 col-lg-4">
                 <a href="#" id="article-1" class="big-article">
                     <img src="images/lifeImg.png" alt="Life image.">
+                    <div class="article-title">
+                        politica <span class="article-dot icon"></span>
+                    </div>
                     <div class="article-header">
                         Sute de polițiști au împânzit Guvernul. 
                         Intrarea în clădirea Executivului din PMAN, 
