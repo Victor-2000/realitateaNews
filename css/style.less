@@ -1882,6 +1882,7 @@ footer {
 
   .search-box {
     position: relative;
+    transition: 0.3s ease-in-out;
 
     width: 300px;
   }
@@ -2177,6 +2178,7 @@ footer {
       transition: 0.3s ease-in-out;
       z-index: 9;
       height: 1px;
+      .basic-shadow();
       .search-field {
         position: absolute;
         margin-top: 0.5em;
@@ -2724,6 +2726,8 @@ footer {
     padding: 1em;
 
     bottom: 10px;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
 
     .menu-header {
       position: relative;
