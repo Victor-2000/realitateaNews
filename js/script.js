@@ -14,8 +14,8 @@ function setCancelButton(item){
 }
 
 function setupAdditionalInfo(){
-    let currencyButton = document.querySelector(".currency-button");
-    let weatherButton = document.querySelector(".weather-button");
+    let currencyButtons = document.querySelectorAll(".currency-button");
+    let weatherButtons = document.querySelectorAll(".weather-button");
     let infoSection = document.querySelector(".additional-info");
     let currencyBlock = document.querySelector(".curs-valutar");
     let weatherBlock = document.querySelector(".meteo");
@@ -23,19 +23,29 @@ function setupAdditionalInfo(){
 
     let isCurrency = false;
 
-    currencyButton.addEventListener("click", 
-    function(){
-        infoSection.style.display = "flex";
-        currencyBlock.style.display = "block";
-        isCurrency = true;
-    });
+    infoSection.style["margin"] = "0";
 
-    weatherButton.addEventListener("click", 
-    function(){
-        infoSection.style.display = "flex";
-        weatherBlock.style.display = "block";
-        isCurrency = false;
-    });
+    currencyButtons.forEach(
+        function (currencyButton) {
+            currencyButton.addEventListener("click", 
+            function(){
+                infoSection.style.display = "flex";
+                currencyBlock.style.display = "block";
+                isCurrency = true;
+            });
+        }
+    );
+    
+    weatherButtons.forEach(
+        function (weatherButton) {
+            weatherButton.addEventListener("click", 
+            function(){
+                infoSection.style.display = "flex";
+                weatherBlock.style.display = "block";
+                isCurrency = false;
+            });
+        }
+    );
 
 
     background.addEventListener("click", 
