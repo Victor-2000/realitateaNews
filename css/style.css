@@ -1198,6 +1198,7 @@ header {
 }
 #article .actualitate .big-article .article-header {
   font-size: 15pt;
+  line-height: 17pt;
 }
 #article .actualitate .small-article {
   align-items: flex-end;
