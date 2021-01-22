@@ -1136,6 +1136,10 @@ header {
   padding-bottom: 2em;
 }
 
+.content-text {
+  color: #201f1f;
+}
+
 .headline-article {
   font-weight: @main-font-weight;
   font-family: @main-font;
@@ -1311,10 +1315,6 @@ header {
     li.selected {
       color: @article-nav-last-text-color;
     }
-  }
-
-  .realitatea-col {
-    margin-top: -160px;
   }
 }
 
@@ -2402,6 +2402,15 @@ footer {
     margin-top: 0;
     top: 0;
 
+    .header-replacement {
+      .right-nav-mobile {
+        justify-content: flex-end;
+      }
+      .logo-col {
+        justify-content: center;
+      }
+    }
+
     .header-replacement,
     .container:first-child {
       position: relative;
@@ -2426,10 +2435,6 @@ footer {
           display: flex;
           justify-content: flex-start;
           padding-left: 1.6em;
-        }
-
-        .logo-col {
-          padding-right: 0;
         }
 
         .right-nav-mobile {
@@ -2466,6 +2471,24 @@ footer {
         background-size: 340px;
       }
     }
+    .header-replacement {
+      position: absolute;
+      top: -55px;
+      left: 0;
+      padding-right: 1em;
+      & > div {
+        display: flex;
+        align-items: center;
+      }
+      .right-nav-mobile {
+        display: flex;
+      }
+      .close-menu-icon {
+        background-position: -48px -222px;
+      }
+      .no-shadow();
+    }
+
     .search-box {
       position: relative;
       bottom: 100px;
@@ -2499,22 +2522,6 @@ footer {
       .icon {
         right: 3px;
       }
-    }
-    .header-replacement {
-      position: absolute;
-      top: -55px;
-      left: 0;
-      & > div {
-        display: flex;
-        align-items: center;
-      }
-      .right-nav-mobile {
-        display: flex;
-      }
-      .close-menu-icon {
-        background-position: -48px -222px;
-      }
-      .no-shadow();
     }
   }
 
@@ -3166,18 +3173,13 @@ footer {
   .headline-article #main-article-image {
     width: 100vw;
   }
-  .article-content {
-    padding: 0;
-    .row {
-      margin: 0;
-    }
-  }
   .headline-article {
+    display: flex;
+    justify-content: center;
     .realitatea-col {
       display: flex;
       justify-content: center;
 
-      margin-top: 0;
       padding-top: 2em;
 
       border-top: 1px solid @separation-line-color-mobile;
@@ -3195,9 +3197,31 @@ footer {
       padding: 0;
       margin: 0;
     }
-    .container {
-      margin: auto;
+
+    .row,
+    .col-12 {
+      position: unset;
     }
+
+    .container-fluid {
+      padding: 0.5em;
+    }
+
+    .col-12 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .article-content {
+      padding: 0 2em;
+      padding-top: 50vw;
+    }
+
+    #main-article-image {
+      position: absolute;
+      left: 0;
+    }
+
     .content-text {
       padding: 2em 0;
     }
