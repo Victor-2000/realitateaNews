@@ -1298,6 +1298,7 @@ header {
 .recomandam {
   background-color: transparent;
   padding-top: 0;
+  padding-bottom: 0;
   margin-top: 0;
 }
 .recomandam .section-logo,
@@ -2733,6 +2734,10 @@ footer .copyright-text {
   #article .recomandam .small-article {
     border-bottom: 1px solid #dbdbdb;
     margin: 0.5em 3em;
+  }
+  .adblock {
+    width: 100%;
+    height: auto;
   }
 }
 /*=====  End of Media queries  ======*/
