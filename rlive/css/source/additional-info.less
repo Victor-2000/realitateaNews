@@ -1,0 +1,233 @@
+.additional-info {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: @additional-info-background-color;
+  color: white;
+
+  position: fixed;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 100;
+  top: 0;
+
+  font-family: @main-font;
+  font-weight: @main-font-weight;
+
+  .additional-info-background {
+    position: absolute;
+    z-index: 101;
+    width: 100%;
+    height: 100%;
+  }
+
+  .meteo,
+  .curs-valutar {
+    background-color: @additional-info-panel-primary-color;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 102;
+    width: 380px;
+    height: 240px;
+    flex-shrink: 0;
+  }
+  .meteo {
+    display: none;
+    .city {
+      display: flex;
+      align-items: center;
+    }
+    .weather-icon {
+      background-size: 300px 300px;
+      width: 40px;
+      height: 40px;
+      background-position: -230px -35px;
+      margin: auto;
+    }
+    .meteo-header {
+      background-color: @additional-info-panel-secondary-color;
+      color: @additional-info-header-color;
+      font-size: 15pt;
+      padding: 1em 1em;
+      margin: 0;
+      .weather-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #current-weather {
+          font-size: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          line-height: 11px;
+        }
+        #current-temp {
+          font-size: 20px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+
+          position: absolute;
+          right: -5px;
+          top: 5px;
+        }
+      }
+    }
+
+    .meteo-content {
+      margin: 0.5em 0;
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .lowest-temp,
+        .highest-temp {
+          line-height: 20px;
+        }
+        .highest-temp {
+          color: @meteo-highest-temp-color;
+        }
+
+        .lowest-temp {
+          color: @meteo-lowest-temp-color;
+        }
+
+        .weather-icon {
+          background-size: 250px 250px;
+          width: 40px;
+          height: 35px;
+          background-position: -230px -35px;
+          margin: 10px 0px;
+        }
+
+        #weather-1 {
+          .weather-icon {
+            background-position: -156px 1px;
+          }
+        }
+        #weather-2 {
+          .weather-icon {
+            background-position: -151px -32px;
+          }
+        }
+        #weather-3 {
+          .weather-icon {
+            background-position: -189px -29px;
+          }
+        }
+        #weather-4 {
+          .weather-icon {
+            background-position: -156px 1px;
+          }
+        }
+        #weather-5 {
+          .weather-icon {
+            background-position: -151px -32px;
+          }
+        }
+        #weather-6 {
+          .weather-icon {
+            background-position: -189px -29px;
+          }
+        }
+        #weather-7 {
+          .weather-icon {
+            background-position: -189px -29px;
+          }
+        }
+
+        li {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+
+          margin: 0.2em;
+          div {
+            display: flex;
+            flex-direction: row;
+          }
+        }
+      }
+    }
+  }
+
+  .curs-valutar {
+    display: none;
+
+    .curs-valutar-header {
+      background-color: @additional-info-panel-secondary-color;
+      color: @additional-info-header-color;
+      font-size: 15pt;
+      padding: 0.7em 1.5em;
+    }
+    .curs-valutar-content {
+      margin: 1em;
+      ul {
+        display: flex;
+        flex-direction: column;
+        li {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+
+          margin: 0.2em;
+          margin-left: 0;
+
+          span {
+            background-size: 250px 250px;
+          }
+
+          .eur {
+            background-position: 0px -125px;
+          }
+          .usd {
+            background-position: -30px -125px;
+          }
+          .rub {
+            background-position: -61px -125px;
+          }
+          .ron {
+            background-position: -91px -125px;
+          }
+          .uah {
+            background-position: -122px -125px;
+          }
+
+          .rising,
+          .falling {
+            position: absolute;
+            left: 45.5%;
+          }
+          .rising {
+            background-position: -165px -130px;
+          }
+          .falling {
+            background-position: -196px -130px;
+          }
+
+          .currency {
+            justify-content: space-between;
+            width: 60px;
+          }
+
+          div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 0 1em;
+          }
+        }
+      }
+    }
+  }
+}

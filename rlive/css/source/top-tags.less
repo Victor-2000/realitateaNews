@@ -1,0 +1,62 @@
+.social-networks,
+.top-tags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 85%;
+  margin: auto;
+  ul {
+    margin-bottom: 0;
+    .social-network,
+    .tag {
+      color: white;
+      font-weight: @main-font-weight;
+
+      background-color: @tag-background-color;
+      border-radius: 20px;
+      padding: 0.3em 0.5em;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        background-color: @tag-background-color-hover;
+      }
+    }
+  }
+
+  .section-logo {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0;
+    font-size: 25pt;
+  }
+}
+
+.social-networks {
+  .social-network {
+    font-family: @main-font;
+    font-weight: @main-font-weight;
+    font-size: 10pt;
+    line-height: 20pt;
+    padding: 0.3em;
+    color: white;
+    &#facebook {
+      background-color: @facebook-link-color;
+    }
+    &#twitter {
+      background-color: @twitter-link-color;
+    }
+    &#odnoklasniki {
+      background-color: @odnoklasniki-link-color;
+    }
+    &#youtube {
+      background-color: @youtube-link-color;
+    }
+    &#telegram {
+      background-color: @telegram-link-color;
+    }
+    &#instagram {
+      background-color: @instagram-link-color;
+    }
+  }
+}

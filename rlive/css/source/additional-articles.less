@@ -1,0 +1,29 @@
+.additional-articles {
+  background-color: @additional-articles-background-color;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  .row > div {
+    flex: 0 0 27.5%;
+    max-width: 27.5%;
+  }
+  .small-article {
+    margin: 1em;
+    img {
+      width: 44%;
+    }
+    .source {
+      color: white;
+      background-color: @additional-articles-source-background-color;
+      border-radius: 20px;
+      padding: 0.4em;
+      font-size: 8pt;
+      font-weight: @main-font-weight;
+      width: auto;
+      left: 50%;
+    }
+    .article-header {
+      color: black;
+      padding-right: 0;
+    }
+  }
+}

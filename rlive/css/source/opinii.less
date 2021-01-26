@@ -1,0 +1,146 @@
+.opinii {
+  .horoscope {
+    .section-logo {
+      padding-left: 2%;
+    }
+  }
+
+  .section-logo {
+    padding-left: 5%;
+  }
+
+  .opinions {
+    display: flex;
+    flex-direction: column;
+    li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      position: relative;
+
+      border-bottom: 1px solid @separation-line-color;
+
+      padding: 1em;
+
+      img {
+        width: 25%;
+      }
+      .opinion-name,
+      .opinion-description {
+        font-family: @main-font;
+        font-weight: @main-font-weight;
+      }
+
+      .opinion-description {
+        line-height: 11pt;
+        font-size: 10pt;
+        padding-top: 2em;
+        padding-left: 1em;
+      }
+
+      .opinion-name {
+        position: absolute;
+        font-size: 12pt;
+        top: 15%;
+        left: 30.5%;
+      }
+    }
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    .section-logo {
+      padding-right: 0;
+    }
+  }
+
+  .article-time {
+    display: flex;
+    padding-top: 10px;
+    font-family: @main-font;
+    font-weight: @main-font-weight;
+    .article-day {
+      color: @day-text-color;
+    }
+    .article-date {
+      margin-left: 3pt;
+      color: black;
+    }
+  }
+  .zodii {
+    flex-wrap: wrap;
+    a {
+      font-family: @main-font;
+      font-weight: @main-font-weight;
+      font-size: 10pt;
+
+      background-color: @zodii-link-color;
+      border-radius: 20px;
+      padding: 0.5em 0.7em;
+
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        background-color: @zodii-link-hover-color;
+        color: white;
+      }
+    }
+    .selected a {
+      background-color: @zodii-link-selected-color;
+      color: white;
+    }
+  }
+  .zodiac-article {
+    background-color: @zodii-link-color;
+    border-radius: 20px;
+    padding: 2em;
+    font-family: @main-font;
+    font-weight: @main-font-weight;
+
+    .zodiac-description {
+      color: @article-details-text-color;
+      font-size: 10pt;
+      line-height: 13pt;
+      padding: 2em 0;
+    }
+
+    .zodiac-header {
+      display: flex;
+      align-items: center;
+      font-size: 11pt;
+
+      .zodiac-name {
+        font-size: 21pt;
+      }
+      .zodiac-period {
+        padding-top: 7px;
+        padding-left: 10px;
+      }
+      .zodiac-icon {
+        padding: 0 20px;
+        background-size: 250px 250px;
+        background-position: -217px -92px;
+
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .zodiac-footer {
+      display: flex;
+      align-items: center;
+      color: @day-text-color;
+      font-size: 9pt;
+
+      .share {
+        margin-bottom: 0;
+        margin-left: 10px;
+        li {
+          margin: 3px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.arhiva {
+  .section-logo {
+    padding-left: 0.6em;
+    font-size: 23pt;
+  }
+  .article {
+    img {
+      width: 50%;
+    }
+    a {
+      padding: 0.5em;
+    }
+  }
+  .small-article {
+    a {
+      flex-direction: column;
+
+      padding: 0.7em;
+
+      transition: 0.2s ease-in-out;
+      &:hover {
+        border-radius: 10px;
+        background-color: @article-background-color-hover;
+      }
+
+      .article-header {
+        color: white;
+        font-size: 12pt;
+        line-height: 13pt;
+        font-weight: 700;
+        padding: 0;
+      }
+    }
+  }
+}
