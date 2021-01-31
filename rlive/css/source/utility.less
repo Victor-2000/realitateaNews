@@ -30,7 +30,8 @@ hr {
 
   margin: 0.5em 0;
 
-  .neumorphic();
+  .neumorphic(0.7px);
+  border-top: none;
 }
 
 a:hover {
@@ -79,6 +80,22 @@ a:hover {
     width: 25px;
     height: 25px;
   }
+  &.right-arrow,
+  &.left-arrow {
+    width: 25px;
+    height: 25px;
+
+    margin: 6px;
+
+    cursor: pointer;
+  }
+}
+
+.left-arrow {
+  background-position: -75px -50px;
+}
+.right-arrow {
+  background-position: -100px -50px;
 }
 
 .facebook {
@@ -117,6 +134,15 @@ a:hover {
   background-position: -77px -27px;
 }
 
+.icon.arrow {
+  background-position: -45px -81px;
+
+  background-size: 300px;
+
+  width: 22px;
+  height: 26px;
+}
+
 .icon.sun {
   background-position: -24px -23px;
   width: 27px;
@@ -132,9 +158,84 @@ a:hover {
   height: 50px;
 }
 
+.calendar {
+  background-color: @calendar-background-color;
+  border-radius: 20px;
+
+  padding: 0.5em;
+  margin: 1em 0;
+
+  width: 100%;
+  height: 250px;
+
+  color: white;
+}
+
 #search-panel {
   margin-top: 1em;
   margin-bottom: 3em;
+}
+
+.section-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: @main-font;
+  font-weight: @main-font-weight;
+
+  color: white;
+  width: 400px;
+
+  .left-button,
+  .right-button {
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    .right-arrow,
+    .left-arrow {
+      width: 25px;
+      height: 25px;
+
+      background-size: 300px;
+      background-position: -191px -81px;
+    }
+    .right-arrow {
+      background-position: -232px -81px;
+    }
+  }
+  .element {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px;
+
+    width: 35px;
+    height: 35px;
+
+    font-size: 17pt;
+    color: @section-nav-element-text-color;
+
+    background-color: @section-nav-element-background-color;
+
+    border-radius: 50%;
+
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      background-color: @section-nav-element-background-color-hover;
+    }
+
+    &.selected {
+      cursor: default;
+      background-color: @section-nav-element-background-color-selected;
+      color: white;
+      .neumorphic(0.7px);
+    }
+  }
 }
 
 .row-flex {
@@ -196,6 +297,11 @@ a:hover {
   margin: 0.7em 0;
   margin-bottom: 2em;
 
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
   img {
     width: 100%;
   }
@@ -205,8 +311,14 @@ a:hover {
     line-height: 19pt;
     font-size: 18pt;
     color: black;
-
     margin: 1em 0;
+
+    .container {
+      padding: 0;
+      .row {
+        margin: 0;
+      }
+    }
   }
 
   .article-title {
@@ -258,6 +370,10 @@ a:hover {
     align-items: center;
   }
 
+  .image-frame {
+    margin-bottom: 1em;
+    position: relative;
+  }
   img {
     width: 100%;
   }
@@ -563,6 +679,22 @@ header {
     font-size: 40pt;
     margin-top: -15px;
     padding-right: 10px;
+  }
+
+  .article-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    width: 75px;
+    .icon {
+      background-position: -52px -13px;
+      background-size: 100px 100px;
+      width: 10px;
+      height: 10px;
+    }
   }
 
   .article-time {

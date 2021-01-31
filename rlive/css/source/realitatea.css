@@ -1,0 +1,10 @@
+.realitatea .section-logo {
+  display: flex;
+  padding-left: 11.5%;
+  width: -webkit-fit-content;
+  width: fit-content;
+}
+.realitatea .section-logo a {
+  width: -webkit-fit-content;
+  width: fit-content;
+}

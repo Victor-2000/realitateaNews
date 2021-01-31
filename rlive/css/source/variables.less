@@ -111,6 +111,19 @@
 @tag-background-color: rgba(255, 255, 255, 0.151);
 @tag-background-color-hover: rgba(255, 255, 255, 0.315);
 
+@navbar-selected-border-color: rgba(255, 255, 255, 0.116);
+@navbar-hover-border-color: rgba(255, 255, 255, 0.205);
+
+@calendar-background-color: #48415a;
+@calendar-week-days-color: #1a1823;
+@calendar-next-month-days-color: #201a2d;
+@current-day-background-color: #ffd100;
+
+@section-nav-element-text-color: #0a090e;
+@section-nav-element-background-color: #767082;
+@section-nav-element-background-color-hover: #65616d;
+@section-nav-element-background-color-selected: #0a090e;
+
 .basic-shadow() {
   -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
@@ -131,4 +144,10 @@
   -webkit-box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.27);
   -moz-box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.27);
   box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.27);
+}
+
+.neumorphic(@thickness) {
+  -webkit-box-shadow: 0px @thickness 0px 0px rgba(255, 255, 255, 0.27);
+  -moz-box-shadow: 0px @thickness 0px 0px rgba(255, 255, 255, 0.27);
+  box-shadow: 0px @thickness 0px 0px rgba(255, 255, 255, 0.27);
 }

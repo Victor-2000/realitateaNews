@@ -181,12 +181,20 @@
   }
 
   .mobile {
-    display: none;
+    display: none !important;
   }
 }
 
 // Medium devices (tablets, less than 992px) md
 @media (max-width: 991.98px) {
+  .container.container-lg {
+    width: 100%;
+  }
+
+  .toate-stirile {
+    margin-bottom: 1em;
+  }
+
   body {
     overflow-x: hidden;
   }
@@ -333,10 +341,46 @@
     .article-time {
       font-size: 20pt;
     }
-    border-bottom: 1px solid @separation-line-color-mobile;
   }
 
-  .big-article,
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .list {
+    padding: 0 1em;
+    ul {
+      height: unset;
+      li {
+        border-bottom: unset;
+      }
+    }
+  }
+
+  .sub-headline.scroll .list ul {
+    height: unset;
+  }
+
+  .big-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    .article-header {
+      .content {
+        font-size: 14pt;
+      }
+      .nav {
+        display: none;
+      }
+    }
+    .article-footer {
+      width: 100%;
+    }
+  }
+
   .small-article {
     display: flex;
     flex-direction: row;
@@ -490,12 +534,7 @@
     margin-left: 3em;
   }
 
-  .last {
-    border-bottom: 1px solid @separation-line-color-mobile !important;
-  }
-
   body {
-    background-color: @mobile-background-color;
     position: relative;
   }
 
@@ -659,14 +698,7 @@
   .societate {
     .section-logo {
       padding-left: 0;
-      &:hover {
-        color: black;
-      }
     }
-  }
-
-  .section-logo:hover {
-    color: black;
   }
 
   .top-tags {
@@ -774,9 +806,6 @@
     padding: 1em 0;
     margin: 0 0.8em;
 
-    border-top: 1px solid @separation-line-color-mobile;
-    border-bottom: 1px solid @separation-line-color-mobile;
-
     ul {
       display: flex;
       flex-wrap: wrap;
@@ -793,19 +822,38 @@
     }
   }
 
-  .toate-stirile {
+  .realitatea {
+    background-color: white;
     .section-logo {
       padding: 1em;
       padding-left: 0.5em;
     }
+    .article {
+      color: black;
+
+      border-bottom: 1px solid @separation-line-color-mobile;
+
+      .article-time {
+        display: none;
+      }
+    }
   }
 
-  footer .search-box {
-    #search-panel {
-      padding: 0.7em 2em;
+  footer {
+    .footer {
+      background: transparent;
+      font-weight: @main-font-weight;
+      .copyright-text {
+        font-size: 10pt;
+      }
     }
-    .icon {
-      top: 8px;
+    .search-box {
+      #search-panel {
+        padding: 0.7em 2em;
+      }
+      .icon {
+        top: 16px;
+      }
     }
   }
 
@@ -1047,6 +1095,66 @@
 
 // Large devices (desktops, less than 1200px) lg
 @media (max-width: 1199.98px) {
+  header {
+    .icon {
+      &.facebook,
+      &.odnoklasniki,
+      &.telegram,
+      &.twitter,
+      &.youtube,
+      &.tiktok,
+      &.instagram {
+        background-size: 200px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  .facebook {
+    background-position: -28px -2px;
+  }
+
+  .odnoklasniki {
+    background-position: -53px -2px;
+  }
+
+  .telegram {
+    background-position: -78px -2px;
+  }
+
+  .twitter {
+    background-position: -104px -2px;
+  }
+
+  .youtube {
+    background-position: -128px -2px;
+  }
+
+  .instagram {
+    background-position: -152px -2px;
+  }
+
+  .tiktok {
+    background-position: -177px -2px;
+  }
+
+  .big-article .article-header {
+    .nav {
+      li a {
+        padding-left: 0.65em;
+        padding-right: 0.65em;
+      }
+    }
+  }
+  .arhiva {
+    .row > div {
+      padding: 0 0.5em;
+    }
+    .article-header {
+      padding-left: 0.5em;
+    }
+  }
 }
 
 // Extra large devices (large desktops)

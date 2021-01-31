@@ -5,6 +5,8 @@ header {
     align-items: center;
     &.logo-col {
       display: block;
+      padding-right: 20px;
+      padding-left: 10px;
     }
   }
 }
@@ -24,6 +26,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
+  flex: 0 0 2%;
+  max-width: 2%;
   .text-left-nav li {
     margin: 0.5em;
   }
@@ -139,7 +144,7 @@ header {
 }
 
 .navbar {
-  padding-left: 2em;
+  padding-left: 0em;
   ul {
     margin-bottom: 0;
     display: flex;
@@ -155,6 +160,22 @@ header {
       color: @navbar-text-color;
       font-weight: 500;
       font-size: 13pt;
+
+      border-radius: 10px;
+
+      padding: 0.3em 0.7em;
+
+      border: 1px solid transparent;
+
+      transition: 0.2s ease-in-out;
+      &:hover {
+        border: 1px solid @navbar-hover-border-color;
+      }
+
+      &.selected {
+        border: 1px solid @navbar-selected-border-color;
+      }
+
       transition: ease-in-out;
       transition-duration: 0.25s;
     }
