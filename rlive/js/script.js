@@ -105,6 +105,7 @@ function fadeIn(button, target, closeButton = null){
                     }
                     ,30);
             }
+            // preventGeneralScroll();
         }
     );
 }
@@ -148,7 +149,7 @@ function slideOut(button, target) {
     button.onclick = function () {
         setTimeout(
             function () {
-                target.style["bottom"] = "100px";
+                target.style["bottom"] = "150px";
                 slideIn(button,target);
             }
         ,1);
@@ -167,8 +168,18 @@ function setupMobileHeader(){
     slideIn(searchButton, searchTarget);
 }
 
+function preventGeneralScroll(){
+    var fixed = document.getElementById('fixed');
+
+    fixed.addEventListener('touchmove', function(e) {
+
+        e.preventDefault();
+
+    }, false);
+}
+
 // setupAds();
-// setupMobileHeader();
+setupMobileHeader();
 setupBody();
 setupSmallArticles();
 // setupAdditionalInfo();
